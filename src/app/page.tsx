@@ -18,13 +18,13 @@ export default function Home() {
     gsap.timeline({
       scrollTrigger: {
         trigger: "#end",
-        start: 'top center',
+        start: 'top top+=200',
         end: 'bottom bottom',
-        pin: true,
-        pinSpacing: true,
+        pin: false,
+        pinSpacing: false,
         scrub: 1,
       }
-    });
+    }).fromTo('#end', { opacity: 0 }, { opacity: 1 });
 
   })
 
@@ -35,9 +35,9 @@ export default function Home() {
       {/* <Projects /> */}
       <div id="end" className="w-[100vw] h-[100vh] flex flex-col items-center justify-center relative">
         <p className="header_text">ご覧ありがとうございます。</p>
-        <div className="flex items-center justify-center text-4xl">
+        <div className="flex items-center justify-center text-xl md:text-4xl">
           <p className="px-2 py-1">プロジェクトの例は</p>
-          <LinkButton href={'/projects'} text="こちら" />
+          <LinkButton href={'/projects'} text="こちら" bg={true} />
           <p className="px-2 py-1">になります。</p>
         </div>
       </div>

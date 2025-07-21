@@ -1,12 +1,19 @@
+'use client'
+
 import Navigation from "@/components/CirclingNavigation/circleNavigation"
 import Description from "@/components/CirclingNavigation/Description"
+import Mobile from "@/components/Mobile/MobileComponent";
+import { useEffect, useState } from "react";
 
 export default function Page(){
-
+    const [isMobile, setIsMobile] = useState(false);
+    useEffect(()=>{
+        setIsMobile(window.innerWidth < 768);
+    },[])
 
     return (
         <>
-            <CirclingNavigationWrapper />
+            {isMobile ? <Mobile />:<CirclingNavigationWrapper />}
         </>
     )
 }

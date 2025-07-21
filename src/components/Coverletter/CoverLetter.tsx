@@ -22,10 +22,10 @@ export default function CoverLetter() {
                         end: "bottom center+=100",
                         scrub: true, // 스크롤에 따라 애니메이션 진행
                         pin: true,
-                        pinSpacing: true,
-                        markers: true,
+                        pinSpacing: false,
+                        // markers: true,
                     },
-                }).fromTo(element, { opacity: 0 }, { opacity: 1 });
+                }).fromTo(element, { opacity: 0 }, { opacity: 1 }).to(element, { opacity: 0});
                 // const animations = {
                 //     fadeIn: { from: { opacity: 0 }, to: { opacity: 1 } },
                 //     fadeOut: { from: { opacity: 1 }, to: { opacity: 0 } },
