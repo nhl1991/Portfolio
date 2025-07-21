@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRef } from 'react';
 import item from '@/lib/items.json'
-import { projects } from '@/lib/projects.json'
+import data from '@/lib/projects.json'
 import { useStore } from '@/lib/stores';
 import { Project } from '@/lib/interface';
 
@@ -13,6 +13,7 @@ export default function Navigation() {
     const ringRef = useRef<HTMLDivElement>(null);
     const smallRingRef = useRef<HTMLDivElement[]>([]);
     const rotationRef = useRef(0)
+    const { projects } = data;
     const cirlceCount = projects.length; // Just change this value to add more circle and adjust size in page.module.css file
     const angle = 360 / cirlceCount;
     const deg = 15;

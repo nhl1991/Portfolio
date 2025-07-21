@@ -14,7 +14,7 @@ import LinkButton from "@/components/ui/LinkButton";
 
 export default function Home() {
   const container = useRef(null);
-  const tl = useRef(null);
+
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.timeline({
@@ -45,15 +45,4 @@ export default function Home() {
       </div>
     </section>
   );
-}
-
-function CirclingNavigationWrapper() {
-
-  return (
-    <div className="w-max h-screen flex">
-      <Navigation />
-      <Description />
-
-    </div>
-  )
 }

@@ -3,17 +3,17 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
-import { data } from "@/lib/coverletter.json"
+import  item  from "@/lib/coverletter.json"
 import React from "react";
 import { Content } from "./Content";
 
 
 export default function CoverLetter() {
     const ref = useRef(null);
-
+    const { data } = item;
     useGSAP(() => {
         gsap.registerPlugin(ScrollTrigger);
-        gsap.utils.toArray("#coverletter > div").forEach((element, index) => {
+        gsap.utils.toArray("#coverletter > div").forEach((element) => {
             if (element instanceof HTMLDivElement) {
                 gsap.timeline({
                     scrollTrigger: {
