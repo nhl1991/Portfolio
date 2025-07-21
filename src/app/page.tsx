@@ -5,8 +5,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
 import Introduction from "@/components/Introduction/Introduction";
 import CoverLetter from "@/components/Coverletter/CoverLetter";
-import Navigation from "@/components/CirclingNavigation/circleNavigation";
-import Description from "@/components/CirclingNavigation/Description";
 import LinkButton from "@/components/ui/LinkButton";
 
 
