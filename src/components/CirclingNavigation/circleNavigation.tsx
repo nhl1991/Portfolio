@@ -59,7 +59,7 @@ export default function Navigation() {
         <div className={`w-screen h-screen p-4`}>
             <div className='w-full h-full flex justify-center items-center relative rounded-2xl'>
                 <div className='w-max h-max relative '>
-                    <div id="ring" className='w-[500px] h-[500px] border-4 border-white rounded-full invisible md:visible relative' onWheel={handleOnWheel} ref={ringRef}>
+                    <div id="ring" className={styles.ring} onWheel={handleOnWheel} ref={ringRef}>
 
                         {
                             Array.from({ length: cirlceCount }).map((__, i) => {
