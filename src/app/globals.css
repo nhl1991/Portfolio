@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  overscroll-behavior: none;
+  /* 오버스크롤 동작 비활성화 */
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, and Opera */
+}
+
+rt, rp {
+  @apply text-base py-2;
+}
+
+.panel-width {
+
+  height: 100vh;
+
+}
+
+#textArea {
+  width: 50%;
+}
+
+
+.header_text {
+  @apply text-6xl p-8 font-bold text-white;
+}
+
+.list-item-title {
+  @apply w-full text-4xl;
+}
+
+.list-item-description {
+  @apply text-2xl py-2;
+}
+
+@media (width < 768px) {
+  .header_text {
+    @apply text-2xl p-4 font-bold text-white;
+  }
+
+  .list-item-title {
+    @apply w-full text-xl;
+  }
+
+  .list-item-description {
+    @apply text-base py-2;
+  }
+  rt, rp {
+  @apply text-[9px] py-1;
+}
+}

@@ -1,0 +1,13 @@
+@reference "tailwindcss";
+
+.amber {
+    @apply bg-amber-200;
+}
+
+.sky {
+    @apply bg-sky-200;
+}
+
+.fuchsia {
+    @apply bg-fuchsia-200;
+}
