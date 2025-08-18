@@ -1,9 +1,9 @@
 
-export default function DescriptionText({children}: {children : React.ReactNode}){
+export default function DescriptionText({ children }: { children: React.ReactNode }) {
 
-    return(
-        <>
-            <p className="list-item-description text-center">{children}</p>
-        </>
+    return (
+        <span className="">
+            <p className="list-item-description rounded-2xl text-left">{children}</p>
+        </span>
     )
 }

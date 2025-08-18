@@ -13,11 +13,15 @@
                 },
                 {
                     "item_title": "言語",
-                    "item_description": ["JLPT N2・TOEIC 970(韓国受験・2022年取得)"]
+                    "item_description": [
+                        "JLPT N2・N3(2024年取得)・TOEIC 970(韓国受験・2022年取得)"
+                    ]
                 },
                 {
                     "item_title": "資格証",
-                    "item_description": ["情報処理技師（韓国国家資格）"]
+                    "item_description": [
+                        "情報処理技師（韓国国家資格）"
+                    ]
                 }
             ]
         },
@@ -44,11 +48,39 @@
         },
         {
             "title": "経験したことは？",
-            "description": ""
+            "description": [
+                {
+                    "item_title": "「いいね」機能の実装とデータ連携",
+                    "item_description": "Next.jsとFirebaseを用いた写真シェアアプリの制作中、Firebaseの「onSnapshot」を活用し、リアルタイムに「いいね」の数が変化するUIを実装。非同期データの状態管理を経験しました。"
+                },
+                {
+                    "item_title": "外部のAPIを利用",
+                    "item_description": "「ExifReader」と言うパッケージを利用し、写真のメタデータを抽出して「Google」の「Geocoding」で位置の情報を表紙。"
+                },
+                {
+                    "item_title": "Zustandを用いた状態管理の実装",
+                    "item_description": "Reactの中規模アプリケーションにおいて、Zustandを導入しグローバルな状態管理を実装。コードの可読性と保守性を意識して構成しました。"
+                }
+            ]
         },
         {
             "title": "興味があることは？",
-            "description": "UIデザインやRefactoringが好きです。最終的には「バックーエンド」のことも興味がありますが、今、「フルスタック」を目指しています。"
+            "description": [
+                {
+                    "item_title": "UI/UXデザイン",
+                    "item_description": "WEB系を初めて学ぶ際、他の言語より直感的などころがあり、興味が出きました。"
+                },
+                {
+                    "item_title": "Refactoring",
+                    "item_description": "さまざまな個人プロジェクトを進める中で、「もっと良い書き方はないか」と考える習慣がつき、可読性や保守性を意識したコード改善に興味を持つようになりました。"
+                    
+                    },
+                {
+                    "item_title": "バックエンド",
+                    "item_description": "今、主にフロント・エンドを注力しておりますが、長期的に「フルスタックエンジニア」を目指しております。そのため「Firebase」を利用したことがあります。今後、「Prisma」と「Postgres」を学び、実装することが目標です。"
+
+                }
+            ]
         }
     ]
 }

@@ -8,7 +8,7 @@ export default function MobileContainer({ item }: { item: Project }) {
 
 
     return (
-        <div className="w-full h-full rounded-2xl bg-slate-900">
+        <div className="w-full h-full rounded-2xl ">
             <div className='w-full h-max flex items-center justify-end p-2'>
 
                 <div className="w-max flex items-center justify-center">
@@ -23,7 +23,7 @@ export default function MobileContainer({ item }: { item: Project }) {
                             <p className='font-bold px-2 py-1'>{item?.title.replace('Project', '').replaceAll('-', ' ').toUpperCase()}</p>
                         </div>
 
-                    <div className="min-w-64 min-h-48 relative rounded-2xl overflow-hidden p-1 border-2 border-white/50" >
+                    <div className="min-w-64 min-h-48 relative rounded-2xl overflow-hidden p-1 border-2 " >
                         <Image className="object-cover" src={item.Image} alt={item.title} fill />
                     </div>
 

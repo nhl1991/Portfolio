@@ -16,7 +16,7 @@
             "database": [
                 "なし"
             ],
-            "github": "https://github.com/nhl1991/ProjectMAL/tree/dev"
+            "github": "https://github.com/nhl1991/Lotto-Generator"
         },
         {
             "title": "Project-MAL",
@@ -35,6 +35,24 @@
                 "なし"
             ],
             "github": "https://github.com/nhl1991/ProjectMAL/tree/dev"
+        },
+        {
+            "title": "Photo Album",
+            "description": "「FIREBASE」と「NEXT.JS」を利用し「Flickr」風の写真シェアサイトです。「いいね」と",
+            "URL": "photo-album-gilt.vercel.app/",
+            "Image": "/src/thumbnail/photo-album.png",
+            "language": [
+                "HTML5",
+                "TypeScript",
+                "CSS3"
+            ],
+            "framework": [
+                "Next.JS"
+            ],
+            "database": [
+                "Firebase"
+            ],
+            "github": "https://github.com/nhl1991/photo-album"
         },
         {
             "title": "Project-nomad-movie",
@@ -90,24 +108,7 @@
                 "Firebase"
             ],
             "github": "https://github.com/nhl1991/nomad-clone/tree/main/nwitter-reloaded"
-        },
-        {
-            "title": "Photo Album",
-            "description": "Next.js + Firebase.",
-            "URL": "photo-album-gilt.vercel.app/",
-            "Image": "/src/thumbnail/photo-album.png",
-            "language": [
-                "HTML5",
-                "TypeScript",
-                "CSS3"
-            ],
-            "framework": [
-                "Next.JS"
-            ],
-            "database": [
-                "Firebase"
-            ],
-            "github": "https://github.com/nhl1991/nomad-clone/tree/main/nwitter-reloaded"
         }
+        
     ]
 }
