@@ -9,29 +9,6 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@theme {
-  --gradient-1: linear-gradient(90deg, rgba(31, 9, 227, 1) 0%, rgba(169, 87, 199, 1) 53%, rgba(237, 221, 83, 1) 100%);
-  --gradient-2: linear-gradient(90deg, rgba(69, 135, 206, 1) 41%, rgba(169, 87, 199, 1) 72%, rgba(93, 83, 237, 1) 100%);
-}
-
-.bg-gradient {
-  background: #ff0000;
-  background: linear-gradient(90deg, rgba(69, 135, 206, 1) 5%, rgba(169, 87, 199, 1) 80%, rgba(93, 83, 237, 1) 100%);
-}
 
 .text-gradient {
   background: var(--gradient-1);
@@ -41,6 +18,39 @@
   -webkit-text-fill-color: transparent;
   /* Safari */
 }
+
+@theme {
+  --gradient-1: linear-gradient(
+    90deg,
+    rgba(31, 9, 227, 1) 0%,
+    rgba(169, 87, 199, 1) 53%,
+    rgba(237, 221, 83, 1) 100%
+  );
+  --gradient-2: linear-gradient(72deg,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+  .text-gradient {
+    background: var(--gradient-2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    /* Safari */
+  }
+}
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+
 
 html,
 body {
@@ -70,15 +80,12 @@ rp {
 }
 
 .panel-width {
-
   height: 100vh;
-
 }
 
 #textArea {
   width: 50%;
 }
-
 
 .header_text {
   @apply text-2xl font-bold text-white;
@@ -112,8 +119,9 @@ rp {
 }
 
 .tracking-in-expand {
-  -webkit-animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-  animation: tracking-in-expand 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  -webkit-animation: tracking-in-expand 3s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+  animation: tracking-in-expand 3s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
 /* ----------------------------------------------

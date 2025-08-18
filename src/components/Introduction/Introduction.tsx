@@ -13,17 +13,19 @@ export default function Introduction() {
     const containerRef = useRef<HTMLDivElement>(null);
 
     useGSAP(() => {
+        
 
         const tl = gsap.timeline({
-            onComplete: () => { gsap.delayedCall(0.5, scrollTo) },
-            defaults: { duration: 1, ease: "power1.in" }
+            onComplete: () => { gsap.delayedCall(2, scrollTo) },
+            defaults: { duration: 1.5, ease: "none", opacity:0, delay: 1 }
 
         })
-
+        
 
         tl.fromTo("#intro_1", { opacity: 0 }, { opacity: 1 })
             .fromTo("#intro_2", { opacity: 0 }, { opacity: 1 })
-            .fromTo("#intro_3", { opacity: 0 }, { opacity: 1 }).call(scrollTo, undefined, "+=2")
+            .fromTo("#intro_3", { opacity: 0 }, { opacity: 1 })
+            // .call(scrollTo, undefined, "+=2")
 
 
     }, { scope: containerRef })
@@ -39,10 +41,10 @@ export default function Introduction() {
         <>
             <div ref={containerRef} id="first" className="w-[100vw] h-[100vh]">
                 <IntroductionWrapper>
-                    <div className="text-xl md:text-4xl p-2 text-gradient flex flex-col gap-4">
-                        <p id="intro_1" className="text-6xl text-center">こんにちは。</p>
-                        <p id="intro_2">私は<b className="text-5xl"><ruby>盧<rp>(</rp><rt>ノ</rt><rp>)</rp>亨<rp>(</rp><rt>ヒョン</rt><rp>)</rp>來<rp>(</rp><rt>レ</rt><rp>)</rp></ruby></b>と申します。</p>
-                        <p id="intro_3">どうぞよろしくお願いします。</p>
+                    <div className="text-xl md:text-4xl p-2  flex flex-col gap-4">
+                        <p id="intro_1" className="text-gradient text-5xl md:text-6xl">こんにちは。</p>
+                        <p id="intro_2" className="text-gradient">私は<b className="text-4xl md:text-5xl "><ruby>盧<rp>(</rp><rt>ノ</rt><rp>)</rp>亨<rp>(</rp><rt>ヒョン</rt><rp>)</rp>來<rp>(</rp><rt>レ</rt><rp>)</rp></ruby></b>と申します。</p>
+                        <p id="intro_3" className="text-gradient">どうぞよろしくお願いします。</p>
                     </div>
                     {/* <div id="intro_4" className="hover:cursor-pointer rounded-2xl px-1 md:py-2">
                         <div className="flex items-center justify-center p-1 rounded-2xl ">
