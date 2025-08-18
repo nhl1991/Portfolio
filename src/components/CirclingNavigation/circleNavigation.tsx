@@ -56,7 +56,7 @@ export default function Navigation() {
 
     return (
 
-        <div className={`w-[50vw] h-screen p-4 `}>
+        <div className={`w-[50vw] h-screen p-4`}>
             <div className='w-full h-full flex justify-center items-center relative rounded-2xl'>
                 <div className='w-full h-full relative -left-100'>
                     <div id="ring" className={`${styles.ring}`} onWheel={handleOnWheel} ref={ringRef}>

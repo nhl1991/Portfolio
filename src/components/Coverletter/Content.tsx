@@ -24,7 +24,7 @@ export function Content({ id, title, description }: {
                                         {
                                             description.map((item, i) => {
                                                 return <li key={i}>
-                                                    <div className="w-max px-2 py-1 text-2xl rounded-2xl bg-gray-700/50">
+                                                    <div className="w-max px-1 py-0.5 text-2xl rounded-xl md:rounded-2xl bg-gray-500/50 text-white">
                                                         <h2 className="list-item-title px-1 py-0.5 flex">
                                                             {item.item_title}
                                                         </h2>

@@ -1,86 +1,63 @@
 
-import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger"
+import gsap from 'gsap';
 import IntroductionWrapper from "./IntroduceContainer";
-import Link from "next/link";
+import { useRef } from "react";
 
+
+gsap.registerPlugin(useGSAP);
 
 //Component for Intro
 export default function Introduction() {
 
-    useGSAP(() => {
-        // Create a timeline
-        let tl = gsap.timeline({
-            delay: 0.5,
-            paused: false, // default is false
-            defaults: {
-                // children inherit these defaults
-                duration: 1,
-                ease: 'none'
-            },
-            smoothChildTiming: true,
-            autoRemoveChildren: true,
-            onComplete: () => {
-                console.log('Finished.')
-            },
-            // other callbacks:
-            // onStart, onUpdate, onRepeat, onReverseComplete
-        });
-        const animations = {
-            fadeOut: {
-                opacity: 0,
-            },
-            fadeIn: {
-                opacity: 1
-            },
-            visibleTrue: {
-                display: 'flex',
-                opacity: 0,
-            },
-            visibleFalse: {
-                display: 'none',
-            }
-        };
-        // const introIds = ['#intro_1', '#intro_2', '#intro_3', '#intro_4'];
-        // introIds.forEach(id => {
-        //     if(id != '#intro_4')
-        //         tl.to(id, animations.visibleTrue)
-        //             .fromTo(id, animations.fadeOut, animations.fadeIn).to(id,animations.fadeOut)
-        //             .fromTo(id, animations.visibleTrue, animations.visibleFalse)
-        //             else
-        //                 tl.to(id, animations.visibleTrue)
-        //             .fromTo(id, animations.fadeOut, animations.fadeIn)
-        // });
+    const containerRef = useRef<HTMLDivElement>(null);
 
-    })
+    useGSAP(() => {
+
+        const tl = gsap.timeline({
+            onComplete: () => { gsap.delayedCall(0.5, scrollTo) },
+            defaults: { duration: 1, ease: "power1.in" }
+
+        })
+
+
+        tl.fromTo("#intro_1", { opacity: 0 }, { opacity: 1 })
+            .fromTo("#intro_2", { opacity: 0 }, { opacity: 1 })
+            .fromTo("#intro_3", { opacity: 0 }, { opacity: 1 }).call(scrollTo, undefined, "+=2")
+
+
+    }, { scope: containerRef })
+
+    function scrollTo() {
+        document.getElementById("coverletter")?.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+        });
+    }
 
     return (
         <>
-            <div id="first" className="w-[100vw] h-[100vh]">
+            <div ref={containerRef} id="first" className="w-[100vw] h-[100vh]">
                 <IntroductionWrapper>
-                    <div className="text-xl md:text-4xl p-2">
-                        <p id="intro_1">こんにちは。</p>
-                        <p id="intro_2">僕は<ruby>盧<rp>(</rp><rt>ノ</rt><rp>)</rp>亨<rp>(</rp><rt>ヒョン</rt><rp>)</rp>來<rp>(</rp><rt>レ</rt><rp>)</rp></ruby>と申します。</p>
+                    <div className="text-xl md:text-4xl p-2 text-gradient flex flex-col gap-4">
+                        <p id="intro_1" className="text-6xl text-center">こんにちは。</p>
+                        <p id="intro_2">私は<b className="text-5xl"><ruby>盧<rp>(</rp><rt>ノ</rt><rp>)</rp>亨<rp>(</rp><rt>ヒョン</rt><rp>)</rp>來<rp>(</rp><rt>レ</rt><rp>)</rp></ruby></b>と申します。</p>
                         <p id="intro_3">どうぞよろしくお願いします。</p>
                     </div>
-                    <div id="intro_4" className="hover:cursor-pointer rounded-2xl px-1 md:py-2">
+                    {/* <div id="intro_4" className="hover:cursor-pointer rounded-2xl px-1 md:py-2">
                         <div className="flex items-center justify-center p-1 rounded-2xl ">
-                            <div className=" animate-pulse hover:animate-none h-full flex items-center justify-center px-2 ">
-                                <button id="scrollTo" className="px-4 py-0.5 bg-sky-600 hover:bg-sky-600/80 rounded-2xl text-white cursor-pointer flex items-center justify-center h-max w-max text-xl md:text-4xl" onClick={() => {
-                                    document.getElementById("coverletter")?.scrollIntoView({
-                                        behavior: "smooth",
-                                        block: "start",
-                                    });
-                                }}>詳しく見る 
-                                </button>
-                                <svg className="w-6 md:w-8 " data-slot="icon" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <div className="hover:animate-none h-full flex items-center justify-center px-2 text-black hover:text-white hover:bg-sky-600/50 rounded-2xl transition-colors duration-200">
+                                <label className="px-4 py-0.5  cursor-pointer flex items-center justify-center h-max w-max text-xl md:text-4xl" htmlFor="scrollTo">
+                                    詳しく見る
+                                    <svg className="w-6 md:w-8 animate-pulse " data-slot="icon" fill="currentcolor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                         <path clipRule="evenodd" fillRule="evenodd" d="M7.47 12.78a.75.75 0 0 0 1.06 0l3.25-3.25a.75.75 0 0 0-1.06-1.06L8 11.19 5.28 8.47a.75.75 0 0 0-1.06 1.06l3.25 3.25ZM4.22 4.53l3.25 3.25a.75.75 0 0 0 1.06 0l3.25-3.25a.75.75 0 0 0-1.06-1.06L8 6.19 5.28 3.47a.75.75 0 0 0-1.06 1.06Z" />
                                     </svg>
+                                </label>
+                                <button id="scrollTo" className="hidden" onClick={scrollTo} />
                             </div>
                         </div>
 
-                    </div>
+                    </div> */}
                     {/* <Link id="scrollToCoverletter" href="#coverletter" scroll={true}>GO!</Link> */}
                 </IntroductionWrapper>
 

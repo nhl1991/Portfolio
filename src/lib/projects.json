@@ -38,7 +38,7 @@
         },
         {
             "title": "Photo Album",
-            "description": "「FIREBASE」と「NEXT.JS」を利用し「Flickr」風の写真シェアサイトです。「いいね」と",
+            "description": "「FIREBASE」と「NEXT.JS」を利用し「Flickr」風の写真シェアサイトです。「いいね」と「いいね」に基づいた写真を「フェバリット」を実装しました。",
             "URL": "photo-album-gilt.vercel.app/",
             "Image": "/src/thumbnail/photo-album.png",
             "language": [

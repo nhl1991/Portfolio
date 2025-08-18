@@ -9,7 +9,7 @@ import LinkButton from "../ui/LinkButton";
 export default function Description() {
 
     const { item } = useStore();
-    
+
     const [isHover, setIsHover] = useState(false);
 
     const onMouseEnter = () => {
@@ -29,9 +29,13 @@ export default function Description() {
                             <p className='text-2xl font-bold px-4 py-1'>{item?.title.toUpperCase()}</p>
                         </div>
                         {item ?
-                            <div className="w-max flex items-center justify-center gap-2">
-                                <LinkButton href={'https://' + item.URL} text="Website" bg={false}></LinkButton>
-                                <LinkButton href={item.github} text="Github" bg={false}></LinkButton>
+                            <div className="w-max flex items-center justify-center gap-2 ">
+                                <div className="bg-sky-600 rounded-xl md:rounded-2xl py-1 px-2">
+                                    <LinkButton href={'https://' + item.URL} text="Website" bg={false}></LinkButton>
+                                </div>
+                                <div className="bg-sky-600 rounded-xl md:rounded-2xl py-1 px-2">
+                                    <LinkButton href={item.github} text="Github" bg={false}></LinkButton>
+                                </div>
                             </div> : null}
                     </div>
                     {item != undefined ?
@@ -73,11 +77,11 @@ export default function Description() {
                 </div>
             </div>
         )
-else
-    return(
-        <div className="w-[50vw] h-full flex items-center justify-center">
-            <p className="text-4xl">左側のメーニュを選んでください。</p>
-        </div>
-    )
+    else
+        return (
+            <div className="w-[50vw] h-full flex items-center justify-center">
+                <p className="text-4xl">左側のメーニュを選んでください。</p>
+            </div>
+        )
 }
 

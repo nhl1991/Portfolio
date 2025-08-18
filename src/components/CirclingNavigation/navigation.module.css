@@ -20,7 +20,7 @@
     }
     
     .ring {
-        @apply w-[750px] h-[750px] border-4 border-gray-300 hover:border-gray-700 dark:hover:border-white transition-colors duration-150 rounded-full invisible md:visible relative;
+        @apply w-[750px] h-[750px] border-4 border-gray-300 hover:border-gray-800 dark:hover:border-white transition-colors duration-150 rounded-full invisible md:visible relative;
     }
 
     .container {
