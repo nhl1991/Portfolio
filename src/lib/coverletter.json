@@ -26,7 +26,7 @@
             ]
         },
         {
-            "title": "できることは？",
+            "title": "できること",
             "description": [
                 {
                     "item_title": "【主に使う言語・技術】",
@@ -47,7 +47,7 @@
             ]
         },
         {
-            "title": "経験したことは？",
+            "title": "経験",
             "description": [
                 {
                     "item_title": "「いいね」機能の実装とデータ連携",
@@ -64,7 +64,7 @@
             ]
         },
         {
-            "title": "興味があることは？",
+            "title": "興味・関心",
             "description": [
                 {
                     "item_title": "UI/UXデザイン",

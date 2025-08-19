@@ -28,7 +28,6 @@ export default function Navigation() {
         if (!ringRef || !ringRef.current) return;
         if (!smallRingRef || !smallRingRef.current) return;
 
-
         // const circles = document.querySelectorAll('#ring div div');
         rotationRef.current += e.deltaY * -0.005;
         elTranform.rot = rotationRef.current * deg; // big circle rotation degree.
@@ -58,7 +57,7 @@ export default function Navigation() {
 
         <div className={`w-[50vw] h-screen p-4`}>
             <div className='w-full h-full flex justify-center items-center relative rounded-2xl'>
-                <div className='w-full h-full relative -left-100'>
+                <div className='w-full h-full relative -left-1/2 flex items-center'>
                     <div id="ring" className={`${styles.ring}`} onWheel={handleOnWheel} ref={ringRef}>
 
                         {
@@ -66,7 +65,7 @@ export default function Navigation() {
                                 return <div key={i} style={{ transform: `rotate(${i * angle}deg)` }} className={styles.container}>
                                     <div title={item.title} style={{ transform: `rotate(-${i * angle}deg)` }} className={styles.item} ref={(el) => { if (el) smallRingRef.current[i] = el; }}>
                                         <Link id={item.title} className='w-full h-full z-50 rounded-full flex items-center justify-center border-4 border-gray-600/20 transition-colors duration-300 hover:border-white  overflow-hidden relative' href={projects[i].URL} onClick={(e) => { onClick(e, projects[i]) }} >
-                                            <Image className='w-full h-full object-cover bg-white/10' fill sizes='(min-width: 125px, min-height: 125px) 100vw, (min-width: 60px, min-height: 60px) 50vw' src={`${projects[i].Image}`} alt="project" />
+                                            <Image className='w-full h-full object-cover ' fill sizes='33vw' src={`${projects[i].Image}`} alt="project" />
                                         </Link>
                                     </div>
                                 </div>

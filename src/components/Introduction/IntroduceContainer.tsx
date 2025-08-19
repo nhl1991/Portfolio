@@ -6,7 +6,7 @@ export default function IntroductionWrapper({
 
 
     return (
-        <div id="introductionContainer" className="w-[100vw] h-[100vh] flex flex-col items-center justify-center ">
+        <div id="introductionContainer" className="w-[100vw] h-[100vh]  ">
             {children}
         </div>
 
