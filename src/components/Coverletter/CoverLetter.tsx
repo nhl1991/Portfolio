@@ -28,7 +28,7 @@ export default function CoverLetter() {
         "#coverletter-container > div",
         containerRef.current
       ) as HTMLDivElement[];
-      items.forEach((selector, i) => {
+      items.forEach((selector) => {
         tl.fromTo(
           selector, // type TweenTarget = string | object | null; 3.1.2^ | element
           { opacity: 0, x: 100 },
