@@ -21,7 +21,7 @@ export default function Description() {
 
     if (item !== undefined)
         return (
-            <div className='w-[50vw] h-full shadow-xl shadow-black'>
+            <div className='w-[50vw] h-full shadow-xl shadow-black overflow-scroll'>
                 <div className={`w-full h-full ${item === undefined ? 'bg-black' : 'bg-white/10'} rounded-l-2xl `}>
                     <div className='w-full h-max flex items-center justify-end p-2 md:text-2xl'>
                         <div className="w-full p-2  flex items-center justify-start">
@@ -53,7 +53,7 @@ export default function Description() {
 
 
 
-                            <div className="flex flex-row gap-1 items-center justify-center md:text-3xl">
+                            <div className="flex flex-row gap-1 items-center justify-center md:text-sm lg:text-xl">
 
                                 <div className="w-max ">
                                     <ListTitle title="Language" />
