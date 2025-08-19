@@ -48,7 +48,7 @@ export default function ProjectIntro() {
           </div>
           <div id="projects-link" className="flex py-4">
             <p id="first-letters" className="">プロジェクトの例は</p>
-            <b id="second-letters">
+            <b id="second-letters" className="text-white">
               <LinkButton
                 className="rounded-2xl button-hover"
                 href={"/projects"}
