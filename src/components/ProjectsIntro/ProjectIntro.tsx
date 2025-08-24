@@ -22,19 +22,10 @@ export default function ProjectIntro() {
       });
 
       tl.fromTo(
-        "#projects-message",
+        "#projects-link-container",
         { opacity: 0 },
         { opacity: 1, filter: "blur(0px)" }
-      ).fromTo(
-        "#projects-link",
-        { opacity: 0 },
-        { opacity: 1, filter: "blur(0px)" }
-      ).fromTo("#first-letters",{ opacity: 0, x:100 },
-        { opacity: 1, x:0, filter: "blur(0px)" })
-        .fromTo("#second-letters",{ opacity: 0, x:100 },
-        { opacity: 1, x:0, filter: "blur(0px)" })
-        .fromTo("#third-letters",{ opacity: 0, x:100},
-        { opacity: 1, x:0, filter: "blur(0px)" });
+      )
     },
     { scope: containerRef }
   );
@@ -42,13 +33,13 @@ export default function ProjectIntro() {
   return (
     <div id="projects" className="w-[100vw] h-[100vh]" ref={containerRef}>
       <div className="w-full h-full flex flex-col items-center justify-center">
-        <div className="px-4 hero-subtitle">
-          <div id="projects-message" className="py-2">
+        <div id="projects-link-container" className="px-4 hero-subtitle">
+          <div className="py-2">
             <p className="">ご覧ありがとうございます。</p>
           </div>
-          <div id="projects-link" className="flex py-4">
-            <p id="first-letters" className="">プロジェクトの例は</p>
-            <b id="second-letters" className="text-white">
+          <div className="flex py-4">
+            <p className="">プロジェクトの例は</p>
+            <b className="text-whitegi">
               <LinkButton
                 className="rounded-2xl button-hover"
                 href={"/projects"}
@@ -56,7 +47,7 @@ export default function ProjectIntro() {
                 bg={true}
               />
             </b>
-            <p id="third-letters" className="">になります。</p>
+            <p className="">になります。</p>
           </div>
         </div>
       </div>

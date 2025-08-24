@@ -8,7 +8,7 @@ export default function MobileContainer({ item }: { item: Project }) {
 
 
     return (
-        <div className="w-full h-full rounded-2xl ">
+        <div className="w-full h-full rounded-2xl mobile-bg-color">
             <div className='w-full h-max flex items-center justify-end p-2'>
 
                 <div className="w-max flex items-center justify-center">

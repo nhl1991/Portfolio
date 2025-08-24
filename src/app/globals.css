@@ -9,12 +9,13 @@
   --foreground: #171717;
 }
 
-
 .text-gradient {
-  background: linear-gradient(90deg,
-      rgba(31, 9, 227, 1) 0%,
-      rgba(169, 87, 199, 1) 53%,
-      rgba(237, 221, 83, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(31, 9, 227, 1) 0%,
+    rgba(169, 87, 199, 1) 53%,
+    rgba(237, 221, 83, 1) 100%
+  );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -25,7 +26,16 @@
 .bg-coverletter {
   @apply text-black/70;
   background: linear-gradient(145deg, #f3f4f6 0%, #e5e7eb 50%, #d1d5db 100%);
-  
+}
+
+.mobile-bg-color {
+  @apply text-white;
+  background: #eeaeca;
+  background: linear-gradient(
+    72deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,10 +45,12 @@
   }
 
   .text-gradient {
-    background:linear-gradient(90deg,
-  rgba(24, 16, 163, 1) 0%,
-  rgba(120, 60, 160, 1) 53%,
-  rgba(180, 170, 60, 1) 100%);
+    background: linear-gradient(
+      90deg,
+      rgba(24, 16, 163, 1) 0%,
+      rgba(120, 60, 160, 1) 53%,
+      rgba(180, 170, 60, 1) 100%
+    );
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -49,7 +61,15 @@
   .bg-coverletter {
     @apply text-white;
     background: linear-gradient(145deg, #374151 0%, #1f2937 50%, #111827 100%);
-
+  }
+  .mobile-bg-color {
+    background: #0d0707;
+    background: linear-gradient(
+      72deg,
+      rgba(13, 7, 7, 1) 0%,
+      rgba(33, 42, 82, 1) 59%,
+      rgba(113, 133, 138, 1) 100%
+    );
   }
 }
 
@@ -58,11 +78,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  
 }
-
-
-
 
 html,
 body {
@@ -104,7 +120,7 @@ rp {
   @apply text-xl sm:text-2xl md:text-4xl lg:text-6xl;
 }
 
-.hero-subtitle>b {
+.hero-subtitle > b {
   @apply text-3xl sm:text-4xl md:text-6xl lg:text-8xl;
 }
 
@@ -122,11 +138,9 @@ rp {
   @apply text-sm md:text-[0.525rem] lg:text-[0.625rem] xl:text-sm 2xl:text-lg;
 }
 
-
 #textArea {
   width: 50%;
 }
-
 
 @media (width < 768px) {
   rt,

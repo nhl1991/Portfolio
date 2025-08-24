@@ -4,12 +4,14 @@ import MobileContainer from './MobileItemContainer';
 export default function Mobile() {
     const { projects } = item;
     return (
-        <div id="wrapper" className="w-svw h-svh ">
+        <div id="wrapper" className="w-svw h-svh">
+            <div className="overflow-scroll w-full h-full p-2">
             {projects.map((item, i) => {
                 return <div id="project" key={i} className="w-full h-full p-2">
                     <MobileContainer item={item} />
                 </div>
             })}
+            </div>
         </div>
     )
 }
