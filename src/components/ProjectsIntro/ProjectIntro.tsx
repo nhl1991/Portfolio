@@ -39,7 +39,7 @@ export default function ProjectIntro() {
           </div>
           <div className="flex py-4">
             <p className="">プロジェクトの例は</p>
-            <b className="text-whitegi">
+            <b className="text-white">
               <LinkButton
                 className="rounded-2xl button-hover"
                 href={"/projects"}
