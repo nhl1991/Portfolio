@@ -65,7 +65,7 @@ export default function Navigation() {
                                 return <div key={i} style={{ transform: `rotate(${i * angle}deg)` }} className={styles.container}>
                                     <div title={item.title} style={{ transform: `rotate(-${i * angle}deg)` }} className={styles.item} ref={(el) => { if (el) smallRingRef.current[i] = el; }}>
                                         <Link id={item.title} className='w-full h-full z-50 rounded-full flex items-center justify-center border-4 border-gray-600/20 transition-colors duration-300 hover:border-white  overflow-hidden relative' href={projects[i].URL} onClick={(e) => { onClick(e, projects[i]) }} >
-                                            <Image className='w-full h-full object-cover ' fill sizes='33vw' src={`${projects[i].Image}`} alt="project" />
+                                            <Image className='w-full h-full object-cover ' fill sizes='(max-width: 768px) 100vw, 33vw' src={`${projects[i].Image}`} alt="project" />
                                         </Link>
                                     </div>
                                 </div>
