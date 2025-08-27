@@ -93,7 +93,7 @@ export default function CoverLetter() {
             <div className="rounded-2xl px-4 py-2 text-white button-hover">
               <label
                 htmlFor="button-next-projects"
-                className="text-xl 2xl:text-4xl cursor-pointer"
+                className="cursor-pointer"
               >
                 次へ進む
               </label>

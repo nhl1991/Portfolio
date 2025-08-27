@@ -29,19 +29,19 @@
             "title": "できること",
             "description": [
                 {
-                    "item_title": "【主に使う言語・技術】",
+                    "item_title": "主に使う言語・技術",
                     "item_description": "HTML・CSS・JavaScriptベースのReact・Next.js"
                 },
                 {
-                    "item_title": "【独学経験がある】",
+                    "item_title": "独学経験がある",
                     "item_description": "PHP、JSP、Git、Firebase"
                 },
                 {
-                    "item_title": "【学習中のこと】",
+                    "item_title": "学習中のこと",
                     "item_description": "Express、MongoDB, Laravel"
                 },
                 {
-                    "item_title": "【基礎学習経験】",
+                    "item_title": "基礎学習経験",
                     "item_description": "C、C++、Java、JavaベースのAndroid"
                 }
             ]

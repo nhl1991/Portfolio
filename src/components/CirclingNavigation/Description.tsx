@@ -29,12 +29,10 @@ export default function Description() {
                         </div>
                         {item ?
                             <div className="w-max flex items-center justify-center gap-2">
-                                <div className="bg-sky-600 rounded-xl md:rounded-2xl py-1 px-2">
-                                    <LinkButton href={'https://' + item.URL} text="Website" bg={false}></LinkButton>
-                                </div>
-                                <div className="bg-sky-600 rounded-xl md:rounded-2xl py-1 px-2">
-                                    <LinkButton href={item.github} text="Github" bg={false}></LinkButton>
-                                </div>
+                                    <LinkButton href={'https://' + item.URL} text="Website" bg={true}></LinkButton>
+
+                                    <LinkButton href={item.github} text="Github" bg={true}></LinkButton>
+
                             </div> : null}
                     </div>
                     {item != undefined ?
@@ -43,7 +41,7 @@ export default function Description() {
                             <div className="md:min-w-[480px] md:min-h-[260px] h-full aspect-[16/9] relative rounded-2xl overflow-hidden " onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}  >
                                 <Image className="object-cover" src={item.Image} alt={item.title} fill sizes="(max-width: 100vw), 33vw" />
                                 {isHover ? <div className="w-full h-full absolute z-50 flex items-center justify-center bg-black/90">
-                                    <div className="w-full flex    items-center justify-center gap-2">
+                                    <div className="w-full flex items-center justify-center gap-2">
                                         <LinkButton href={'http://' + item.URL} text="Website" bg={false}></LinkButton>
                                         <LinkButton href={item.github} text="Github" bg={false}></LinkButton>
                                     </div>
@@ -53,14 +51,14 @@ export default function Description() {
 
 
 
-                            <div className="flex flex-row gap-1 items-center justify-center md:text-sm lg:text-xl">
+                            <div className="flex flex-row gap-1 items-center justify-center">
 
-                                <div className="w-max ">
+                                <div className="w-max flex flex-col gap-2">
                                     <ListTitle title="Language" />
                                     <ListTitle title="Framework" />
                                     <ListTitle title="Database" />
                                 </div>
-                                <div className="w-max ">
+                                <div className="w-max flex flex-col gap-2">
                                     <ListItem items={item.language} />
                                     <ListItem items={item.framework} />
                                     <ListItem items={item.database} />

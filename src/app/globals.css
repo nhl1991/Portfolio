@@ -9,6 +9,36 @@
   --foreground: #171717;
 }
 
+#intro_1 {
+  font-size: clamp(4rem, 2rem + 10vw, 9rem);
+}
+#intro_2 {
+  font-size: clamp(1.25rem, 1.5rem + 4vw, 4rem);
+}
+#intro_3 {
+  font-size: clamp(1rem, 1.25rem + 2vw, 3rem);
+}
+
+
+h1 {
+  font-size: clamp(2rem, 1rem + 3vw, 4rem);
+}
+
+h2 {
+  font-size: clamp(1.25rem, 1rem + 1vw, 1.5rem);
+}
+
+h3 {
+  font-size: clamp(1rem, 1rem + 1vw, 1.125rem);
+}
+
+p,a {
+  font-size: clamp(0.625rem, 0.7rem + 0.5vw, 1rem);
+}
+
+label {
+  font-size: clamp(1rem, 1rem + 1vw ,1.25rem);
+}
 .text-gradient {
   background: linear-gradient(
     90deg,
@@ -101,41 +131,14 @@ body::-webkit-scrollbar {
   display: none;
   /* Chrome, Safari, and Opera */
 }
-
+/* 
 rt,
 rp {
   @apply text-base py-2;
-}
+} */
 
 .panel-width {
   height: 100vh;
-}
-
-/* font-sizes */
-.hero-title {
-  @apply text-4xl sm:text-6xl md:text-7xl lg:text-9xl;
-}
-
-.hero-subtitle {
-  @apply text-xl sm:text-2xl md:text-4xl lg:text-6xl;
-}
-
-.hero-subtitle > b {
-  @apply text-3xl sm:text-4xl md:text-6xl lg:text-8xl;
-}
-
-.header_text {
-  @apply text-xl md:text-2xl xl:text-xl 2xl:text-4xl;
-}
-
-.list-item-title {
-  @apply 2xl:p-2 lg:p-1 md:p-0.5;
-  @apply text-base md:text-[0.625rem] lg:text-[0.7rem] xl:text-base 2xl:text-2xl font-bold;
-}
-
-.list-item-description {
-  @apply 2xl:p-3 lg:p-2 md:p-1;
-  @apply text-sm md:text-[0.525rem] lg:text-[0.625rem] xl:text-sm 2xl:text-lg;
 }
 
 #textArea {
@@ -151,4 +154,9 @@ rp {
 
 .button-hover {
   @apply bg-sky-600 hover:bg-sky-500 dark:bg-slate-900 dark:hover:bg-slate-800;
+}
+
+
+.button-text {
+  @apply text-[clamp(0.525rem,1vw+0.9rem,1.125rem)];
 }

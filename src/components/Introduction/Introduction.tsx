@@ -39,11 +39,11 @@ export default function Introduction() {
       id="first"
       className="w-[100vw] h-[100vh] flex flex-col items-center justify-center"
     >
-      <div className="text-xl md:text-4xl p-2  flex flex-col gap-4">
-        <p id="intro_1" className="text-gradient hero-title">
+      <div className="p-2  flex flex-col gap-2">
+        <h1 id="intro_1" className="text-gradient">
           こんにちは。
-        </p>
-        <p id="intro_2" className="text-gradient hero-subtitle">
+        </h1>
+        <h2 id="intro_2" className="text-gradient">
           私は
           <b className="">
             <ruby>
@@ -57,16 +57,16 @@ export default function Introduction() {
             </ruby>
           </b>
           と申します。
-        </p>
-        <p id="intro_3" className="text-gradient hero-subtitle">
+        </h2>
+        <h3 id="intro_3" className="text-gradient">
           どうぞよろしくお願いします。
-        </p>
+        </h3>
       </div>
       <div id="button-next-container" className="p-2">
         <div className="rounded-2xl px-4 py-2 text-white button-hover">
           <label
             htmlFor="button-next-coverletter"
-            className="text-xl 2xl:text-4xl cursor-pointer"
+            className=" cursor-pointer text-[1rem]"
           >
             次へ進む
           </label>
