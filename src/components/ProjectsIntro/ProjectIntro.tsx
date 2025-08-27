@@ -1,5 +1,4 @@
 import { useRef } from "react";
-import LinkButton from "../ui/LinkButton";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
