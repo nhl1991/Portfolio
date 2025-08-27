@@ -13,7 +13,7 @@ export default function LinkButton({
 }) {
   return (
     <div
-      className={
+      className={ className +
         'text-white flex items-center justify-center px-2 py-1' +
           `  rounded-lg md:rounded-xl cursor-pointer ${
             bg ? "bg-sky-600 hover:bg-sky-800" : "hover:opacity-80"
