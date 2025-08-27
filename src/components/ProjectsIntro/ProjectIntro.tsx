@@ -39,10 +39,9 @@ export default function ProjectIntro() {
           </div>
           <div>
             <h1 className="flex">
-              プロジェクトの例は
-                <Link className="animate-pulse" href={'/projects'}><h1  className="text-gradient ">こちら</h1></Link>
+                <Link className="animate-pulse" href={'/projects'}><h1  className="text-gradient ">
+              プロジェクトの例を見る</h1></Link>
 
-              になります。
             </h1>
           </div>
         </div>
