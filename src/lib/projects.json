@@ -5,6 +5,7 @@
             "description": "韓国の「LOTTO 6/45」に対応した番号生成・抽選支援アプリです。",
             "URL": "nhl1991.github.io/Lotto-Generator/",
             "Image": "/src/thumbnail/Lotto.png",
+            "github": "https://github.com/nhl1991/Lotto-Generator",
             "language": [
                 "HTML5",
                 "TypeScript",
@@ -15,14 +16,14 @@
             ],
             "database": [
                 "なし"
-            ],
-            "github": "https://github.com/nhl1991/Lotto-Generator"
+            ]
         },
         {
             "title": "Project-MAL",
             "description": "「MyAnimeList.net」のAPIを利用し、レイアウトとCSSの学習のために作成したアニメ情報サイトです。",
             "URL": "project-mal.vercel.app",
             "Image": "/src/thumbnail/project-mal.png",
+            "github": "https://github.com/nhl1991/ProjectMAL/tree/dev",
             "language": [
                 "HTML5",
                 "TypeScript",
@@ -33,14 +34,14 @@
             ],
             "database": [
                 "なし"
-            ],
-            "github": "https://github.com/nhl1991/ProjectMAL/tree/dev"
+            ]
         },
         {
             "title": "Photo Album",
-            "description": "「FIREBASE」と「NEXT.JS」を利用し「Flickr」風の写真シェアサイトです。「いいね」と「いいね」に基づいた写真を「フェバリット」を実装しました。",
+            "description": "「FIREBASE」と「NEXT.JS」を利用し「Flickr」風の写真シェアサイトです。「いいね」と「いいね」に基づいた写真を「フェバリット」を実装しました。 *ID: guest@example.com / PW:Guest1234!@",
             "URL": "photo-album-gilt.vercel.app/",
             "Image": "/src/thumbnail/photo-album.png",
+            "github": "https://github.com/nhl1991/photo-album",
             "language": [
                 "HTML5",
                 "TypeScript",
@@ -51,14 +52,14 @@
             ],
             "database": [
                 "Firebase"
-            ],
-            "github": "https://github.com/nhl1991/photo-album"
+            ]
         },
         {
             "title": "Project-nomad-movie",
             "description": "Next.jsの基礎を学ぶため、映画情報サイトを模倣してクローンコーディングを行いました。映画リストの取得、詳細ページ遷移などの実装を通じて、ルーティングや型定義を練習しました。",
             "URL": "project-nomad-movie.vercel.app",
             "Image": "/src/thumbnail/project-nomad-movie.png",
+            "github": "https://github.com/nhl1991/project-nomad-movie",
             "language": [
                 "HTML5",
                 "TypeScript",
@@ -69,14 +70,14 @@
             ],
             "database": [
                 "なし"
-            ],
-            "github": "https://github.com/nhl1991/project-nomad-movie"
+            ]
         },
         {
             "title": "Project-Circling-navigation",
             "description": "スクロールでメーニュが回る簡単なサイトです。",
             "URL": "project-new-circling-navigation.vercel.app",
             "Image": "/src/thumbnail/project-circling-navigation.png",
+            "github": "https://github.com/nhl1991/project-new-circling-navigation",
             "language": [
                 "HTML5",
                 "TypeScript",
@@ -87,14 +88,14 @@
             ],
             "database": [
                 "なし"
-            ],
-            "github": "https://github.com/nhl1991/project-new-circling-navigation"
+            ]
         },
         {
             "title": "Project-Nwitter-Reloaded",
             "description": "Firebaseを学びながら行いました。「ツイタ」と言うSNSを倣ったクローンコティングサイトです。",
             "URL": "nwitter-reloaded-2d0a7.web.app/",
             "Image": "/src/thumbnail/project-nwitter-reloaded.png",
+            "github": "https://github.com/nhl1991/nomad-clone/tree/main/nwitter-reloaded",
             "language": [
                 "HTML5",
                 "TypeScript",
@@ -106,8 +107,26 @@
             ],
             "database": [
                 "Firebase"
+            ]
+        },
+        {
+            "title": "Next.JS Demo",
+            "description": "「NEXT.JS」を独学しながら、多様なことを試したものをまとめたサイトです。",
+            "URL": "nextjs-example-demo.vercel.app/",
+            "github": "https://github.com/nhl1991/nextjs-example-demo",
+            "Image": "/src/thumbnail/nextjs-demo.png",
+            "language": [
+                "HTML5",
+                "TypeScript",
+                "CSS3"
             ],
-            "github": "https://github.com/nhl1991/nomad-clone/tree/main/nwitter-reloaded"
+            "framework": [
+                "Next.JS"
+            ],
+            "database": [
+                "なし"
+            ]
+            
         }
         
     ]
