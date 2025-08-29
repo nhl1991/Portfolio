@@ -40,7 +40,7 @@
             "title": "Photo Album",
             "description": "「FIREBASE」と「NEXT.JS」を利用し「Flickr」風の写真シェアサイトです。「いいね」と「いいね」に基づいた写真を「フェバリット」を実装しました。 *ID: guest@example.com / PW:Guest1234!@",
             "URL": "photo-album-gilt.vercel.app/",
-            "Image": "/src/thumbnail/photo-album.png",
+            "Image": "/src/thumbnail/project-photo-album.png",
             "github": "https://github.com/nhl1991/photo-album",
             "language": [
                 "HTML5",
