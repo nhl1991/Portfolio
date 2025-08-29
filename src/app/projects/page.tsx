@@ -3,7 +3,6 @@
 import Navigation from "@/components/CirclingNavigation/circleNavigation"
 import Description from "@/components/CirclingNavigation/Description"
 import Mobile from "@/components/Mobile/MobileComponent";
-import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Page() {
