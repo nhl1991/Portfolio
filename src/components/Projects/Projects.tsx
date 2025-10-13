@@ -1,14 +1,10 @@
 "use client";
 import Description from "@/components/Projects/Description";
-import { useEffect, useState } from "react";
 import ProjectNavigation from "@/components/Projects/ProjectNavigation";
 import { useStore } from "@/lib/stores";
 
 export default function Projects() {
-  const [isMobile, setIsMobile] = useState(false);
-  useEffect(() => {
-    setIsMobile(window.innerWidth < 768);
-  }, []);
+
 
   return (
     <>

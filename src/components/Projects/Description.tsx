@@ -8,8 +8,6 @@ import LinkButton from "../ui/LinkButton";
 
 export default function Description() {
   const { item, setIsModalOpen } = useStore();
-  if (item === undefined) return;
-
   const [isHover, setIsHover] = useState(false);
 
   const onMouseEnter = () => {
@@ -25,10 +23,12 @@ export default function Description() {
       document.body.style.overflow = "";
     };
   }, []);
+
+  if (item === undefined) return;
   return (
     <section
       className="w-screen h-screen bg-black/50 p-4 md:p-8 fixed inset-0"
-      onClick={(e: MouseEvent<HTMLElement>) => {
+      onClick={() => {
         setIsModalOpen(false);
       }}
     >
