@@ -63,10 +63,10 @@ export default function Introduction() {
         </h3>
       </div>
       <div id="button-next-container" className="p-2">
-        <div className="rounded-2xl px-4 py-2 text-white button-hover">
+        <div className="text-white">
           <label
             htmlFor="button-next-coverletter"
-            className=" cursor-pointer text-[1rem]"
+            className="rounded-2xl  px-4 py-2 cursor-pointer text-[1rem] button-hover"
           >
             次へ進む
           </label>

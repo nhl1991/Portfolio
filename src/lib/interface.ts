@@ -7,6 +7,7 @@ export interface Project {
     framework:   string[];
     database:    string[];
     github:      string;
+    clone: boolean;
 }
 
 

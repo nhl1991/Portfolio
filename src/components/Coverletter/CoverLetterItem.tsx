@@ -11,18 +11,13 @@ export function CoverLetterItem({
   description: Item[];
 }) {
   return (
-    <div
+    <article
       id={id}
-      className={`w-full h-full rounded-2xl shadow-md lg:shadow-lg bg-coverletter shadow-gray-400 dark:shadow-gray-900 relative`}
+      className={`w-96 rounded-2xl relative`}
     >
-      <header id="header" className="text-center font-bold p-1 lg:p-4">
-        <h2 id="title" className="">
-          {title}
-        </h2>
-      </header>
-      <section
+      <div
         id="content"
-        className="w-full  flex flex-col items-center justify-center overflow-scroll"
+        className="flex flex-col items-center justify-center overflow-scroll"
       >
         <ul className="w-full flex flex-col gap-0.5 md:gap-1">
           {description.map((item, i) => {
@@ -58,7 +53,7 @@ export function CoverLetterItem({
             );
           })}
         </ul>
-      </section>
-    </div>
+      </div>
+    </article>
   );
 }

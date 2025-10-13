@@ -1,37 +1,58 @@
 import item from "@/lib/coverletter.json";
 import { CoverLetterItem } from "./CoverLetterItem";
-// import Image from "next/image";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import CoverLetterHeader from "./ui/CoverletterHeader";
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
 export default function CoverLetter() {
   const { data } = item;
+  const [ current, setCurrent ] = useState('')
   const containerRef = useRef<HTMLDivElement>(null);
+
   useGSAP(
     () => {
+
+      const elements = gsap.utils.toArray("#coverletter-container > section", containerRef.current)
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: containerRef.current,
           start: "top center",
+          end: "bottom center+=200",
+          scrub: true,
+          onToggle: (self) => {
+            console.log('toggle is on')
+            if (self.isActive)
+              gsap.to("#coverletter_navigation", { display: "block", duration: 0 });
+            else gsap.to("#coverletter_navigation", { display: "none", duration: 0 });
+          },
+          onUpdate:() => {
+            // 修正必要
+            elements.map((item, idx)=> {
+              if(item instanceof HTMLElement)
+              if(ScrollTrigger.isInViewport(item, 0.7))
+                setCurrent(item.id)
+              }
+            )
+            
+          }
         },
-        delay: 1,
+        delay: 0,
         defaults: { duration: 0.3, opacity: 0 },
       });
-
-    //   tl.fromTo("#profile-image", { opacity: 0 }, { opacity: 1 });
+      
       const items: Array<HTMLDivElement> = gsap.utils.toArray(
-        "#coverletter-container > div",
+        "#coverletter-container > section",
         containerRef.current
       ) as HTMLDivElement[];
-      items.forEach((selector) => {
+      items.forEach((selector, idx) => {
         tl.fromTo(
           selector, // type TweenTarget = string | object | null; 3.1.2^ | element
-          { opacity: 0, x: 100 },
+          { opacity: 0, x: 100 * (idx+1) },
           { opacity: 1, x: 0 }
         );
       });
@@ -39,68 +60,85 @@ export default function CoverLetter() {
     },
     { scope: containerRef }
   );
-
-  function handleOnClick(){
+  
+  function handleOnNext() {
     document.getElementById("projects")?.scrollIntoView({
       behavior: "smooth",
       block: "start",
     });
-  };
+  }
 
   return (
     <>
       <div
         id="coverletter"
-        className="w-screen flex min-h-screen items-center justify-center"
+        className="w-screen flex min-h-screen items-center justify-center relative"
         ref={containerRef}
       >
-        <div className="w-full h-full flex flex-col items-center justify-center">
-          <div className="w-full h-max flex items-center justify-center p-4">
-            {/* <div
-              id="profile-image"
-              className="min-w-64 min-h-64 rounded-full relative overflow-hidden"
-            >
-              <Image
-                src="/src/profile-image/profile.jpeg"
-                className="object-cover"
-                fill
-                sizes="(max-width: 100vw) 50vw"
-                alt="profile"
-              />
-            </div> */}
-          </div>
-          <div className="w-full flex items-center justify-center">
+
+        <nav
+          id="coverletter_navigation"
+          className="p-4 hidden fixed top-0 md:top-50 right-0"
+        >
+          <ul className="text-xs md:text-xl flex md:flex-col gap-8 md:list-disc font-bold z-50">
+            {data.map((item, idx) => (
+              <li key={idx} >
+                <button
+                className={`cursor-pointer ${current === item.title ? 'text-sky-300':null}`}
+                  onClick={() => {
+                    console.log('click')
+                    document.getElementById(item.title)?.scrollIntoView({
+                      behavior: "smooth",
+                      block: "start",
+                    });
+                  }}
+                >
+                  {item.title}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </nav>
+        <div className=" h-full flex flex-col items-center justify-center ">
+          <div className="w-full flex items-center justify-center relative">
+
             <div
               id="coverletter-container"
-              className="w-full max-w-[1920px] h-max flex flex-col md:grid grid-cols-[repeat(4,minmax(240px,640px))] gap-2 md:gap-4 grid-rows-1 p-1"
+              className="w-full min-h-screen flex flex-col items-center justify-center gap-2 md:gap-4 p-1"
             >
               {data
                 ? data.map((item, idx) => {
                     return (
-                      <CoverLetterItem
+                      <section
                         key={idx}
-                        id={`item-container-${idx}`}
-                        title={item.title}
-                        description={item.description}
-                      />
+                        id={item.title}
+                        className="h-screen flex flex-col items-center justify-center"
+                      >
+                        <CoverLetterHeader title={item.title} />
+                        <CoverLetterItem
+                          key={idx}
+                          id={`item-container-${idx}`}
+                          title={item.title}
+                          description={item.description}
+                        />
+                      </section>
                     );
                   })
                 : null}
             </div>
           </div>
-          {/* <div className="w-full h-16 bg-red-200"></div> */}
           <div id="button-next-container" className="p-2">
-            <div className="rounded-2xl px-4 py-2 text-white button-hover">
+            <div className="text-white">
               <label
                 htmlFor="button-next-projects"
-                className="cursor-pointer"
+                className="rounded-2xl  px-4 py-2 cursor-pointer text-[1rem] button-hover"
               >
                 次へ進む
               </label>
               <button
                 id="button-next-projects"
                 className="hidden"
-                onClick={handleOnClick}
+                onClick={handleOnNext}
               ></button>
             </div>
           </div>

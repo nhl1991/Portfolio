@@ -2,18 +2,20 @@
 import { useRef } from "react";
 import Introduction from "@/components/Introduction/Introduction";
 import CoverLetter from "@/components/Coverletter/CoverLetter";
-import ProjectIntro from "@/components/ProjectsIntro/ProjectIntro";
+import Projects from "../components/Projects/Projects";
+import Contacts from "@/components/Contact/Contacts";
 
 export default function Home() {
 
   const containerRef = useRef<HTMLElement>(null);
 
   return (
-    <section id="section" className="w-screen min-h-[300vh]" ref={containerRef}>
+    <section id="section" className="w-screen min-h-screen overflow-hidden" ref={containerRef}>
   
       <Introduction />
       <CoverLetter />
-      <ProjectIntro />
+      <Projects />
+      <Contacts />
     </section>
   );
 }

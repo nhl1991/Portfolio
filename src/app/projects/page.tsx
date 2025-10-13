@@ -1,7 +1,7 @@
 'use client'
 
-import Navigation from "@/components/CirclingNavigation/circleNavigation"
-import Description from "@/components/CirclingNavigation/Description"
+import Navigation from "@/components/Projects/ProjectNavigation"
+import Description from "@/components/Projects/Description"
 import Mobile from "@/components/Mobile/MobileComponent";
 import { useEffect, useState } from "react";
 
@@ -13,12 +13,12 @@ export default function Page() {
 
     return (
         <>
-            {isMobile ? <Mobile /> : <CirclingNavigationWrapper />}
+            {isMobile ? <Mobile /> : <CirclingNavigationContainer />}
         </>
     )
 }
 
-function CirclingNavigationWrapper() {
+function CirclingNavigationContainer() {
 
     return (
         <div className="w-full h-full flex items-center justify-center">

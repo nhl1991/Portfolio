@@ -19,25 +19,20 @@
   font-size: clamp(1rem, 1.25rem + 2vw, 3rem);
 }
 
-
 h1 {
   font-size: clamp(2rem, 1rem + 3vw, 4rem);
 }
 
 h2 {
-  font-size: clamp(1.25rem, 1rem + 1vw, 1.5rem);
+  font-size: clamp(1.75rem, 1.5rem + 2vw, 2.5rem);
 }
 
 h3 {
   font-size: clamp(1rem, 1rem + 1vw, 1.125rem);
 }
 
-p,a {
-  font-size: clamp(0.625rem, 0.7rem + 0.5vw, 1rem);
-}
-
 label {
-  font-size: clamp(1rem, 1rem + 1vw ,1.25rem);
+  font-size: clamp(1rem, 1rem + 1vw, 1.25rem);
 }
 .text-gradient {
   background: linear-gradient(
@@ -145,17 +140,27 @@ rp {
   width: 50%;
 }
 
+.grid-layout {
+  @apply grid grid-cols-[repeat(4,minmax(240px,1fr))] grid-rows-[repeat(2,minmax(240px,1fr))]  gap-4;
+}
+
 @media (width < 768px) {
   rt,
   rp {
     @apply text-[9px] py-1;
+  }
+  h2 {
+  font-size: clamp(0.5rem, 1rem + 1vw, 3rem);
+}
+
+  .grid-layout {
+    @apply grid grid-cols-[repeat(2,minmax(120px,1fr))] grid-rows-[repeat(4,minmax(120px,1fr))]  gap-2;
   }
 }
 
 .button-hover {
   @apply bg-sky-600 hover:bg-sky-500 dark:bg-slate-900 dark:hover:bg-slate-800;
 }
-
 
 .button-text {
   @apply text-[clamp(0.525rem,1vw+0.9rem,1.125rem)];
