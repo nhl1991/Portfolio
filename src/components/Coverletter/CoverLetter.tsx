@@ -24,7 +24,7 @@ export default function CoverLetter() {
         scrollTrigger: {
           trigger: containerRef.current,
           start: "top center",
-          end: "bottom bottom",
+          end: "bottom center",
 
           onToggle: (self) => {
             console.log("toggle is on");

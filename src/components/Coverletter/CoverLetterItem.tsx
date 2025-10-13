@@ -21,7 +21,7 @@ export function CoverLetterItem({
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top center",
-          end: "bottom center+=200",
+          end: "bottom bottom",
           scrub: true
         },
         defaults: { duration: 0.3, opacity: 0 },
