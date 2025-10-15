@@ -1,6 +1,6 @@
 "use client";
-import Description from "@/components/Projects/Description";
-import ProjectNavigation from "@/components/Projects/ProjectNavigation";
+import DescriptionModal from "@/components/Projects/components/DescriptionModal/DescriptionModal";
+import ProjectNavigation from "@/components/Projects/components/ProjectNavigation";
 import { useStore } from "@/lib/stores";
 
 export default function Projects() {
@@ -22,10 +22,8 @@ function ProjectNavigationContainer() {
       className="w-full h-full flex items-center justify-center"
       onMouseOver={(e) => e.stopPropagation()}
     >
-      <div className="w-full h-full md:flex overflow-hidden">
         <ProjectNavigation />
-        {isModalOpen ? <Description /> : null}
-      </div>
+        {isModalOpen ? <DescriptionModal /> : null}
     </div>
   );
 }

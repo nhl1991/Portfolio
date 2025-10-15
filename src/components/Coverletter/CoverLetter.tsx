@@ -5,6 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import { useRef, useState } from "react";
 import React from "react";
+import ButtonNext from "../ui/ButtonNext";
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
@@ -13,6 +14,7 @@ export default function CoverLetter() {
   const { data } = item;
   const [current, setCurrent] = useState("");
   const containerRef = useRef<HTMLDivElement>(null);
+  
 
   useGSAP(
     () => {
@@ -27,7 +29,6 @@ export default function CoverLetter() {
           end: "bottom center",
 
           onToggle: (self) => {
-            console.log("toggle is on");
             if (self.isActive)
               gsap.to("#coverletter_navigation", {
                 display: "block",
@@ -67,20 +68,14 @@ export default function CoverLetter() {
     { scope: containerRef }
   );
 
-  function handleOnNext() {
-    document.getElementById("projects")?.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  }
-
   return (
     <>
-      <div
+      <section
         id="coverletter"
         className="w-screen flex min-h-screen items-center justify-center relative"
         ref={containerRef}
       >
+        {/* fixed nav */}
         <nav
           id="coverletter_navigation"
           className="p-4 hidden fixed top-0 md:top-50 right-0"
@@ -106,44 +101,29 @@ export default function CoverLetter() {
             ))}
           </ul>
         </nav>
-        <div className=" h-full flex flex-col items-center justify-center ">
-          <div className="w-full flex items-center justify-center relative">
-            <div
-              id="coverletter-container"
-              className="w-full min-h-screen flex flex-col items-center justify-center gap-2 md:gap-4 p-1"
-            >
-              {data
-                ? data.map((item, idx) => {
-                    return (
-                      <React.Fragment key={idx}>
-                        <CoverLetterItem
-                          id={`item-container-${idx}`}
-                          title={item.title}
-                          description={item.description}
-                        />
-                      </React.Fragment>
-                    );
-                  })
-                : null}
-            </div>
-          </div>
-          <div id="button-next-container" className="p-2">
-            <div className="text-white">
-              <label
-                htmlFor="button-next-projects"
-                className="rounded-2xl  px-4 py-2 cursor-pointer text-[1rem] button-hover"
-              >
-                次へ進む
-              </label>
-              <button
-                id="button-next-projects"
-                className="hidden"
-                onClick={handleOnNext}
-              ></button>
-            </div>
+        {/* Page */}
+        <div
+          id="coverletter-container"
+          className="flex flex-col items-center justify-center gap-2 md:gap-4 p-1"
+        >
+          {data
+            ? data.map((item, idx) => {
+                return (
+                  <React.Fragment key={idx}>
+                    <CoverLetterItem
+                      id={`item-container-${idx}`}
+                      title={item.title}
+                      description={item.description}
+                    />
+                  </React.Fragment>
+                );
+              })
+            : null}
+            <div className="absolute bottom-0">
+          <ButtonNext targetId="projects" />
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

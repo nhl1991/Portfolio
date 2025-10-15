@@ -1,12 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
+import { EmailIcon, HomeIcon } from "@/components/ui/svgIcon/Icons";
+import ContactHeader from "./ui/ContactHeader";
 
 export default function Contacts() {
   return (
-    <section className="w-full min-h-screen flex flex-col items-center justify-center bottom-0 gap-4 p-2">
-      <div className="py-2">
-        <p className="md:text-6xl">ご覧ありがとうございます。</p>
-      </div>
+    <section id="contact" className="w-full min-h-screen flex flex-col items-center justify-center bottom-0 gap-4 p-2">
+      <ContactHeader />
       <div className="flex gap-4">
          {/* Github - Navigate to Github */}
         <Link
@@ -25,40 +25,15 @@ export default function Contacts() {
 
          {/* Mail - Open default mail provider */}
         <Link
+          title="mail"
           href={"mailto:laslark1991@gmail.com"}
-          className="w-12 h-12 rounded-full p-2 button-hover"
+          className="rounded-full p-2 button-hover"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="white"
-            className="w-full"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
-            />
-          </svg>
+          <EmailIcon className="w-8" stroke="white"/>
         </Link>
          {/* Home - Scroll To Top. */}
-        <Link href={"/"} className="w-12 h-12 rounded-full p-2 button-hover">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="white"
-            className="w-full"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-            />
-          </svg>
+        <Link title="home" href={"/"} className="rounded-full p-2 button-hover">
+          <HomeIcon className="w-8" />
         </Link>
       </div>
     </section>

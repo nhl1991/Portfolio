@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 import CoverLetterHeader from "./ui/CoverletterHeader";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { CodeIcon } from "../ui/svgIcon/Icons";
 
 export function CoverLetterItem({
   id,
@@ -49,18 +50,7 @@ export function CoverLetterItem({
                 <React.Fragment key={i}>
                   <li className="w-full p-1">
                     <div className="w-max flex items-center justify-center gap-1">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                        className="size-6"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M14.447 3.026a.75.75 0 0 1 .527.921l-4.5 16.5a.75.75 0 0 1-1.448-.394l4.5-16.5a.75.75 0 0 1 .921-.527ZM16.72 6.22a.75.75 0 0 1 1.06 0l5.25 5.25a.75.75 0 0 1 0 1.06l-5.25 5.25a.75.75 0 1 1-1.06-1.06L21.44 12l-4.72-4.72a.75.75 0 0 1 0-1.06Zm-9.44 0a.75.75 0 0 1 0 1.06L2.56 12l4.72 4.72a.75.75 0 0 1-1.06 1.06L.97 12.53a.75.75 0 0 1 0-1.06l5.25-5.25a.75.75 0 0 1 1.06 0Z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
+                      <CodeIcon className="w-6" />
                       <h3 className="font-bold">{item.item_title}</h3>
                     </div>
                     <div className="px-2">

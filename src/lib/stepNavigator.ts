@@ -1,11 +1,9 @@
 
 
-  export function handleOnClick(element:React.RefObject<HTMLElement>) {
-    if(element.current === undefined) return;
-    element.current.scrollIntoView({behavior: "smooth",
-      block: "start",})
-    // document.getElementById("coverletter")?.scrollIntoView({
-    //   behavior: "smooth",
-    //   block: "start",
-    // });
+  export function handleOnClick(target: string) {
+    console.log(target)
+    document.getElementById(target)?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
   }
