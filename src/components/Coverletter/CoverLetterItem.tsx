@@ -39,23 +39,23 @@ export function CoverLetterItem({
       ref={sectionRef}
     >
       <CoverLetterHeader title={title} />
-      <article id={id} className={`max-w-full md:w-[48rem] rounded-2xl relative`}>
+      <article id={id} className={`max-w-full md:w-[64rem] w-max rounded-2xl relative`}>
         <div
           id="content"
           className="flex flex-col items-center justify-center overflow-scroll"
         >
-          <ul className="w-full flex flex-col gap-8 md:gap-1">
+          <ul className="flex flex-col gap-8 md:gap-1">
             {description.map((item, i) => {
               return (
                 <React.Fragment key={i}>
-                  <li className="w-full p-1">
+                  <li className="p-1">
                     <div className="flex items-center gap-4 px-4">
-                      <CodeIcon className="w-10" />
+                      <CodeIcon className="w-10 dark:stroke-white" />
                       <h2 className="font-bold">{item.item_title}</h2>
                     </div>
                     <div className="px-12">
                       <span>
-                        <p className="text-3xl">{item.item_description}</p>
+                        <p className="text-4xl">{item.item_description}</p>
                       </span>
                     </div>
                   </li>
