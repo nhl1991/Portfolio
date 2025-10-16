@@ -45,7 +45,7 @@ export default function DescriptionModal() {
       ref={containerRef}
     >
       <div
-        className="dark:bg-slate-900 bg-white rounded-2xl h-full w-max overflow-scroll p-8"
+        className="dark:bg-slate-900 bg-white rounded-2xl h-max w-max overflow-scroll p-2"
         onClick={(e: MouseEvent<HTMLElement>) => {
           e.stopPropagation();
         }}

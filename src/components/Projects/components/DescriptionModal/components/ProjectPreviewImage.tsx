@@ -22,7 +22,7 @@ export default function ProjectPreviewImage({
 
   return (
     <figure
-      className="w-[64rem] h-[40rem] aspect-[16/10] relative rounded-2xl overflow-hidden "
+      className="md:w-[64rem] w-[32rem] md:h-[40rem] aspect-[16/10] relative rounded-2xl overflow-hidden p-4 "
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >

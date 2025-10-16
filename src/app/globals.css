@@ -21,15 +21,15 @@
 }
 
 h1 {
-  font-size: clamp(2rem, 1rem + 3vw, 4rem);
+  font-size: clamp(2rem, 2rem + 3vw, 4rem);
 }
 
 h2 {
-  font-size: clamp(1.75rem, 2rem + 2vw, 3.5rem);
+  font-size: clamp(1.75rem, 1.75rem + 2vw, 3.5rem);
 }
 
 h3 {
-  font-size: clamp(1rem, 1rem + 2vw, 2.5rem);
+  font-size: clamp(1rem, 1.5rem + 1vw, 2.5rem);
 }
 
 label {
@@ -38,9 +38,10 @@ label {
 .text-gradient {
   background: linear-gradient(
     90deg,
-    rgba(31, 9, 227, 1) 0%,
-    rgba(169, 87, 199, 1) 53%,
-    rgba(237, 221, 83, 1) 100%
+      rgba(24, 16, 163, 1) 0%,
+      rgba(120, 60, 160, 1) 33%,
+      rgba(180, 170, 60, 1) 70%,
+      rgba(255,255,255,1) 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
@@ -75,7 +76,8 @@ label {
       90deg,
       rgba(24, 16, 163, 1) 0%,
       rgba(120, 60, 160, 1) 53%,
-      rgba(180, 170, 60, 1) 100%
+      rgba(180, 170, 60, 1) 70%,
+      rgba(255,255,255,1) 100%
     );
     -webkit-background-clip: text;
     background-clip: text;
@@ -94,7 +96,8 @@ label {
       72deg,
       rgba(13, 7, 7, 1) 0%,
       rgba(33, 42, 82, 1) 59%,
-      rgba(113, 133, 138, 1) 100%
+      rgba(113, 133, 138, 1) 90%,
+
     );
   }
 }
@@ -150,9 +153,7 @@ rp {
   rp {
     @apply text-[9px] py-1;
   }
-  h2 {
-  font-size: clamp(0.5rem, 1rem + 1vw, 3rem);
-}
+  
 
   .grid-layout {
     @apply grid grid-cols-[repeat(2,minmax(120px,1fr))] grid-rows-[repeat(4,minmax(120px,1fr))]  gap-2;

@@ -13,11 +13,9 @@ export default function ModalHeader({
 }) {
   const { setIsModalOpen } = useStore();
   return (
-    <header className="w-full h-max flex items-center justify-end">
-      <div className="w-full flex items-center justify-start">
-        <h2 className="font-bold px-4 py-1">{title.toUpperCase()}</h2>
-      </div>
-      <div className="w-max flex items-center  px-4 py-1 justify-center gap-2">
+    <header className="w-full h-max flex flex-col items-center justify-end p-2">
+      
+      <div className="w-full flex  items-center justify-end gap-2">
         <LinkButton
           href={"https://" + website}
           text="Website"
@@ -31,6 +29,9 @@ export default function ModalHeader({
         >
           <CloseIcon className="w-14" />
         </button>
+      </div>
+      <div className="w-full flex items-center justify-center">
+        <h2 className="font-bold px-4 py-1">{title.toUpperCase()}</h2>
       </div>
     </header>
   );

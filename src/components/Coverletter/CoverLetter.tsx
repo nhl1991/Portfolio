@@ -78,7 +78,7 @@ export default function CoverLetter() {
           id="coverletter_navigation"
           className="p-4 hidden fixed top-0 md:top-[50%] right-0"
         >
-          <ul className="text-xs md:text-3xl flex md:flex-col gap-8 md:list-disc font-bold z-50">
+          <ul className="text-3xl flex md:flex-col gap-8 md:list-disc font-bold z-50">
             {data.map((item, idx) => (
               <li key={idx}>
                 <button
