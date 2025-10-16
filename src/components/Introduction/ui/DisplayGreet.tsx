@@ -1,6 +1,6 @@
 export default function DisplayGreet() {
   return (
-      <div className="p-2 flex flex-col gap-2">
+      <article className="p-2 flex flex-col gap-2">
       <h1 id="intro_1" className="text-gradient">
         こんにちは。
       </h1>
@@ -22,6 +22,6 @@ export default function DisplayGreet() {
       <h3 id="intro_3" className="text-gradient">
         どうぞよろしくお願いします。
       </h3>
-    </div>
+    </article>
   );
 }

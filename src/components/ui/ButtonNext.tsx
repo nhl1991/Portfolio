@@ -18,9 +18,9 @@ export default function ButtonNext({ targetId }: { targetId: string }) {
       <div className="text-white">
         <label
           htmlFor={id}
-          className="rounded-2xl  px-4 py-2 cursor-pointer text-[1rem] button-hover"
+          className="rounded-2xl  px-4 py-2 cursor-pointer text-[8rem] button-hover"
         >
-          次へ
+          次のセクションへ
         </label>
         <button
           id={id}

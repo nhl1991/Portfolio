@@ -21,8 +21,8 @@ export default function ProjectPreviewImage({
   };
 
   return (
-    <div
-      className="w-96 h-60 aspect-[16/10] relative rounded-2xl overflow-hidden "
+    <figure
+      className="w-[64rem] h-[40rem] aspect-[16/10] relative rounded-2xl overflow-hidden "
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
@@ -46,6 +46,6 @@ export default function ProjectPreviewImage({
           </div>
         </div>
       ) : null}
-    </div>
+    </figure>
   );
 }

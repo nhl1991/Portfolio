@@ -14,8 +14,6 @@ export default function CoverLetter() {
   const { data } = item;
   const [current, setCurrent] = useState("");
   const containerRef = useRef<HTMLDivElement>(null);
-  
-
   useGSAP(
     () => {
       const elements = gsap.utils.toArray(
@@ -78,9 +76,9 @@ export default function CoverLetter() {
         {/* fixed nav */}
         <nav
           id="coverletter_navigation"
-          className="p-4 hidden fixed top-0 md:top-50 right-0"
+          className="p-4 hidden fixed top-0 md:top-[50%] right-0"
         >
-          <ul className="text-xs md:text-xl flex md:flex-col gap-8 md:list-disc font-bold z-50">
+          <ul className="text-xs md:text-3xl flex md:flex-col gap-8 md:list-disc font-bold z-50">
             {data.map((item, idx) => (
               <li key={idx}>
                 <button
@@ -119,8 +117,8 @@ export default function CoverLetter() {
                 );
               })
             : null}
-            <div className="absolute bottom-0">
-          <ButtonNext targetId="projects" />
+          <div className="absolute bottom-0">
+            <ButtonNext targetId="projects" />
           </div>
         </div>
       </section>

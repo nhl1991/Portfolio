@@ -11,17 +11,17 @@ export default function ProjectStack({
   database: Array<string>;
 }) {
   return (
-    <div className="flex flex-row gap-1 items-center justify-center">
-      <div className="w-max flex flex-col gap-2">
+    <figure className="flex flex-row gap-4">
+      <div className="w-max flex flex-col gap-4">
         <ListTitle title="Language" />
         <ListTitle title="Framework" />
         <ListTitle title="Database" />
       </div>
-      <div className="w-max flex flex-col gap-2">
+      <div className="w-max flex flex-col gap-4">
         <ListItem items={language} />
         <ListItem items={framework} />
         <ListItem items={database} />
       </div>
-    </div>
+    </figure>
   );
 }

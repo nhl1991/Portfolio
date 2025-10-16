@@ -38,14 +38,14 @@ export default function DescriptionModal() {
   if (item === undefined) return;
   return (
     <section
-      className="w-screen h-screen bg-black/50 p-4 md:p-8 fixed inset-0"
+      className="w-screen h-screen bg-black/50 p-4 md:p-8 fixed inset-0 flex items-center justify-center"
       onClick={() => {
         setIsModalOpen(false);
       }}
       ref={containerRef}
     >
       <div
-        className={`dark:bg-slate-900 bg-white rounded-2xl h-full md:max-h-full overflow-scroll`}
+        className="dark:bg-slate-900 bg-white rounded-2xl h-full w-max overflow-scroll p-8"
         onClick={(e: MouseEvent<HTMLElement>) => {
           e.stopPropagation();
         }}
@@ -57,22 +57,27 @@ export default function DescriptionModal() {
         />
 
         <article className="flex items-center justify-center flex-col gap-2 p-2">
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 text-4xl p-2">
             <ProjectPreviewImage
               image={item.Image}
               url={item.URL}
               github={item.github}
               title={item.title}
             />
+          </div>
+          <div className="flex flex-col gap-y-8 text-3xl p-2 ">
             <ProjectStack
               language={item.language}
               framework={item.framework}
               database={item.database}
             />
-          </div>
-          <div className="w-full  p-2 flex items-center justify-center">
             <ProjectDescription description={item.description} />
           </div>
+          <footer>
+            <p className="text-xl">
+              ログインが必要な場合 *ID: guest@example.com / PW:Guest1234!@
+            </p>
+          </footer>
         </article>
       </div>
     </section>

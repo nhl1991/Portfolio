@@ -13,7 +13,7 @@ export default function ProjectNavigation() {
 
   return (
     <section
-      className={`w-screen h-screen p-4 flex items-center flex-col gap-2`}
+      className={`w-screen h-screen p-4 flex items-center flex-col gap-8`}
     >
       <Header text="個人開発" />
       <article className="grid-layout">

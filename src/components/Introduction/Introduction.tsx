@@ -43,13 +43,13 @@ export default function Introduction() {
   );
 
   return (
-    <div
+    <section
       ref={containerRef}
       id="first"
-      className="w-[100vw] h-[100vh] flex flex-col items-center justify-center"
+      className="w-[100vw] h-[100vh] flex flex-col items-center justify-center gap-8"
     >
       <DisplayGreet />
       <ButtonNext targetId="coverletter" />
-    </div>
+    </section>
   );
 }
