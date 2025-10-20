@@ -39,7 +39,7 @@ export function CoverLetterItem({
       ref={sectionRef}
     >
       <CoverLetterHeader title={title} />
-      <article id={id} className={`max-w-full md:w-[64rem] w-max rounded-2xl relative`}>
+      <article id={id} className={`max-w-full md:w-[64rem] w-full rounded-2xl relative`}>
         <div
           id="content"
           className="flex flex-col items-center justify-center overflow-scroll"
