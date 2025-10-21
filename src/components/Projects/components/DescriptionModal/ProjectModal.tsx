@@ -8,7 +8,7 @@ import ProjectStack from "./components/ProjectStack";
 import ProjectPreviewImage from "./components/ProjectPreviewImage";
 import ProjectDescription from "./components/ProjectDescription";
 
-export default function DescriptionModal() {
+export default function ProjectModal() {
   const { item, setIsModalOpen } = useStore();
   const containerRef = useRef<HTMLElement>(null);
 
@@ -45,7 +45,7 @@ export default function DescriptionModal() {
       ref={containerRef}
     >
       <div
-        className="dark:bg-slate-900 bg-white rounded-2xl max-h-full h-max w-max min-w-[96rem] overflow-scroll p-2"
+        className="dark:bg-slate-900 bg-white rounded-2xl max-h-full h-max w-full md:w-max md:min-w-[96rem] overflow-scroll p-2"
         onClick={(e: MouseEvent<HTMLElement>) => {
           e.stopPropagation();
         }}

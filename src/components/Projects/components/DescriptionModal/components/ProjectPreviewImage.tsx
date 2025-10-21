@@ -22,12 +22,12 @@ export default function ProjectPreviewImage({
 
   return (
     <figure
-      className="md:w-[64rem] w-[32rem] md:h-[40rem] aspect-[16/10] relative rounded-2xl overflow-hidden p-4 "
+      className="md:w-[64rem] w-[32rem] md:h-[40rem] aspect-[16/10] relative rounded-2xl overflow-hidden"
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
       <Image
-        className="object-contain"
+        className="object-cover"
         src={image}
         alt={title}
         fill
@@ -35,7 +35,7 @@ export default function ProjectPreviewImage({
         priority
       />
       {isHover ? (
-        <div className="w-full h-full absolute z-50 flex items-center justify-center bg-black/50">
+        <div className="w-full h-full absolute z-50 flex items-center justify-center bg-black/90">
           <div className="flex items-center justify-center gap-2">
             <LinkButton
               href={"http://" + url}

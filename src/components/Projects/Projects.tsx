@@ -1,5 +1,5 @@
 "use client";
-import DescriptionModal from "@/components/Projects/components/DescriptionModal/DescriptionModal";
+import ProjectModal from "@/components/Projects/components/DescriptionModal/ProjectModal";
 import ProjectNavigation from "@/components/Projects/components/ProjectNavigation";
 import { useStore } from "@/lib/stores";
 
@@ -22,7 +22,7 @@ function ProjectNavigationContainer() {
       onMouseOver={(e) => e.stopPropagation()}
     >
         <ProjectNavigation />
-        {isModalOpen ? <DescriptionModal /> : null}
+        {isModalOpen ? <ProjectModal /> : null}
     </div>
   );
 }
