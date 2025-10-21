@@ -38,14 +38,14 @@ export default function DescriptionModal() {
   if (item === undefined) return;
   return (
     <section
-      className="w-screen h-screen bg-black/50 p-4 md:p-8 fixed inset-0 flex items-center justify-center"
+      className="w-screen h-screen bg-black/50 fixed inset-0 flex justify-center p-2 items-center"
       onClick={() => {
         setIsModalOpen(false);
       }}
       ref={containerRef}
     >
       <div
-        className="dark:bg-slate-900 bg-white rounded-2xl h-max w-max overflow-scroll p-2"
+        className="dark:bg-slate-900 bg-white rounded-2xl max-h-full h-max w-max min-w-[96rem] overflow-scroll p-2"
         onClick={(e: MouseEvent<HTMLElement>) => {
           e.stopPropagation();
         }}

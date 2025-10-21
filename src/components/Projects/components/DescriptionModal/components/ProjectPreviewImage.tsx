@@ -35,7 +35,7 @@ export default function ProjectPreviewImage({
         priority
       />
       {isHover ? (
-        <div className="w-full h-full absolute z-50 flex items-center justify-center bg-black/90">
+        <div className="w-full h-full absolute z-50 flex items-center justify-center bg-black/50">
           <div className="flex items-center justify-center gap-2">
             <LinkButton
               href={"http://" + url}

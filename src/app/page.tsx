@@ -3,7 +3,7 @@ import { useRef } from "react";
 import Introduction from "@/components/Introduction/Introduction";
 import CoverLetter from "@/components/Coverletter/CoverLetter";
 import Projects from "../components/Projects/Projects";
-import Contacts from "@/components/Contact/Contacts";
+import Outro from "@/components/Outro/Outro";
 
 export default function Home() {
   const containerRef = useRef<HTMLElement>(null);
@@ -17,7 +17,7 @@ export default function Home() {
       <Introduction />
       <CoverLetter />
       <Projects />
-      <Contacts />
+      <Outro />
     </section>
   );
 }

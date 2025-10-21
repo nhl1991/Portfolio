@@ -19,7 +19,6 @@ function ProjectNavigationContainer() {
   return (
     <div
       id="projects"
-      className="w-full h-full flex items-center justify-center"
       onMouseOver={(e) => e.stopPropagation()}
     >
         <ProjectNavigation />

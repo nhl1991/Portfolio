@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import ContactList from "@/components/Outro/ui/ContactList";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,6 +30,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col`}
       >
         <main className="w-screen min-h-screen ">{children}</main>
+        <ContactList />
         <footer className=""></footer>
       </body>
     </html>
