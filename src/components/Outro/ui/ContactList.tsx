@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function ContactList() {
   return (
-    <aside className="flex flex-col fixed h-max w-max top-[70%] md:left-0 right-0 gap-4 p-4">
+    <aside className="flex flex-row fixed h-max w-max bottom-10 right-16 gap-4 p-4">
       {/* Github - Navigate to Github */}
       <Link
         title="github"

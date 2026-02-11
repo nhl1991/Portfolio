@@ -27,14 +27,14 @@ export default function ProjectNavigation() {
                 setIsModalOpen(true);
               }}
             >
-              {/* {item.clone ? (
-                <div className="absolute inset-0 bg-black h-min px-4">
-                  <p>CLONE-CODED</p>
+              {item.clone ? (
+                <div className="w-full h-full absolute inset-0 flex items-center justify-center px-4 z-20">
+                  <p className="w-full text-4xl bg-black py-12">CLONE-CODED</p>
                 </div>
-              ) : null} */}
+              ) : null}
 
               <Image
-                className="object-cover"
+                className="object-cover z-10"
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
                 src={item.Image}

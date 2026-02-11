@@ -12,15 +12,11 @@ export default function LinkButton({
   className?: string;
 }) {
   return (
-    <div
-      className={ className +
-        ` text-white flex items-center justify-center px-2 py-1 text-[2rem] rounded-lg md:rounded-xl cursor-pointer ${
-            bg ? "bg-sky-600 hover:bg-sky-800" : "hover:opacity-80"
+      <Link className={ className +
+        ` text-white flex items-center justify-center px-3 py-1 text-2xl rounded-lg md:rounded-xl cursor-pointer ${
+            bg ? "bg-sky-600 dark:bg-indigo-900 dark:hover:bg-indigo-950 hover:bg-sky-800" : "hover:opacity-80"
           } `
-      }
-    >
-      <Link href={href}>{text}</Link>
-    </div>
+      } href={href}>{text}</Link>
   );
 }
 

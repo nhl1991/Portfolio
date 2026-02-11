@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ContactList from "@/components/Outro/ui/ContactList";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,7 +32,9 @@ export default function RootLayout({
       >
         <main className="w-screen min-h-screen ">{children}</main>
         <ContactList />
-        <footer className=""></footer>
+        <footer className="">
+          <Link href={'https://github.com/nhl1991?tab=repositories'}>More information</Link>
+        </footer>
       </body>
     </html>
   );

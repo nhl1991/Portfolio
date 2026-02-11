@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <section
       id="section"
-      className="w-screen min-h-screen overflow-hidden"
+      className="overflow-hidden"
       ref={containerRef}
     >
       <Introduction />

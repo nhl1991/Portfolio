@@ -14,7 +14,7 @@
                 {
                     "item_title": "語学能力",
                     "item_description": [
-                        "JLPT N2・N3(2024年取得)・TOEIC 970(韓国受験・2022年取得)"
+                        "JLPT N2(2024年取得)・TOEIC 970(韓国受験・2022年取得)"
                     ]
                 },
                 {
@@ -34,15 +34,15 @@
                 },
                 {
                     "item_title": "独学経験がある",
-                    "item_description": "PHP・React・Next.js"
+                    "item_description": "React・Next.js・PHP"
                 },
                 {
                     "item_title": "学習中のこと",
-                    "item_description": "Express・Laravel"
+                    "item_description": "React・Next.js・"
                 },
                 {
                     "item_title": "基礎技術（大学）",
-                    "item_description": "C・C++・Java・Linuxなど"
+                    "item_description": "C・C++・Java・Linux（CentOS)など"
                 }
             ]
         },

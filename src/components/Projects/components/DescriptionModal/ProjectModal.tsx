@@ -38,7 +38,7 @@ export default function ProjectModal() {
   if (item === undefined) return;
   return (
     <section
-      className="w-screen h-screen bg-black/50 fixed inset-0 flex justify-center p-2 items-center"
+      className="w-screen h-screen bg-black/50 fixed inset-0 flex justify-center p-2 items-center z-50"
       onClick={() => {
         setIsModalOpen(false);
       }}
@@ -57,7 +57,7 @@ export default function ProjectModal() {
         />
 
         <article className="flex items-center justify-center flex-col gap-2 p-2">
-          <div className="flex flex-col gap-4 text-4xl p-2">
+          <div className="w-full flex flex-col gap-4 text-4xl p-2">
             <ProjectPreviewImage
               image={item.Image}
               url={item.URL}

@@ -50,17 +50,6 @@ export default function CoverLetter() {
         defaults: { duration: 0.3, opacity: 0 },
       });
 
-      // const items: Array<HTMLDivElement> = gsap.utils.toArray(
-      //   "#coverletter-container > section",
-      //   containerRef.current
-      // ) as HTMLDivElement[];
-      // items.forEach((selector, idx) => {
-      //   tl.fromTo(
-      //     selector, // type TweenTarget = string | object | null; 3.1.2^ | element
-      //     { opacity: 0, x: 100 * (idx + 1) },
-      //     { opacity: 1, x: 0 }
-      //   );
-      // });
       tl.fromTo("#button-next-container", { y: 100 }, { opacity: 1, y: 0 });
     },
     { scope: containerRef }
@@ -102,7 +91,7 @@ export default function CoverLetter() {
         {/* Page */}
         <div
           id="coverletter-container"
-          className="flex flex-col items-center justify-center gap-2 md:gap-4 p-1"
+          className="flex flex-col items-center md:max-w-7xl w-full justify-center p-1"
         >
           {data
             ? data.map((item, idx) => {

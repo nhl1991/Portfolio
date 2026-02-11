@@ -34,17 +34,6 @@
       "clone": false
     },
     {
-      "title": "Nomad Movie",
-      "description": "Next.jsの基礎を学ぶため、映画情報サイトを模倣してクローンコーディングを行いました。映画リストの取得、詳細ページ遷移などの実装を通じて、ルーティングや型定義を練習しました。",
-      "URL": "project-nomad-movie.vercel.app",
-      "Image": "/src/thumbnail/project-nomad-movie.png",
-      "github": "https://github.com/nhl1991/project-nomad-movie",
-      "language": ["HTML5", "TypeScript", "CSS3"],
-      "framework": ["Next.JS"],
-      "database": ["なし"],
-      "clone": true
-    },
-    {
       "title": "Circling Navigation",
       "description": "スクロールでメーニュが回る簡単なサイトです。",
       "URL": "project-new-circling-navigation.vercel.app",
@@ -54,17 +43,6 @@
       "framework": ["Next.JS"],
       "database": ["なし"],
       "clone": false
-    },
-    {
-      "title": "Nwitter Reloaded",
-      "description": "Firebaseを学びながら行いました。「ツイタ」と言うSNSを倣ったクローンコティングサイトです。",
-      "URL": "nwitter-reloaded-2d0a7.web.app/",
-      "Image": "/src/thumbnail/project-nwitter-reloaded.png",
-      "github": "https://github.com/nhl1991/nomad-clone/tree/main/nwitter-reloaded",
-      "language": ["HTML5", "TypeScript", "CSS3"],
-      "framework": ["React", "Vite"],
-      "database": ["Firebase"],
-      "clone": true
     },
     {
       "title": "Todo list",
@@ -87,6 +65,29 @@
       "framework": ["Next.JS"],
       "database": ["なし"],
       "clone": false
+    },
+    {
+      "title": "Nwitter Reloaded",
+      "description": "Firebaseを学びながら行いました。「ツイタ」と言うSNSを倣ったクローンコティングサイトです。",
+      "URL": "nwitter-reloaded-2d0a7.web.app/",
+      "Image": "/src/thumbnail/project-nwitter-reloaded.png",
+      "github": "https://github.com/nhl1991/nomad-clone/tree/main/nwitter-reloaded",
+      "language": ["HTML5", "TypeScript", "CSS3"],
+      "framework": ["React", "Vite"],
+      "database": ["Firebase"],
+      "clone": true
+    },
+
+    {
+      "title": "Nomad Movie",
+      "description": "Next.jsの基礎を学ぶため、映画情報サイトを模倣してクローンコーディングを行いました。映画リストの取得、詳細ページ遷移などの実装を通じて、ルーティングや型定義を練習しました。",
+      "URL": "project-nomad-movie.vercel.app",
+      "Image": "/src/thumbnail/project-nomad-movie.png",
+      "github": "https://github.com/nhl1991/project-nomad-movie",
+      "language": ["HTML5", "TypeScript", "CSS3"],
+      "framework": ["Next.JS"],
+      "database": ["なし"],
+      "clone": true
     }
   ]
 }

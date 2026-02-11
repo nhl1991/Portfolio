@@ -11,7 +11,7 @@ export default function ProjectStack({
   database: Array<string>;
 }) {
   return (
-    <figure className="flex flex-row gap-4">
+    <figure className="flex flex-row gap-4 text-2xl items-center justify-center">
       <div className="w-max flex flex-col gap-4">
         <ListTitle title="Language" />
         <ListTitle title="Framework" />
