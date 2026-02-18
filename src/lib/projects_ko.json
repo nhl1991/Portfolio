@@ -1,0 +1,71 @@
+{
+  "projects": [
+    {
+      "title": "애니메이션 정보 사이트",
+      "description": "MyAnimeList.net에서 제공하는 API를 이용한 애니메이션 조회, 검색 서비스입니다.",
+      "URL": "project-mal.vercel.app",
+      "Image": "/src/thumbnail/project-mal.png",
+      "github": "https://github.com/nhl1991/ProjectMAL/tree/dev",
+      "language": ["HTML5", "TypeScript", "CSS3"],
+      "framework": ["Next.JS"],
+      "database": ["-"],
+      "clone": false
+    },
+    {
+      "title": "사진 공유 서비스",
+      "description": "Firebase와 Admin-SDK를 이용하여 개발한 사진 공유 서비스입니다.",
+      "URL": "photo-album-gilt.vercel.app/",
+      "Image": "/src/thumbnail/project-photo-album.png",
+      "github": "https://github.com/nhl1991/photo-album",
+      "language": ["HTML5", "TypeScript", "CSS3"],
+      "framework": ["Next.JS"],
+      "database": ["Firebase"],
+      "clone": false
+    },
+    {
+      "title": "Todo list",
+      "description": "Next.JS와 NestJS를 사용하여 만든 Todo 사이트입니다.",
+      "URL": "https://next-js-todo-client.vercel.app/",
+      "github": "https://github.com/nhl1991/-NextJS-Todo-Client",
+      "Image": "/src/thumbnail/project-todo.png",
+      "language": ["HTML5", "TypeScript", "CSS3"],
+      "framework": ["Next.JS", "Nest.js(Render)"],
+      "database": ["Postgres(NEON)"],
+      "clone": false
+    },
+    {
+      "title": "Lotto",
+      "description": "韓国の「LOTTO 6/45」に対応した番号生成・抽選支援アプリです。",
+      "URL": "nhl1991.github.io/Lotto-Generator/",
+      "Image": "/src/thumbnail/Lotto.png",
+      "github": "https://github.com/nhl1991/Lotto-Generator",
+      "language": ["HTML5", "TypeScript", "CSS3"],
+      "framework": ["Next.js"],
+      "database": ["なし"],
+      "clone": false
+    },
+
+    {
+      "title": "Circling Navigation",
+      "description": "スクロールでメーニュが回る簡単なサイトです。",
+      "URL": "project-new-circling-navigation.vercel.app",
+      "Image": "/src/thumbnail/project-circling-navigation.png",
+      "github": "https://github.com/nhl1991/project-new-circling-navigation",
+      "language": ["HTML5", "TypeScript", "CSS3"],
+      "framework": ["Next.JS"],
+      "database": ["なし"],
+      "clone": false
+    },
+    {
+      "title": "Next.JS Demo",
+      "description": "NEXT.JS를 공부하며 기록",
+      "URL": "nextjs-example-demo.vercel.app/",
+      "github": "https://github.com/nhl1991/nextjs-example-demo",
+      "Image": "/src/thumbnail/nextjs-demo.png",
+      "language": ["HTML5", "TypeScript", "CSS3"],
+      "framework": ["Next.JS"],
+      "database": ["なし"],
+      "clone": false
+    }
+  ]
+}

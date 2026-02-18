@@ -3,7 +3,7 @@ import Image from "next/image";
 import { projects } from "@/lib/projects.json";
 import { useStore } from "@/lib/stores";
 import { Project } from "@/lib/interface";
-import ButtonNext from "@/components/ui/ButtonNext";
+import ButtonNext from "@/components/ui/ScrollButton";
 import Header from "@/components/Projects/ui/Header";
 
 export default function ProjectNavigation() {
@@ -16,12 +16,12 @@ export default function ProjectNavigation() {
       className={`w-screen h-screen p-4 flex items-center flex-col gap-8`}
     >
       <Header text="個人開発" />
-      <article className="grid-layout">
+      <div className="grid-layout">
         {projects.map((item: Project, i) => {
           return (
-            <div
+            <article
               key={i}
-              className="w-full h-full border-2 border-black dark:border-white rounded-2xl overflow-hidden relative cursor-pointer hover:scale-105 transition-transform duration-500"
+              className="w-full h-full shadow-md rounded-2xl overflow-hidden relative cursor-pointer hover:scale-105 transition-transform duration-500"
               onClick={() => {
                 setItem(item);
                 setIsModalOpen(true);
@@ -40,10 +40,10 @@ export default function ProjectNavigation() {
                 src={item.Image}
                 alt={item.title}
               />
-            </div>
+            </article>
           );
         })}
-      </article>
+      </div>
       <ButtonNext targetId="contact" />
     </section>
   );

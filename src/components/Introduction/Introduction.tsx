@@ -2,7 +2,9 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useRef } from "react";
 import DisplayGreet from "./ui/DisplayGreet";
-import ButtonNext from "../ui/ButtonNext";
+import ButtonNext from "../ui/ScrollButton";
+import { Button } from "../ui/button";
+import ScrollButton from "../ui/ScrollButton";
 
 gsap.registerPlugin(useGSAP);
 
@@ -21,7 +23,6 @@ export default function Introduction() {
 
       tl.fromTo("#intro_1", { opacity: 0, delay: 0.5 }, { opacity: 1 })
         .fromTo("#intro_2", { opacity: 0, delay: 0.5 }, { opacity: 1 })
-        .fromTo("#intro_3", { opacity: 0, delay: 0.5 }, { opacity: 1 })
         .fromTo("#button-next-container", { y: 100 }, { opacity: 1, y: 0 });
 
       tl.to(
@@ -46,10 +47,10 @@ export default function Introduction() {
     <section
       ref={containerRef}
       id="first"
-      className="w-[100vw] h-[100vh] flex flex-col items-center justify-center gap-8"
+      className="w-screen h-screen flex flex-col items-center justify-center gap-8"
     >
       <DisplayGreet />
-      <ButtonNext targetId="coverletter" />
+      <ScrollButton targetId="coverletter"/>
     </section>
   );
 }

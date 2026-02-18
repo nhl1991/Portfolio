@@ -5,7 +5,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import { useRef, useState } from "react";
 import React from "react";
-import ButtonNext from "../ui/ButtonNext";
+import ButtonNext from "../ui/ScrollButton";
+import { Button } from "../ui/button";
+import ScrollButton from "../ui/ScrollButton";
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
@@ -107,7 +109,7 @@ export default function CoverLetter() {
               })
             : null}
           <div className="absolute bottom-0">
-            <ButtonNext targetId="projects" />
+            <ScrollButton targetId="projects" />
           </div>
         </div>
       </section>
