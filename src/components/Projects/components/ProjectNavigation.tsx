@@ -1,10 +1,8 @@
 "use client";
 import Image from "next/image";
-import { projects } from "@/lib/projects.json";
+import { projects } from "@/lib/projects_ko.json";
 import { useStore } from "@/lib/stores";
 import { Project } from "@/lib/interface";
-import ButtonNext from "@/components/ui/ButtonNext";
-import Header from "@/components/Projects/ui/Header";
 
 export default function ProjectNavigation() {
   // React.MouseEventHandler<HTMLAnchorElement>
@@ -13,38 +11,36 @@ export default function ProjectNavigation() {
 
   return (
     <section
-      className={`w-screen h-screen p-4 flex items-center flex-col gap-8`}
+      className={`w-screen min-h-screen h-screen p-4 flex items-center justify-center flex-col gap-8`}
     >
-      <Header text="個人開発" />
-      <article className="grid-layout">
+      <div className="grid-layout p-24">
         {projects.map((item: Project, i) => {
           return (
-            <div
+            <article
               key={i}
-              className="w-full h-full border-2 border-black dark:border-white rounded-2xl overflow-hidden relative cursor-pointer hover:scale-105 transition-transform duration-500"
+              className="w-full h-full shadow-md rounded-2xl overflow-hidden relative cursor-pointer "
               onClick={() => {
                 setItem(item);
                 setIsModalOpen(true);
               }}
             >
-              {/* {item.clone ? (
-                <div className="absolute inset-0 bg-black h-min px-4">
-                  <p>CLONE-CODED</p>
+              {item.clone ? (
+                <div className="w-full h-full absolute inset-0 flex items-center justify-center px-4 z-20">
+                  <p className="w-full text-4xl bg-black py-12">CLONE-CODED</p>
                 </div>
-              ) : null} */}
+              ) : null}
 
               <Image
-                className="object-cover"
+                className="object-cover z-10 hover:scale-115 transition-transform duration-500"
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
                 src={item.Image}
                 alt={item.title}
               />
-            </div>
+            </article>
           );
         })}
-      </article>
-      <ButtonNext targetId="contact" />
+      </div>
     </section>
   );
 }

@@ -1,5 +1,5 @@
-import { ListTitle } from "../ui/ItemTitle";
-import { ListItem } from "../ui/ListItemTitle";
+import { ListTitle } from "./ItemTitle";
+import { ListItem } from "./ListItemTitle";
 
 export default function ProjectStack({
   language,
@@ -11,15 +11,13 @@ export default function ProjectStack({
   database: Array<string>;
 }) {
   return (
-    <figure className="flex flex-row gap-4">
+    <figure className="flex flex-row gap-4 text-2xl items-center justify-center">
       <div className="w-max flex flex-col gap-4">
         <ListTitle title="Language" />
-        <ListTitle title="Framework" />
-        <ListTitle title="Database" />
-      </div>
-      <div className="w-max flex flex-col gap-4">
         <ListItem items={language} />
+        <ListTitle title="Framework" />
         <ListItem items={framework} />
+        <ListTitle title="Database" />
         <ListItem items={database} />
       </div>
     </figure>

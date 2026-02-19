@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 export default function LinkButton({
@@ -12,15 +13,8 @@ export default function LinkButton({
   className?: string;
 }) {
   return (
-    <div
-      className={ className +
-        ` text-white flex items-center justify-center px-2 py-1 text-[2rem] rounded-lg md:rounded-xl cursor-pointer ${
-            bg ? "bg-sky-600 hover:bg-sky-800" : "hover:opacity-80"
-          } `
-      }
-    >
-      <Link href={href}>{text}</Link>
-    </div>
+    <Link className={cn("text-white flex items-center justify-center px-4 py-2 text-2xl rounded-md cursor-pointer", bg ? "bg-blue-900 hover:bg-sky-500" : "hover:opacity-80", className)
+    } href={href}>{text}</Link>
   );
 }
 

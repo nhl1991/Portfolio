@@ -1,32 +1,32 @@
 {
     "data": [
         {
-            "title": "自己紹介",
+            "title": "자기소개",
             "description": [
                 {
-                    "item_title": "名前",
-                    "item_description": "盧亨來(ノ·ヒョンレ)"
+                    "item_title": "이름",
+                    "item_description": "노형래"
                 },
                 {
                     "item_title": "学歴",
-                    "item_description": "韓国・嘉泉大学（4年制）卒業[コンピューター工学]"
+                    "item_description": "가천대학교 컴퓨터공학과"
                 },
                 {
-                    "item_title": "語学能力",
+                    "item_title": "자격증",
                     "item_description": [
-                        "JLPT N2・N3(2024年取得)・TOEIC 970(韓国受験・2022年取得)"
+                        "정보처리기사"
                     ]
                 },
                 {
-                    "item_title": "資格証",
+                    "item_title": "기타 자격증",
                     "item_description": [
-                        "情報処理技師（韓国国家資格）"
+                        "JLPT N2・TOEIC 970"
                     ]
                 }
             ]
         },
         {
-            "title": "スキル",
+            "title": "스킬",
             "description": [
                 {
                     "item_title": "主に使う言語・技術",
@@ -34,32 +34,15 @@
                 },
                 {
                     "item_title": "独学経験がある",
-                    "item_description": "PHP・React・Next.js"
+                    "item_description": "React・Next.js・PHP"
                 },
                 {
                     "item_title": "学習中のこと",
-                    "item_description": "Express・Laravel"
+                    "item_description": "React・Next.js・"
                 },
                 {
                     "item_title": "基礎技術（大学）",
-                    "item_description": "C・C++・Java・Linuxなど"
-                }
-            ]
-        },
-        {
-            "title": "経験",
-            "description": [
-                {
-                    "item_title": "「いいね」機能の実装とデータ連携",
-                    "item_description": "Next.jsとFirebaseを用いた写真シェアアプリの制作中、Firebaseの「onSnapshot」を活用し、リアルタイムに「いいね」の数が変化するUIを実装。非同期データの状態管理を経験しました。"
-                },
-                {
-                    "item_title": "外部のAPIを利用",
-                    "item_description": "「MyAnimeList.com」のAPIを活かしアニメ情報サイトや写真のメータデータを読み込んでGoogleのGeocodingを活用し位置データを提供する機能を実装しました。"
-                },
-                {
-                    "item_title": "Zustandを用いた状態管理の実装",
-                    "item_description": "個人プロジェクトにZustandを導入しグローバルな状態管理を実装。コードの可読性と保守性を意識して構成しました。"
+                    "item_description": "C・C++・Java・Linux（CentOS)など"
                 }
             ]
         },

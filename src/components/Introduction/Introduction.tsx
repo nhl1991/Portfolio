@@ -1,8 +1,9 @@
+"use client"
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useRef } from "react";
 import DisplayGreet from "./ui/DisplayGreet";
-import ButtonNext from "../ui/ButtonNext";
+import ScrollButton from "../ui/NextSectionButton";
 
 gsap.registerPlugin(useGSAP);
 
@@ -10,46 +11,49 @@ gsap.registerPlugin(useGSAP);
 export default function Introduction() {
   const containerRef = useRef<HTMLDivElement>(null);
 
-  useGSAP(
-    () => {
-      const tl = gsap.timeline({
-        // onComplete: () => {
-        //   gsap.delayedCall(1.5, handleOnClick);
-        // },
-        defaults: { duration: 0.5, ease: "none", opacity: 0 },
-      });
+  // useGSAP(
+  //   () => {
+  //     const tl = gsap.timeline({
+  //       // onComplete: () => {
+  //       //   gsap.delayedCall(1.5, handleOnClick);
+  //       // },
+  //       defaults: { duration: 0.5, ease: "none", opacity: 0 },
+  //     });
 
-      tl.fromTo("#intro_1", { opacity: 0, delay: 0.5 }, { opacity: 1 })
-        .fromTo("#intro_2", { opacity: 0, delay: 0.5 }, { opacity: 1 })
-        .fromTo("#intro_3", { opacity: 0, delay: 0.5 }, { opacity: 1 })
-        .fromTo("#button-next-container", { y: 100 }, { opacity: 1, y: 0 });
+  //     tl.fromTo("#intro_1", { opacity: 0, delay: 0.5 }, { opacity: 1 })
+  //       .fromTo("#intro_2", { opacity: 0, delay: 0.5 }, { opacity: 1 })
+  //       .fromTo("#button-next-container", { y: 100 }, { opacity: 1, y: 0 });
 
-      tl.to(
-        containerRef.current,
-        {
-          scrollTrigger: {
-            trigger: containerRef.current,
-            start: "center top",
-            end: "bottom center",
-            scrub: 1,
-          },
-          opacity: 0,
-          duration: 1
-        }
-      );
-    },
+  //     tl.to(
+  //       containerRef.current,
+  //       {
+  //         scrollTrigger: {
+  //           trigger: containerRef.current,
+  //           start: "center top",
+  //           end: "bottom center",
+  //           scrub: 1,
+  //         },
+  //         opacity: 0,
+  //         duration: 1
+  //       }
+  //     );
+  //   },
 
-    { scope: containerRef }
-  );
+  //   { scope: containerRef }
+  // );
 
   return (
     <section
       ref={containerRef}
       id="first"
-      className="w-[100vw] h-[100vh] flex flex-col items-center justify-center gap-8"
+      className="w-full md:max-w-7xl h-screen flex flex-col items-center justify-center gap-8"
     >
-      <DisplayGreet />
-      <ButtonNext targetId="coverletter" />
+      <div className="w-full h-full flex items-center justify-center">
+        <DisplayGreet />
+      </div>
+      <div>
+        <ScrollButton targetId="coverletter" />
+      </div>
     </section>
   );
 }
