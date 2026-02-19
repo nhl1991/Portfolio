@@ -74,8 +74,8 @@ label {
     90deg,
       rgba(24, 16, 163, 1) 0%,
       rgba(120, 60, 160, 1) 33%,
-      rgba(180, 170, 60, 1) 70%,
-      rgba(255,255,255,1) 100%
+      rgba(15, 234, 80, 0.614) 70%,
+      rgb(87, 44, 128) 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
@@ -98,16 +98,19 @@ label {
     rgba(148, 187, 233, 1) 100%
   );
 }
+li > p {
+  @apply font-bold;
+}
 
 @media (prefers-color-scheme: dark) {
 
   .text-gradient {
     background: linear-gradient(
       90deg,
-      rgba(24, 16, 163, 1) 0%,
-      rgba(120, 60, 160, 1) 53%,
-      rgba(180, 170, 60, 1) 95%,
-      rgba(255,255,255,1) 100%
+      rgb(255, 255, 255) 0%,
+      rgb(255, 255, 255) 33%,
+      rgba(255, 255, 255, 0.614) 70%,
+      rgb(255, 255, 255) 100%
     );
     -webkit-background-clip: text;
     background-clip: text;
@@ -210,6 +213,11 @@ rp {
 .grid-layout {
   @apply grid grid-cols-[repeat(4,minmax(240px,1fr))] grid-rows-[repeat(2,minmax(240px,1fr))]  gap-4;
 }
+@media (width < 1280px){
+  .grid-layout {
+  @apply grid grid-cols-[repeat(3,minmax(240px,1fr))] grid-rows-[repeat(4,minmax(240px,1fr))]  gap-4;
+}
+}
 
 @media (width < 768px) {
   rt,
@@ -218,12 +226,12 @@ rp {
   }
 
   .grid-layout {
-    @apply grid grid-cols-[repeat(2,minmax(120px,1fr))] grid-rows-[repeat(4,minmax(120px,1fr))]  gap-2;
+    @apply grid grid-cols-[repeat(3,minmax(120px,1fr))] grid-rows-[repeat(4,minmax(120px,1fr))]  gap-2;
   }
 }
 
 .button-hover {
-  @apply bg-sky-600 hover:bg-sky-500 dark:bg-slate-900 dark:hover:bg-slate-800;
+  @apply bg-sky-600 hover:bg-sky-500 dark:bg-slate-900 dark:hover:bg-slate-800 px-3 py-1;
 }
 
 .button-text {

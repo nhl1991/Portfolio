@@ -1,118 +1,29 @@
-import item from "@/lib/coverletter.json";
-import { CoverLetterItem } from "./CoverLetterItem";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import gsap from "gsap";
-import { useRef, useState } from "react";
-import React from "react";
-import ButtonNext from "../ui/ScrollButton";
-import { Button } from "../ui/button";
-import ScrollButton from "../ui/ScrollButton";
+"use client"
+import NextSectionButton from "../ui/NextSectionButton"
+import { TypographyH1 } from "../ui/shadcn/typography/TypographyH1"
+import About from "./ui/About"
+import Summary from "./ui/Summary"
 
-gsap.registerPlugin(useGSAP);
-gsap.registerPlugin(ScrollTrigger);
+export default function Coverletter() {
 
-export default function CoverLetter() {
-  const { data } = item;
-  const [current, setCurrent] = useState("");
-  const containerRef = useRef<HTMLDivElement>(null);
-  useGSAP(
-    () => {
-      const elements = gsap.utils.toArray(
-        "#coverletter-container > section",
-        containerRef.current
-      );
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: containerRef.current,
-          start: "top center",
-          end: "bottom center",
 
-          onToggle: (self) => {
-            if (self.isActive)
-              gsap.to("#coverletter_navigation", {
-                display: "block",
-                duration: 0,
-              });
-            else
-              gsap.to("#coverletter_navigation", {
-                display: "none",
-                duration: 0,
-              });
-          },
-          onUpdate: () => {
-            // 修正必要
-            elements.map((item) => {
-              if (item instanceof HTMLElement)
-                if (ScrollTrigger.isInViewport(item, 0.7)) setCurrent(item.id);
-            });
-          },
-        },
-        delay: 0,
-        defaults: { duration: 0.3, opacity: 0 },
-      });
+    return (
+        <section id="coverletter" className="w-screen min-h-screen h-screen flex flex-col items-center justify-center ">
+            <div className="w-full h-full flex flex-col items-center justify-center">
+                <TypographyH1>ABOUT ME</TypographyH1>
+                <div className="md:max-w-7xl w-full flex md:flex-row flex-col items-center justify-center ">
+                    <div className="flex items-center justify-center flex-col gap-y-4 md:max-w-[960px] px-8 py-4 rounded-xl order-2 md:order-1">
+                        <About />
+                    </div>
+                    <div className="flex items-center justify-center flex-col gap-y-4 md:max-w-[960px] px-8 py-4 rounded-xl order-1 md:order-2">
+                        <Summary />
+                    </div>
+                </div>
+            </div>
+            <div>
+                <NextSectionButton targetId="projects" />
+            </div>
 
-      tl.fromTo("#button-next-container", { y: 100 }, { opacity: 1, y: 0 });
-    },
-    { scope: containerRef }
-  );
-
-  return (
-    <>
-      <section
-        id="coverletter"
-        className="w-screen flex min-h-screen items-center justify-center relative"
-        ref={containerRef}
-      >
-        {/* fixed nav */}
-        <nav
-          id="coverletter_navigation"
-          className="p-4 hidden fixed top-0 md:top-[50%] right-0"
-        >
-          <ul className="text-3xl flex md:flex-col gap-8 md:list-disc font-bold z-50">
-            {data.map((item, idx) => (
-              <li key={idx}>
-                <button
-                  className={`cursor-pointer ${
-                    current === item.title ? "text-sky-300" : null
-                  }`}
-                  onClick={() => {
-                    console.log("click");
-                    document.getElementById(item.title)?.scrollIntoView({
-                      behavior: "smooth",
-                      block: "start",
-                    });
-                  }}
-                >
-                  {item.title}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </nav>
-        {/* Page */}
-        <div
-          id="coverletter-container"
-          className="flex flex-col items-center md:max-w-7xl w-full justify-center p-1"
-        >
-          {data
-            ? data.map((item, idx) => {
-                return (
-                  <React.Fragment key={idx}>
-                    <CoverLetterItem
-                      id={`item-container-${idx}`}
-                      title={item.title}
-                      description={item.description}
-                    />
-                  </React.Fragment>
-                );
-              })
-            : null}
-          <div className="absolute bottom-0">
-            <ScrollButton targetId="projects" />
-          </div>
-        </div>
-      </section>
-    </>
-  );
+        </section>
+    )
 }

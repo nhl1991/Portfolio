@@ -2,7 +2,7 @@ import LinkButton from "@/components/ui/LinkButton";
 import { CloseIcon } from "@/components/ui/svgIcon/Icons";
 import { useStore } from "@/lib/stores";
 
-export default function ModalHeader({
+export default function ProjectTitle({
   title,
   website,
   github,

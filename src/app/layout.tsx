@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import ContactList from "@/components/Outro/ui/ContactList";
-import Link from "next/link";
+import ContactList from "@/components/ui/ContactList";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: { default: 'Portfolio', template: '%s | laslark1991' },
   description: "Portfolio",
-  
+
 };
 
 export default function RootLayout({
@@ -28,13 +27,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
-        <main className="w-screen min-h-screen ">{children}</main>
+        <main className="w-screen min-h-screen flex items-center justify-center flex-col bg-indigo-950 text-white">{children}</main>
         <ContactList />
-        <footer className="">
-          <Link href={'https://github.com/nhl1991?tab=repositories'}>More information</Link>
-        </footer>
       </body>
     </html>
   );

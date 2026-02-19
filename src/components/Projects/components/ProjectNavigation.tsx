@@ -1,10 +1,9 @@
 "use client";
 import Image from "next/image";
-import { projects } from "@/lib/projects.json";
+import { projects } from "@/lib/projects_ko.json";
 import { useStore } from "@/lib/stores";
 import { Project } from "@/lib/interface";
-import ButtonNext from "@/components/ui/ScrollButton";
-import Header from "@/components/Projects/ui/Header";
+import { TypographyH1 } from "@/components/ui/shadcn/typography/TypographyH1";
 
 export default function ProjectNavigation() {
   // React.MouseEventHandler<HTMLAnchorElement>
@@ -13,15 +12,15 @@ export default function ProjectNavigation() {
 
   return (
     <section
-      className={`w-screen h-screen p-4 flex items-center flex-col gap-8`}
+      className={`w-screen min-h-screen p-4 flex items-center flex-col gap-8`}
     >
-      <Header text="個人開発" />
-      <div className="grid-layout">
+      <TypographyH1>PROJECTS</TypographyH1>
+      <div className="grid-layout p-24">
         {projects.map((item: Project, i) => {
           return (
             <article
               key={i}
-              className="w-full h-full shadow-md rounded-2xl overflow-hidden relative cursor-pointer hover:scale-105 transition-transform duration-500"
+              className="w-full h-full shadow-md rounded-2xl overflow-hidden relative cursor-pointer "
               onClick={() => {
                 setItem(item);
                 setIsModalOpen(true);
@@ -34,7 +33,7 @@ export default function ProjectNavigation() {
               ) : null}
 
               <Image
-                className="object-cover z-10"
+                className="object-cover z-10 hover:scale-115 transition-transform duration-500"
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
                 src={item.Image}
@@ -44,7 +43,6 @@ export default function ProjectNavigation() {
           );
         })}
       </div>
-      <ButtonNext targetId="contact" />
     </section>
   );
 }

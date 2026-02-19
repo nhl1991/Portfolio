@@ -1,9 +1,9 @@
 "use client";
 
 import { useId } from "react";
-import { Button } from "./button";
+import ChevronDoubleDown from "./svgIcon/ChevronDoubleDown";
 
-export default function ScrollButton({ targetId }: { targetId: string }) {
+export default function NextSectionButton({ targetId }: { targetId: string }) {
   const id = useId();
 
   function handleOnClick() {
@@ -15,7 +15,9 @@ export default function ScrollButton({ targetId }: { targetId: string }) {
 
   return (
     <div id="button-next-container">
-      <Button id={id} size={'lg'} variant={'outline'} onClick={handleOnClick}>NEXT</Button>
+      <button id={id} onClick={handleOnClick}>
+        <ChevronDoubleDown className="w-24 animate-bounce" />
+        </button>
     </div>
   );
 }

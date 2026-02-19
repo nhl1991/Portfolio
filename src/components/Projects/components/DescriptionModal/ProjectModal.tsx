@@ -3,10 +3,10 @@ import { useStore } from "@/lib/stores";
 import gsap from "gsap";
 import { MouseEvent, useEffect, useRef } from "react";
 import { useGSAP } from "@gsap/react";
-import ModalHeader from "./ui/ModalHeader";
-import ProjectStack from "./components/ProjectStack";
-import ProjectPreviewImage from "./components/ProjectPreviewImage";
-import ProjectDescription from "./components/ProjectDescription";
+import ProjectPreviewImage from "./ui/ProjectPreviewImage";
+import ProjectStack from "./ui/ProjectStack";
+import ProjectDescription from "./ui/ProjectDescription";
+import ProjectTitle from "./ui/ProjectTitle";
 
 export default function ProjectModal() {
   const { item, setIsModalOpen } = useStore();
@@ -45,12 +45,12 @@ export default function ProjectModal() {
       ref={containerRef}
     >
       <div
-        className="dark:bg-slate-900 bg-white rounded-2xl max-h-full h-max w-full md:w-max md:min-w-[96rem] overflow-scroll p-2"
+        className="dark:bg-slate-900 bg-indigo-950 rounded-2xl md:max-w-7xl  h-max w-full overflow-scroll p-2"
         onClick={(e: MouseEvent<HTMLElement>) => {
           e.stopPropagation();
         }}
       >
-        <ModalHeader
+        <ProjectTitle
           title={item.title}
           website={item.URL}
           github={item.github}
@@ -73,11 +73,6 @@ export default function ProjectModal() {
             />
             <ProjectDescription description={item.description} />
           </div>
-          <footer>
-            <p className="text-xl">
-              ログインが必要な場合 *ID: guest@example.com / PW:Guest1234!@
-            </p>
-          </footer>
         </article>
       </div>
     </section>

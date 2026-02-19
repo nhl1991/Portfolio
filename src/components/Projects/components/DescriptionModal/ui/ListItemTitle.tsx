@@ -5,7 +5,7 @@ export function ListItem({ items }: { items: Array<string> }) {
         return (
           <li
             key={idx}
-            className="px-3 py-1 md:rounded-xl rounded-md text-white bg-sky-600 dark:bg-indigo-800"
+            className="px-3 py-1.5 bg-black rounded-md "
           >
             <p className="">{item.toUpperCase()}</p>
           </li>

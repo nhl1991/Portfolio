@@ -3,12 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 export default function ContactList() {
   return (
-    <aside className="flex flex-row fixed h-max w-max bottom-10 right-16 gap-4 p-4">
+    <aside className="flex flex-row fixed h-max w-max bottom-30 right-16 gap-4 p-4">
       {/* Github - Navigate to Github */}
       <Link
         title="github"
         href="https://github.com/nhl1991"
-        className="w-20 h-20 relative rounded-full hover:border-2 hover:scale-105 duration-300 p-2"
+        className="w-20 h-20 relative rounded-full hover:scale-105 duration-300 p-2"
       >
         <Image
           fill
