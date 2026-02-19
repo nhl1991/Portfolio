@@ -4,7 +4,7 @@ import { TypographyH1 } from "../ui/shadcn/typography/TypographyH1"
 import About from "./ui/About"
 import Summary from "./ui/Summary"
 
-export default function Coverletter() {
+export default function AboutContainer() {
 
 
     return (
