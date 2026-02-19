@@ -3,7 +3,6 @@ import Image from "next/image";
 import { projects } from "@/lib/projects_ko.json";
 import { useStore } from "@/lib/stores";
 import { Project } from "@/lib/interface";
-import { TypographyH1 } from "@/components/ui/shadcn/typography/TypographyH1";
 
 export default function ProjectNavigation() {
   // React.MouseEventHandler<HTMLAnchorElement>
@@ -12,9 +11,8 @@ export default function ProjectNavigation() {
 
   return (
     <section
-      className={`w-screen min-h-screen p-4 flex items-center flex-col gap-8`}
+      className={`w-screen min-h-screen h-screen p-4 flex items-center justify-center flex-col gap-8`}
     >
-      <TypographyH1>PROJECTS</TypographyH1>
       <div className="grid-layout p-24">
         {projects.map((item: Project, i) => {
           return (
