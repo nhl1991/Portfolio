@@ -65,6 +65,10 @@ h2 {
 h3 {
   font-size: clamp(1rem, 1.5rem + 1vw, 2.5rem);
 }
+p {
+  
+  font-size: clamp(0.875rem, 0.8rem + 0.5vw, 1.125rem);
+}
 
 label {
   font-size: clamp(1rem, 1rem + 2vw, 2rem);
