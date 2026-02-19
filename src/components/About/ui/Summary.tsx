@@ -34,7 +34,7 @@ export default function Summary() {
         <ul className="md:max-w-3xl flex flex-col gap-y-8">
             <li >
                 <TypographyH3>NAME</TypographyH3>
-                <p className="text-4xl px-4 py-2">노형래</p>
+                <h4 className="text-4xl px-4 py-2">노형래</h4>
             </li>
             <li>
                 <TypographyH3>Language</TypographyH3>

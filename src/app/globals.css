@@ -43,7 +43,7 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
 }
-
+/* 
 #intro_1 {
   font-size: clamp(4rem, 2rem + 10vw, 9rem);
 }
@@ -52,18 +52,22 @@
 }
 #intro_3 {
   font-size: clamp(1rem, 1.25rem + 2vw, 3rem);
-}
+} */
 
 h1 {
-  font-size: clamp(2rem, 2rem + 3vw, 4rem);
+  font-size: clamp(2rem, 2rem + 3vw, 8rem);
 }
 
 h2 {
-  font-size: clamp(1.75rem, 1.75rem + 2vw, 3.5rem);
+  font-size: clamp(1.75rem, 1.75rem + 2vw, 4.5rem);
 }
 
 h3 {
   font-size: clamp(1rem, 1.5rem + 1vw, 2.5rem);
+}
+p {
+  
+  font-size: clamp(0.875rem, 0.8rem + 0.5vw, 1.125rem);
 }
 
 label {
