@@ -1,6 +1,8 @@
-import LinkButton from "@/components/ui/LinkButton";
+import Github from "@/components/ui/svgIcon/Github";
+import GlobalAlt from "@/components/ui/svgIcon/Global-Alt";
 import { CloseIcon } from "@/components/ui/svgIcon/Icons";
 import { useStore } from "@/lib/stores";
+import Link from "next/link";
 
 export default function ProjectTitle({
   title,
@@ -16,13 +18,24 @@ export default function ProjectTitle({
     <header className="w-full h-max flex flex-col items-center justify-end p-2">
       
       <div className="w-full flex  items-center justify-end gap-2">
-        <LinkButton
+        <Link 
+          href={"https://" + website}
+          aria-label="Website"
+          >
+            <GlobalAlt className="w-12 hover:stroke-gray-600 " />
+          </Link> 
+          <Link 
+          href={github}
+          aria-label="Github">
+            <Github className="w-10 hover:fill-gray-600 " />
+          </Link>
+        {/* <LinkButton
           href={"https://" + website}
           text="Website"
           bg={true}
         ></LinkButton>
 
-        <LinkButton href={github} text="Github" bg={true}></LinkButton>
+        <LinkButton href={github} text="Github" bg={true}></LinkButton> */}
         <button
           className="cursor-pointer"
           onClick={() => setIsModalOpen(false)}

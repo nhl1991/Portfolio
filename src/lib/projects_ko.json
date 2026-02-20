@@ -73,7 +73,7 @@
       "Image": "/src/thumbnail/project-nwitter-reloaded.png",
       "github": "https://github.com/nhl1991/nomad-clone/tree/main/nwitter-reloaded",
       "language": ["HTML5", "TypeScript", "CSS3"],
-      "framework": ["React", "Vite"],
+      "framework": ["React+Vite"],
       "database": ["Firebase"],
       "clone": true
     },

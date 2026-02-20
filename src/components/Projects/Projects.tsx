@@ -18,13 +18,16 @@ function ProjectNavigationContainer() {
   const { isModalOpen } = useStore();
 
   return (
-    <div
+    <section
       id="projects"
+      className="w-screen h-screen flex flex-col"
       onMouseOver={(e) => e.stopPropagation()}
     >
-      <TypographyH1>PROJECTS</TypographyH1>
-        <ProjectNavigation />
-        {isModalOpen ? <ProjectModal /> : null}
-    </div>
+
+
+      <header className="py-20"><TypographyH1>PROJECTS</TypographyH1></header>
+      <ProjectNavigation />
+      {isModalOpen ? <ProjectModal /> : null}
+    </section>
   );
 }

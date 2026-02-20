@@ -215,7 +215,7 @@ rp {
 }
 
 .grid-layout {
-  @apply grid grid-cols-[repeat(4,minmax(240px,1fr))] grid-rows-[repeat(2,minmax(240px,1fr))]  gap-4;
+  @apply grid grid-cols-[repeat(4,minmax(120px,240px))] grid-rows-[repeat(2,minmax(120px,240px))]  gap-4;
 }
 @media (width < 1280px){
   .grid-layout {
@@ -230,7 +230,7 @@ rp {
   }
 
   .grid-layout {
-    @apply grid grid-cols-[repeat(3,minmax(120px,1fr))] grid-rows-[repeat(4,minmax(120px,1fr))]  gap-2;
+    @apply grid grid-cols-[repeat(3,minmax(80px,1fr))] grid-rows-[repeat(4,minmax(80px,1fr))]  gap-2;
   }
 }
 

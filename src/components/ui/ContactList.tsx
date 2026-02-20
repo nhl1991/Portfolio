@@ -1,6 +1,6 @@
 import { EmailIcon, HomeIcon } from "@/components/ui/svgIcon/Icons";
-import Image from "next/image";
 import Link from "next/link";
+import Github from "./svgIcon/Github";
 export default function ContactList() {
   return (
     <aside className="flex flex-row fixed h-max w-max bottom-30 right-16 gap-4 p-4">
@@ -8,21 +8,16 @@ export default function ContactList() {
       <Link
         title="github"
         href="https://github.com/nhl1991"
-        className="w-20 h-20 relative rounded-full hover:scale-105 duration-300 p-2"
+        className="w-20 bg-black rounded-full p-2 hover:scale-105 duration-300 opacity-70"
       >
-        <Image
-          fill
-          sizes="(max-width: 768px) 100vw, 33vw"
-          src="/src/navigationThumbnail/github.webp"
-          alt="github"
-        />
+        <Github className="fill-white" />
       </Link>
 
       {/* Mail - Open default mail provider */}
       <Link
         title="mail"
         href={"mailto:laslark1991@gmail.com"}
-        className="w-20 bg-black rounded-full p-2 hover:scale-105 duration-300"
+        className="w-20 bg-black rounded-full p-2 hover:scale-105 duration-300 opacity-70"
       >
         <EmailIcon className="" stroke="white" />
       </Link>
@@ -30,7 +25,7 @@ export default function ContactList() {
       <Link
         title="home"
         href={"/"}
-        className="w-20 bg-black rounded-full p-2 hover:scale-105 duration-300"
+        className="w-20 bg-black rounded-full p-2 hover:scale-105 duration-300 opacity-70"
       >
         <HomeIcon className="" />
       </Link>
