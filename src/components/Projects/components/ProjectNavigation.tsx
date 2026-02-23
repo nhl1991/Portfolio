@@ -13,7 +13,7 @@ export default function ProjectNavigation() {
     <div
       className="w-full h-full p-4 gap-8 flex items-center justify-center-safe"
     >
-      <div className="w-max grid-layout p-24 bg-indigo-950 rounded-xl shadow-md">
+      <div className="w-max grid-layout p-4 md:p-12 xl:p-24 bg-indigo-950 rounded-xl shadow-md">
         {projects.map((item: Project, i) => {
           return (
             <article
