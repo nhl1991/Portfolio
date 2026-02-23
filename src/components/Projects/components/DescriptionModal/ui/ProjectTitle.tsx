@@ -33,13 +33,6 @@ export default function ProjectTitle({
         >
           <Github className="w-10 hover:fill-gray-600 " />
         </Link>
-        {/* <LinkButton
-          href={"https://" + website}
-          text="Website"
-          bg={true}
-        ></LinkButton>
-
-        <LinkButton href={github} text="Github" bg={true}></LinkButton> */}
         <button
           className="cursor-pointer"
           onClick={() => setIsModalOpen(false)}
