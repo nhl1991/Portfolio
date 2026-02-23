@@ -43,17 +43,20 @@ export default function Introduction() {
   // );
 
   return (
-    <section
-      ref={containerRef}
-      id="first"
-      className="w-full md:max-w-7xl h-screen flex flex-col items-center justify-center gap-8"
-    >
-      <div className="w-full h-full flex items-center justify-center">
-        <DisplayGreet />
+    <section className="w-screen h-screen flex flex-col items-center justify-center">
+      <div
+        ref={containerRef}
+        id="first"
+        className="w-full md:max-w-7xl h-full  flex flex-col items-center justify-center gap-8"
+      >
+        <div className="p-8 flex items-center justify-center">
+          <DisplayGreet />
+        </div>
+        
       </div>
       <div>
-        <ScrollButton targetId="coverletter" />
-      </div>
+          <ScrollButton targetId="coverletter" />
+        </div>
     </section>
   );
 }

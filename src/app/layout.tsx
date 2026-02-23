@@ -29,7 +29,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
-        <main className="w-screen min-h-screen flex items-center justify-center flex-col bg-indigo-950 text-white">{children}</main>
+        <main className=" bg-indigo-950 text-white">{children}</main>
         <ContactList />
       </body>
     </html>
