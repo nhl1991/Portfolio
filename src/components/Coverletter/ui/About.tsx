@@ -1,10 +1,27 @@
 import { TypographyH3 } from "@/components/ui/shadcn/typography/TypographyH3";
 import { TypographyP } from "@/components/ui/shadcn/typography/TypographyP";
+import { useTranslations } from "next-intl";
+
+interface ABOUT {
+    title: string,
+    content: string
+}
 
 export default function About() {
-
+    const t = useTranslations()
+    const about = t.raw('about');
     return (
         <ul className="md:max-w-3xl flex flex-col gap-y-8">
+            {
+                about.map((item:ABOUT, idx: number)=>{
+                    return <li key={idx}>
+                <TypographyH3>{item.title}</TypographyH3>
+                <TypographyP>{item.content}
+                </TypographyP>
+            </li>
+                })
+            }
+{/*             
             <li>
                 <TypographyH3>1. UI/UX 디자인</TypographyH3>
                 <TypographyP>웹 개발을 처음 접했을 때, 다른 언어에 비해 결과가 즉각적으로 시각화된다는 점에서 큰 흥미를 느꼈습니다.
@@ -25,7 +42,7 @@ export default function About() {
                 <TypographyP>  현재는 프론트엔드 개발에 집중하고 있으나, 장기적으로는 프론트엔드와 백엔드를 모두 이해하는 풀스택 엔지니어로 성장하는 것을 목표로 하고 있습니다.
                     Firebase를 활용하여 인증 및 데이터 관리 기능을 구현해본 경험이 있으며, 향후 Prisma와 PostgreSQL을 학습하여 보다 구조화된 데이터 설계 및 서버 사이드 로직 구현 역량을 강화할 계획입니다.
                 </TypographyP>
-            </li>
+            </li> */}
         </ul>
     )
 }
