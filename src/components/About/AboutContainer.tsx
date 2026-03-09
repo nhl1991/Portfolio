@@ -1,4 +1,4 @@
-"use client"
+
 import NextSectionButton from "../ui/NextSectionButton"
 import { TypographyH1 } from "../ui/shadcn/typography/TypographyH1"
 import About from "./ui/About"

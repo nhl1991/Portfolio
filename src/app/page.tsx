@@ -1,15 +1,19 @@
 
-import Introduction from "@/components/Introduction/Introduction";
-import Projects from "../components/Projects/Projects";
 import AboutContainer from "@/components/About/AboutContainer";
+import Introduction from "@/components/Introduction/Introduction";
+import { LocaleButton } from "@/components/LocaleButton";
+import ProjectContainer from "@/components/Projects/Projects";
 
-export default function Home() {
+
+export default async function Home() {
 
   return (
     <>
+
+      <LocaleButton />
       <Introduction />
       <AboutContainer />
-      <Projects />
+      <ProjectContainer />
       {/* <Outro /> */}
     </>
   );

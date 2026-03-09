@@ -1,0 +1,176 @@
+{
+  "summary": {
+    "name": "盧亨来(ノヒョンレ)",
+    "certificate": "情報処理技師(韓国国家資格)"
+  },
+  "about": [
+    {
+      "title": "1. UI/UXデザイン",
+      "content": "Web開発に初めて触れた際、他の言語と比べて結果がすぐに視覚的に確認できる点に大きな魅力を感じました。単に機能を実装するだけでなく、ユーザーが直感的に理解し、快適に利用できるインターフェースを設計するプロセスに興味を持つようになりました。その後、プロジェクトを進める中で、ユーザー体験を意識した画面構成や導線設計について継続的に学習し、改善に取り組んでいます。"
+    },
+    {
+      "title": "2. リファクタリング",
+      "content": "複数の個人プロジェクトを進める中で、「より良い構造はないか」「可読性を高める方法は何か」といった点を常に考えるようになりました。その過程で、コードの動作だけでなく、保守性や拡張性を意識する習慣が身につきました。重複コードの削減、責務の分離、明確なネーミングなど、コード品質の向上に関心を持って取り組んでいます。今後も単なる機能実装にとどまらず、持続可能なコードを書くことを意識して開発に取り組みたいと考えています。"
+    },
+    {
+      "title": "3. バックエンドおよびフルスタックスキルの拡張",
+      "content": "現在はフロントエンド開発を中心に取り組んでいますが、将来的にはフロントエンドとバックエンドの両方を理解したフルスタックエンジニアとして成長することを目標としています。Firebaseを利用して認証やデータ管理機能を実装した経験があり、今後はPrismaやPostgreSQLを学習し、より体系的なデータ設計やサーバーサイドロジックの実装力を高めていきたいと考えています。"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Lotto",
+      "description": "韓国の「LOTTO 6/45」に対応した番号生成・抽選支援アプリです。",
+      "URL": "https://nhl1991.github.io/Lotto-Generator/",
+      "Image": "/src/thumbnail/Lotto.png",
+      "github": "https://github.com/nhl1991/Lotto-Generator",
+      "language": [
+        "HTML5",
+        "TypeScript",
+        "CSS3"
+      ],
+      "framework": [
+        "Next.js"
+      ],
+      "database": [
+        "なし"
+      ],
+      "clone": false
+    },
+    {
+      "title": "アニメ情報サイト",
+      "description": "「MyAnimeList.net」のAPIを利用し、レイアウトとCSSの学習のために作成したアニメ情報サイトです。",
+      "URL": "https://project-mal.vercel.app",
+      "Image": "/src/thumbnail/project-mal.png",
+      "github": "https://github.com/nhl1991/ProjectMAL/tree/dev",
+      "language": [
+        "HTML5",
+        "TypeScript",
+        "CSS3"
+      ],
+      "framework": [
+        "Next.JS"
+      ],
+      "database": [
+        "なし"
+      ],
+      "clone": false
+    },
+    {
+      "title": "Photo Album",
+      "description": "「FIREBASE」と「NEXT.JS」を利用し「Flickr」風の写真シェアサイトです。「いいね」と「いいね」に基づいた写真を「フェバリット」を実装しました。",
+      "URL": "https://photo-album-gilt.vercel.app/",
+      "Image": "/src/thumbnail/project-photo-album.png",
+      "github": "https://github.com/nhl1991/photo-album",
+      "language": [
+        "HTML5",
+        "TypeScript",
+        "CSS3"
+      ],
+      "framework": [
+        "Next.JS"
+      ],
+      "database": [
+        "Firebase"
+      ],
+      "clone": false
+    },
+    {
+      "title": "Circling Navigation",
+      "description": "スクロールでメーニュが回る簡単なサイトです。",
+      "URL": "https://project-new-circling-navigation.vercel.app",
+      "Image": "/src/thumbnail/project-circling-navigation.png",
+      "github": "https://github.com/nhl1991/project-new-circling-navigation",
+      "language": [
+        "HTML5",
+        "TypeScript",
+        "CSS3"
+      ],
+      "framework": [
+        "Next.JS"
+      ],
+      "database": [
+        "なし"
+      ],
+      "clone": false
+    },
+    {
+      "title": "Todo list",
+      "description": "「Next.js」と「Nest.js」を用いて作ったTODOアップです。",
+      "URL": "https://next-js-todo-client.vercel.app/",
+      "github": "https://github.com/nhl1991/-NextJS-Todo-Client",
+      "Image": "/src/thumbnail/project-todo.png",
+      "language": [
+        "HTML5",
+        "TypeScript",
+        "CSS3"
+      ],
+      "framework": [
+        "Next.JS",
+        "Nest.js(Render)"
+      ],
+      "database": [
+        "Postgres(NEON)"
+      ],
+      "clone": false
+    },
+    {
+      "title": "Next.JS Demo",
+      "description": "「NEXT.JS」を独学しながら、多様なことを試したものをまとめたサイトです。",
+      "URL": "https://nextjs-example-demo.vercel.app/",
+      "github": "https://github.com/nhl1991/nextjs-example-demo",
+      "Image": "/src/thumbnail/nextjs-demo.png",
+      "language": [
+        "HTML5",
+        "TypeScript",
+        "CSS3"
+      ],
+      "framework": [
+        "Next.JS"
+      ],
+      "database": [
+        "なし"
+      ],
+      "clone": false
+    },
+    {
+      "title": "Nwitter Reloaded",
+      "description": "Firebaseを学びながら行いました。「ツイタ」と言うSNSを倣ったクローンコティングサイトです。",
+      "URL": "https://nwitter-reloaded-2d0a7.web.app/",
+      "Image": "/src/thumbnail/project-nwitter-reloaded.png",
+      "github": "https://github.com/nhl1991/nomad-clone/tree/main/nwitter-reloaded",
+      "language": [
+        "HTML5",
+        "TypeScript",
+        "CSS3"
+      ],
+      "framework": [
+        "React",
+        "Vite"
+      ],
+      "database": [
+        "Firebase"
+      ],
+      "clone": true
+    },
+    {
+      "title": "Nomad Movie",
+      "description": "Next.jsの基礎を学ぶため、映画情報サイトを模倣してクローンコーディングを行いました。映画リストの取得、詳細ページ遷移などの実装を通じて、ルーティングや型定義を練習しました。",
+      "URL": "https://project-nomad-movie.vercel.app",
+      "Image": "/src/thumbnail/project-nomad-movie.png",
+      "github": "https://github.com/nhl1991/project-nomad-movie",
+      "language": [
+        "HTML5",
+        "TypeScript",
+        "CSS3"
+      ],
+      "framework": [
+        "Next.JS"
+      ],
+      "database": [
+        "なし"
+      ],
+      "clone": true
+    }
+  ]
+}

@@ -1,20 +1,25 @@
-"use client";
+"use client"
 import Image from "next/image";
-import { projects } from "@/lib/projects_ko.json";
 import { useStore } from "@/lib/stores";
 import { Project } from "@/lib/interface";
+import { TypographyH1 } from "@/components/ui/shadcn/typography/TypographyH1";
+import { useTranslations } from "next-intl";
 
 export default function ProjectNavigation() {
   // React.MouseEventHandler<HTMLAnchorElement>
 
   const { setItem, setIsModalOpen } = useStore();
-
+  const t = useTranslations();
+  const projects = t.raw('projects')
   return (
     <div
-      className="w-full h-full p-4 gap-8 flex items-center justify-center-safe"
+      className="w-full h-full p-4 gap-8 flex flex-col items-center justify-center-safe"
     >
-      <div className="w-max grid-layout p-4 md:p-12 xl:p-24 bg-indigo-950 rounded-xl shadow-md">
-        {projects.map((item: Project, i) => {
+      <header className="py-20">
+        <TypographyH1>PROJECTS</TypographyH1>
+      </header>
+      <div className="grid-layout p-24">
+        {projects.map((item: Project, i: number) => {
           return (
             <article
               key={i}

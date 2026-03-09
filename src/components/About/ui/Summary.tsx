@@ -3,6 +3,7 @@ import { TypographyP } from "@/components/ui/shadcn/typography/TypographyP";
 import Badge from "./Badge";
 import FlagJP from "@/components/ui/svgIcon/FlagJP";
 import FlagUK from "@/components/ui/svgIcon/FlagUK";
+import { useTranslations } from "next-intl";
 
 export default function Summary() {
     const BADGES = [
@@ -30,11 +31,14 @@ export default function Summary() {
             alt: 'Next.js Badge'
         },
     ]
+
+    const t = useTranslations('summary')
+
     return (
         <ul className="md:max-w-3xl flex flex-col gap-y-8">
             <li >
                 <TypographyH3>NAME</TypographyH3>
-                <h4 className="text-4xl px-4 py-2">노형래</h4>
+                <p className="text-4xl px-4 py-2">{t('name')}</p>
             </li>
             <li>
                 <TypographyH3>Language</TypographyH3>
@@ -56,7 +60,7 @@ export default function Summary() {
             <li >
                 <TypographyH3>Certificate</TypographyH3>
                 <div className="w-max px-4 py-2">
-                    <span className="text-2xl"><TypographyP>정보처리기사</TypographyP></span>
+                    <span className="text-2xl"><TypographyP>{t('certificate')}</TypographyP></span>
                 </div>
             </li>
             <li >
