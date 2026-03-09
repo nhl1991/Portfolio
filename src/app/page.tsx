@@ -1,4 +1,4 @@
-"use server"
+
 import Coverletter from "@/components/Coverletter/CoverLetter";
 import Introduction from "@/components/Introduction/Introduction";
 import { LocaleButton } from "@/components/LocaleButton";

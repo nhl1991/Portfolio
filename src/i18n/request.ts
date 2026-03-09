@@ -1,3 +1,4 @@
+import { Locale, SUPPORTED_LOCALES } from '@/lib/interface';
 import {getRequestConfig} from 'next-intl/server';
 import { cookies } from 'next/headers';
  
@@ -6,7 +7,8 @@ export default getRequestConfig(async () => {
 //   const locale = 'jp';
   
   const store = await cookies();
-  const locale = store.get('locale')?.value || 'ko';
+  const cookieLocale = store.get('locale')?.value;
+  const locale:Locale = SUPPORTED_LOCALES.includes(cookieLocale as Locale) ? (cookieLocale as Locale) : 'ko';
  
   return {
     locale,

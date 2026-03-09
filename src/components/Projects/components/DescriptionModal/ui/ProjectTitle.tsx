@@ -17,7 +17,8 @@ export default function ProjectTitle({
       
       <div className="w-full flex  items-center justify-end gap-2">
         <LinkButton
-          href={"https://" + website}
+          href={website}
+          
           text="Website"
           bg={true}
         ></LinkButton>

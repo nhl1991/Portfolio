@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ContactList from "@/components/ui/ContactList";
-import { NextIntlClientProvider } from "next-intl";
+import { Locale, NextIntlClientProvider } from "next-intl";
+import { cookies } from "next/headers";
+import { isLocale } from "@/lib/utils";
+
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -25,9 +29,12 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
 
+  const store = await cookies()
+  const cookieLocale = store.get('locale')?.value
+  const locale: Locale = cookieLocale && isLocale(cookieLocale) ? cookieLocale : 'ko'
 
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
