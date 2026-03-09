@@ -20,7 +20,7 @@ function ProjectNavigationContainer() {
   return (
     <section
       id="projects"
-      className="w-screen h-screen flex flex-col"
+      className="w-screen min-h-screen flex flex-col"
       onMouseOver={(e) => e.stopPropagation()}
     >
 

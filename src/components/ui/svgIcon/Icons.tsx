@@ -16,6 +16,7 @@ export const EmailIcon = ({
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
     aria-hidden="true"
+    focusable="false"
   >
     <path
       strokeLinecap="round"
@@ -43,6 +44,7 @@ export const CloseIcon = ({
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
     aria-hidden="true"
+    focusable="false"
   >
     <path
       strokeLinecap="round"

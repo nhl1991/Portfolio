@@ -16,26 +16,23 @@ export default function ProjectTitle({
   const { setIsModalOpen } = useStore();
   return (
     <header className="w-full h-max flex flex-col items-center justify-end p-2">
-      
       <div className="w-full flex  items-center justify-end gap-2">
-        <Link 
+        <Link
           href={"https://" + website}
           aria-label="Website"
-          >
-            <GlobalAlt className="w-12 hover:stroke-gray-600 " />
-          </Link> 
-          <Link 
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <GlobalAlt className="w-12 hover:stroke-gray-600 " />
+        </Link>
+        <Link
           href={github}
-          aria-label="Github">
-            <Github className="w-10 hover:fill-gray-600 " />
-          </Link>
-        {/* <LinkButton
-          href={"https://" + website}
-          text="Website"
-          bg={true}
-        ></LinkButton>
-
-        <LinkButton href={github} text="Github" bg={true}></LinkButton> */}
+          aria-label="Github"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Github className="w-10 hover:fill-gray-600 " />
+        </Link>
         <button
           className="cursor-pointer"
           onClick={() => setIsModalOpen(false)}
