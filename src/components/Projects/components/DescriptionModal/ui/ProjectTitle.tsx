@@ -18,7 +18,7 @@ export default function ProjectTitle({
     <header className="w-full h-max flex flex-col items-center justify-end p-2">
       <div className="w-full flex  items-center justify-end gap-2">
         <Link
-          href={"https://" + website}
+          href={website}
           aria-label="Website"
           target="_blank"
           rel="noopener noreferrer"

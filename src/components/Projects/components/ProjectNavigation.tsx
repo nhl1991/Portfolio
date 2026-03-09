@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import Image from "next/image";
 import { useStore } from "@/lib/stores";
 import { Project } from "@/lib/interface";
@@ -13,11 +13,13 @@ export default function ProjectNavigation() {
   const projects = t.raw('projects')
   return (
     <div
-      className="w-full h-full p-4 gap-8 flex items-center justify-center-safe"
+      className="w-full h-full p-4 gap-8 flex flex-col items-center justify-center-safe"
     >
-      <TypographyH1>PROJECTS</TypographyH1>
+      <header className="py-20">
+        <TypographyH1>PROJECTS</TypographyH1>
+      </header>
       <div className="grid-layout p-24">
-        {projects.map((item: Project, i:number) => {
+        {projects.map((item: Project, i: number) => {
           return (
             <article
               key={i}

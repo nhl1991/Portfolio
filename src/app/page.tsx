@@ -1,8 +1,8 @@
 
-import Coverletter from "@/components/Coverletter/CoverLetter";
+import AboutContainer from "@/components/About/AboutContainer";
 import Introduction from "@/components/Introduction/Introduction";
 import { LocaleButton } from "@/components/LocaleButton";
-import Projects from "@/components/Projects/Projects";
+import ProjectContainer from "@/components/Projects/Projects";
 
 
 export default async function Home() {
@@ -13,7 +13,7 @@ export default async function Home() {
       <LocaleButton />
       <Introduction />
       <AboutContainer />
-      <Projects />
+      <ProjectContainer />
       {/* <Outro /> */}
     </>
   );

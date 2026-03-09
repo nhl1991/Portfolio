@@ -2,32 +2,20 @@
 import ProjectModal from "@/components/Projects/components/DescriptionModal/ProjectModal";
 import ProjectNavigation from "@/components/Projects/components/ProjectNavigation";
 import { useStore } from "@/lib/stores";
-import { TypographyH1 } from "../ui/shadcn/typography/TypographyH1";
-
-export default function Projects() {
 
 
-  return (
-    <>
-      <ProjectNavigationContainer />
-    </>
-  );
-}
 
-function ProjectNavigationContainer() {
+export default function ProjectContainer() {
   const { isModalOpen } = useStore();
 
   return (
     <section
       id="projects"
-      className="w-screen min-h-screen flex flex-col"
+      className="min-h-screen"
       onMouseOver={(e) => e.stopPropagation()}
     >
-
-
-      <header className="py-20"><TypographyH1>PROJECTS</TypographyH1></header>
-      <ProjectNavigation />
-      {isModalOpen ? <ProjectModal /> : null}
+        <ProjectNavigation />
+        {isModalOpen ? <ProjectModal /> : null}
     </section>
   );
 }
