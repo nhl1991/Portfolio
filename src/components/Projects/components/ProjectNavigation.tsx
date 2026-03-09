@@ -18,7 +18,7 @@ export default function ProjectNavigation() {
           return (
             <article
               key={i}
-              className=" shadow-md rounded-2xl overflow-hidden relative cursor-pointer "
+              className=" rounded-xl overflow-hidden relative cursor-pointer"
               onClick={() => {
                 setItem(item);
                 setIsModalOpen(true);
