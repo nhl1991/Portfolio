@@ -43,7 +43,7 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
 }
-
+/* 
 #intro_1 {
   font-size: clamp(4rem, 2rem + 10vw, 9rem);
 }
@@ -52,18 +52,22 @@
 }
 #intro_3 {
   font-size: clamp(1rem, 1.25rem + 2vw, 3rem);
-}
+} */
 
 h1 {
-  font-size: clamp(2rem, 2rem + 3vw, 4rem);
+  font-size: clamp(2rem, 2rem + 3vw, 8rem);
 }
 
 h2 {
-  font-size: clamp(1.75rem, 1.75rem + 2vw, 3.5rem);
+  font-size: clamp(1.75rem, 1.75rem + 2vw, 4.5rem);
 }
 
 h3 {
-  font-size: clamp(1rem, 1.5rem + 1vw, 2.5rem);
+  font-size: clamp(1rem, 1.5rem + 1vw, 1.25rem);
+}
+p {
+  
+  font-size: clamp(0.875rem, 0.8rem + 0.5vw, 1.125rem);
 }
 
 label {
@@ -211,7 +215,7 @@ rp {
 }
 
 .grid-layout {
-  @apply grid grid-cols-[repeat(4,minmax(240px,1fr))] grid-rows-[repeat(2,minmax(240px,1fr))]  gap-4;
+  @apply grid grid-cols-[repeat(4,minmax(120px,240px))] grid-rows-[repeat(2,minmax(120px,240px))]  gap-4;
 }
 @media (width < 1280px){
   .grid-layout {
@@ -226,7 +230,7 @@ rp {
   }
 
   .grid-layout {
-    @apply grid grid-cols-[repeat(3,minmax(120px,1fr))] grid-rows-[repeat(4,minmax(120px,1fr))]  gap-2;
+    @apply grid grid-cols-[repeat(3,minmax(80px,1fr))] grid-rows-[repeat(4,minmax(80px,1fr))]  gap-2;
   }
 }
 

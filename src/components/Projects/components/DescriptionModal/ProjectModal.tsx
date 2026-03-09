@@ -45,7 +45,7 @@ export default function ProjectModal() {
       ref={containerRef}
     >
       <div
-        className="dark:bg-slate-900 bg-indigo-950 rounded-2xl md:max-w-7xl  h-max w-full overflow-scroll p-2"
+        className="dark:bg-slate-900 bg-indigo-950 rounded-2xl md:max-w-7xl  md:aspect-[16/10] w-full overflow-scroll p-2 shadow-2xl"
         onClick={(e: MouseEvent<HTMLElement>) => {
           e.stopPropagation();
         }}
@@ -56,21 +56,22 @@ export default function ProjectModal() {
           github={item.github}
         />
 
-        <article className="flex items-center justify-center flex-col gap-2 p-2">
-          <div className="w-full flex flex-col gap-4 text-4xl p-2">
+        <article className="flex flex-col items-center justify-center gap-2 p-2">
+          <div className="flex md:flex-row flex-col gap-y-4 gap-x-12 text-4xl p-2">
             <ProjectPreviewImage
               image={item.Image}
               url={item.URL}
               github={item.github}
               title={item.title}
             />
-          </div>
-          <div className="flex flex-col gap-y-8 text-3xl p-2 ">
-            <ProjectStack
+             <ProjectStack
               language={item.language}
               framework={item.framework}
               database={item.database}
             />
+          </div>
+          <div className="flex flex-col-reverse gap-y-8 text-3xl p-2 ">
+           
             <ProjectDescription description={item.description} />
           </div>
         </article>

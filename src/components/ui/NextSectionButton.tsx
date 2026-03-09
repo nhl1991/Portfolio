@@ -15,7 +15,7 @@ export default function NextSectionButton({ targetId }: { targetId: string }) {
 
   return (
     <div id="button-next-container">
-      <button id={id} onClick={handleOnClick}>
+      <button id={id} onClick={handleOnClick} aria-label="Next section">
         <ChevronDoubleDown className="w-24 animate-bounce" />
         </button>
     </div>

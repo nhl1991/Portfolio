@@ -12,8 +12,8 @@ export default function ProjectNavigation() {
   const t = useTranslations();
   const projects = t.raw('projects')
   return (
-    <section
-      className={`w-screen min-h-screen p-4 flex items-center flex-col gap-8`}
+    <div
+      className="w-full h-full p-4 gap-8 flex items-center justify-center-safe"
     >
       <TypographyH1>PROJECTS</TypographyH1>
       <div className="grid-layout p-24">
@@ -21,15 +21,15 @@ export default function ProjectNavigation() {
           return (
             <article
               key={i}
-              className="w-full h-full shadow-md rounded-2xl overflow-hidden relative cursor-pointer "
+              className=" rounded-xl overflow-hidden relative cursor-pointer"
               onClick={() => {
                 setItem(item);
                 setIsModalOpen(true);
               }}
             >
               {item.clone ? (
-                <div className="w-full h-full absolute inset-0 flex items-center justify-center px-4 z-20">
-                  <p className="w-full text-4xl bg-black py-12">CLONE-CODED</p>
+                <div className="w-full h-full bg-black/80 absolute inset-0 flex items-center justify-center px-4 z-20">
+                  <p className="font-bold text-4xl">CLONE-CODING</p>
                 </div>
               ) : null}
 
@@ -44,6 +44,6 @@ export default function ProjectNavigation() {
           );
         })}
       </div>
-    </section>
+    </div>
   );
 }

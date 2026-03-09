@@ -12,7 +12,7 @@ export default async function Home() {
 
       <LocaleButton />
       <Introduction />
-      <Coverletter />
+      <AboutContainer />
       <Projects />
       {/* <Outro /> */}
     </>
