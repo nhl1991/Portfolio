@@ -22,7 +22,7 @@
             "title": "Lotto",
             "description": "한국 'LOTTO 6/45'에 맞춘 번호 생성 및 추첨 보조 애플리케이션입니다.",
             "URL": "https://nhl1991.github.io/Lotto-Generator/",
-            "Image": "/src/thumbnail/Lotto.png",
+            "image": "/src/thumbnail/Lotto.png",
             "github": "https://github.com/nhl1991/Lotto-Generator",
             "language": [
                 "HTML5",
@@ -41,7 +41,7 @@
             "title": "애니메이션 정보 사이트",
             "description": "MyAnimeList API를 활용하여 제작한 애니메이션 정보 웹사이트입니다. 레이아웃 설계와 CSS 학습을 목적으로 개발하였습니다.",
             "URL": "https://project-mal.vercel.app",
-            "Image": "/src/thumbnail/project-mal.png",
+            "image": "/src/thumbnail/project-mal.png",
             "github": "https://github.com/nhl1991/ProjectMAL/tree/dev",
             "language": [
                 "HTML5",
@@ -60,7 +60,7 @@
             "title": "Photo Album",
             "description": "Firebase와 Next.js를 활용하여 제작한 Flickr 스타일의 사진 공유 웹사이트입니다. 좋아요 기능 및 좋아요 기반 즐겨찾기(Favorite) 기능을 구현하였습니다.",
             "URL": "https://photo-album-gilt.vercel.app/",
-            "Image": "/src/thumbnail/project-photo-album.png",
+            "image": "/src/thumbnail/project-photo-album.png",
             "github": "https://github.com/nhl1991/photo-album",
             "language": [
                 "HTML5",
@@ -79,7 +79,7 @@
             "title": "Circling Navigation",
             "description": "스크롤에 따라 메뉴가 회전하는 인터랙션을 구현한 간단한 웹 프로젝트입니다.",
             "URL": "https://project-new-circling-navigation.vercel.app",
-            "Image": "/src/thumbnail/project-circling-navigation.png",
+            "image": "/src/thumbnail/project-circling-navigation.png",
             "github": "https://github.com/nhl1991/project-new-circling-navigation",
             "language": [
                 "HTML5",
@@ -99,7 +99,7 @@
             "description": "Next.js(프론트엔드)와 Nest.js(백엔드)를 활용하여 구현한 풀스택 TODO 애플리케이션입니다. REST API 설계 및 Postgres(NEON) 기반 데이터 저장 구조를 구현하였습니다.",
             "URL": "https://todolist-chi-red.vercel.app/",
             "github": "https://github.com/nhl1991/-NextJS-Todo-Client",
-            "Image": "/src/thumbnail/project-todo.png",
+            "image": "/src/thumbnail/project-todo.png",
             "language": [
                 "HTML5",
                 "TypeScript",
@@ -119,7 +119,7 @@
             "description": "Next.js를 독학하며 다양한 기능과 실험적인 구현을 정리한 데모 프로젝트입니다.",
             "URL": "https://nextjs-example-demo.vercel.app/",
             "github": "https://github.com/nhl1991/nextjs-example-demo",
-            "Image": "/src/thumbnail/nextjs-demo.png",
+            "image": "/src/thumbnail/nextjs-demo.png",
             "language": [
                 "HTML5",
                 "TypeScript",
@@ -137,7 +137,7 @@
             "title": "Nwitter Reloaded",
             "description": "Firebase 학습을 목적으로 Twitter 스타일 SNS를 클론 코딩한 프로젝트입니다. 인증 및 게시물 CRUD 기능을 구현하였습니다.",
             "URL": "https://nwitter-reloaded-2d0a7.web.app/",
-            "Image": "/src/thumbnail/project-nwitter-reloaded.png",
+            "image": "/src/thumbnail/project-nwitter-reloaded.png",
             "github": "https://github.com/nhl1991/nomad-clone/tree/main/nwitter-reloaded",
             "language": [
                 "HTML5",
@@ -157,7 +157,7 @@
             "title": "Nomad Movie",
             "description": "Next.js 기초 학습을 위해 영화 정보 사이트를 클론 코딩한 프로젝트입니다. 영화 목록 조회, 상세 페이지 구현 등을 통해 라우팅과 타입 정의를 연습하였습니다.",
             "URL": "https://project-nomad-movie.vercel.app",
-            "Image": "/src/thumbnail/project-nomad-movie.png",
+            "image": "/src/thumbnail/project-nomad-movie.png",
             "github": "https://github.com/nhl1991/project-nomad-movie",
             "language": [
                 "HTML5",

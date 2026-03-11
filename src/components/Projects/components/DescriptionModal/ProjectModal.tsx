@@ -59,7 +59,7 @@ export default function ProjectModal() {
         <article className="flex flex-col items-center justify-center gap-2 p-2">
           <div className="flex md:flex-row flex-col gap-y-4 gap-x-12 text-4xl p-2">
             <ProjectPreviewImage
-              image={item.Image}
+              image={item.image}
               url={item.URL}
               github={item.github}
               title={item.title}

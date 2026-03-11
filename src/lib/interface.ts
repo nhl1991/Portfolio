@@ -2,7 +2,7 @@ export interface Project {
     title:       string;
     description: string;
     URL:         string;
-    Image:       string;
+    image:       string;
     language:    string[];
     framework:   string[];
     database:    string[];
