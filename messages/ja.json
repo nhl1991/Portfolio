@@ -157,7 +157,7 @@
       "title": "Nomad Movie",
       "description": "Next.jsの基礎を学ぶため、映画情報サイトを模倣してクローンコーディングを行いました。映画リストの取得、詳細ページ遷移などの実装を通じて、ルーティングや型定義を練習しました。",
       "URL": "https://project-nomad-movie.vercel.app",
-      "Image": "/src/thumbnail/project-nomad-movie.png",
+      "image": "/src/thumbnail/project-nomad-movie.png",
       "github": "https://github.com/nhl1991/project-nomad-movie",
       "language": [
         "HTML5",
