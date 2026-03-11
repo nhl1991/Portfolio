@@ -52,7 +52,7 @@ export default function ProjectModal() {
       >
         <ProjectTitle
           title={item.title}
-          website={item.URL}
+          website={item.url}
           github={item.github}
         />
 
@@ -60,7 +60,7 @@ export default function ProjectModal() {
           <div className="flex md:flex-row flex-col gap-y-4 gap-x-12 text-4xl p-2">
             <ProjectPreviewImage
               image={item.image}
-              url={item.URL}
+              url={item.url}
               github={item.github}
               title={item.title}
             />

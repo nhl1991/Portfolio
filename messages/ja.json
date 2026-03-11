@@ -59,7 +59,7 @@
     {
       "title": "Photo Album",
       "description": "「FIREBASE」と「NEXT.JS」を利用し「Flickr」風の写真シェアサイトです。「いいね」と「いいね」に基づいた写真を「フェバリット」を実装しました。",
-      "URL": "https://photo-album-gilt.vercel.app/",
+      "url": "https://photo-album-gilt.vercel.app/",
       "image": "/src/thumbnail/project-photo-album.png",
       "github": "https://github.com/nhl1991/photo-album",
       "language": [
@@ -78,7 +78,7 @@
     {
       "title": "Circling Navigation",
       "description": "スクロールでメーニュが回る簡単なサイトです。",
-      "URL": "https://project-new-circling-navigation.vercel.app",
+      "url": "https://project-new-circling-navigation.vercel.app",
       "image": "/src/thumbnail/project-circling-navigation.png",
       "github": "https://github.com/nhl1991/project-new-circling-navigation",
       "language": [
@@ -97,7 +97,7 @@
     {
       "title": "Todo list",
       "description": "「Next.js」と「Nest.js」を用いて作ったTODOアップです。",
-      "URL": "https://next-js-todo-client.vercel.app/",
+      "url": "https://next-js-todo-client.vercel.app/",
       "github": "https://github.com/nhl1991/-NextJS-Todo-Client",
       "image": "/src/thumbnail/project-todo.png",
       "language": [
@@ -117,7 +117,7 @@
     {
       "title": "Next.JS Demo",
       "description": "「NEXT.JS」を独学しながら、多様なことを試したものをまとめたサイトです。",
-      "URL": "https://nextjs-example-demo.vercel.app/",
+      "url": "https://nextjs-example-demo.vercel.app/",
       "github": "https://github.com/nhl1991/nextjs-example-demo",
       "image": "/src/thumbnail/nextjs-demo.png",
       "language": [
@@ -136,7 +136,7 @@
     {
       "title": "Nwitter Reloaded",
       "description": "Firebaseを学びながら行いました。「ツイタ」と言うSNSを倣ったクローンコティングサイトです。",
-      "URL": "https://nwitter-reloaded-2d0a7.web.app/",
+      "url": "https://nwitter-reloaded-2d0a7.web.app/",
       "image": "/src/thumbnail/project-nwitter-reloaded.png",
       "github": "https://github.com/nhl1991/nomad-clone/tree/main/nwitter-reloaded",
       "language": [
@@ -156,7 +156,7 @@
     {
       "title": "Nomad Movie",
       "description": "Next.jsの基礎を学ぶため、映画情報サイトを模倣してクローンコーディングを行いました。映画リストの取得、詳細ページ遷移などの実装を通じて、ルーティングや型定義を練習しました。",
-      "URL": "https://project-nomad-movie.vercel.app",
+      "url": "https://project-nomad-movie.vercel.app",
       "image": "/src/thumbnail/project-nomad-movie.png",
       "github": "https://github.com/nhl1991/project-nomad-movie",
       "language": [
