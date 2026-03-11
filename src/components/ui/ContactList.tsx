@@ -3,7 +3,7 @@ import Link from "next/link";
 import Github from "./svgIcon/Github";
 export default function ContactList() {
   return (
-    <aside className="flex flex-row fixed h-max w-max bottom-30 right-16 gap-4 p-4">
+    <aside className="flex flex-row fixed h-max w-max bottom-5 md:bottom-30 right-16 gap-4 p-4">
       {/* Github - Navigate to Github */}
       <Link
         title="github"
