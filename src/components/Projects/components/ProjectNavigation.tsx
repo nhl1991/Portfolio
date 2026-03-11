@@ -39,7 +39,7 @@ export default function ProjectNavigation() {
                 className="object-cover z-10 hover:scale-115 transition-transform duration-500"
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
-                src={item.Image}
+                src={item.image}
                 alt={item.title}
               />
             </article>
