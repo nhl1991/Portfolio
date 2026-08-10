@@ -21,7 +21,7 @@
     {
       "title": "Lotto",
       "description": "韓国の「LOTTO 6/45」に対応した番号生成・抽選支援アプリです。",
-      "URL": "https://nhl1991.github.io/Lotto-Generator/",
+      "url": "https://nhl1991.github.io/Lotto-Generator/",
       "image": "/src/thumbnail/Lotto.png",
       "github": "https://github.com/nhl1991/Lotto-Generator",
       "language": [
@@ -40,7 +40,7 @@
     {
       "title": "アニメ情報サイト",
       "description": "「MyAnimeList.net」のAPIを利用し、レイアウトとCSSの学習のために作成したアニメ情報サイトです。",
-      "URL": "https://project-mal.vercel.app",
+      "url": "https://project-mal.vercel.app",
       "image": "/src/thumbnail/project-mal.png",
       "github": "https://github.com/nhl1991/ProjectMAL/tree/dev",
       "language": [
