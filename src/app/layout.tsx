@@ -1,20 +1,30 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Plus_Jakarta_Sans, Noto_Sans_KR, Noto_Sans_JP, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
-import ContactList from "@/components/ui/ContactList";
 import { Locale, NextIntlClientProvider } from "next-intl";
 import { cookies } from "next/headers";
 import { isLocale } from "@/lib/utils";
 
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const jakarta = Plus_Jakarta_Sans({
+  variable: "--font-jakarta",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const notoKR = Noto_Sans_KR({
+  variable: "--font-noto-kr",
   subsets: ["latin"],
+});
+
+const notoJP = Noto_Sans_JP({
+  variable: "--font-noto-jp",
+  subsets: ["latin"],
+});
+
+const plexMono = IBM_Plex_Mono({
+  variable: "--font-plex-mono",
+  subsets: ["latin"],
+  weight: ["500"],
 });
 
 const SITE_URL = "https://portfolio-laslark1991.vercel.app/";
@@ -68,12 +78,11 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
+        className={`${jakarta.variable} ${notoKR.variable} ${notoJP.variable} ${plexMono.variable} antialiased bg-background text-foreground`}
       >
         <NextIntlClientProvider>
-          <main className=" bg-indigo-950 text-white">{children}</main>
+          <main>{children}</main>
         </NextIntlClientProvider>
-        <ContactList />
       </body>
     </html>
   );

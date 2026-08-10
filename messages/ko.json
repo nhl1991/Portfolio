@@ -3,6 +3,14 @@
     "name": "노형래",
     "certificate": "정보처리기사"
   },
+    "appHeader": {
+        "subtitle": "Frontend / Fullstack Developer",
+        "pillCategory": "개발자 도구",
+        "pillStatus": "구직 중",
+        "version": "v0.4.0-beta · 주니어",
+        "ctaContact": "문의하기",
+        "ctaHistory": "이력 보기"
+    },
     "about": [
         {
             "title": "1. UI/UX 디자인",
@@ -40,6 +48,7 @@
         {
             "title": "애니메이션 정보 사이트",
             "description": "MyAnimeList API를 활용하여 제작한 애니메이션 정보 웹사이트입니다. 레이아웃 설계와 CSS 학습을 목적으로 개발하였습니다.",
+            "highlight": "외부 API 연동, URL 동기화 필터·무한스크롤 등 UX 디테일까지 반복 개선",
             "url": "https://project-mal.vercel.app",
             "image": "/src/thumbnail/project-mal.png",
             "github": "https://github.com/nhl1991/ProjectMAL/tree/dev",
@@ -59,6 +68,7 @@
         {
             "title": "Photo Album",
             "description": "Firebase와 Next.js를 활용하여 제작한 Flickr 스타일의 사진 공유 웹사이트입니다. 좋아요 기능 및 좋아요 기반 즐겨찾기(Favorite) 기능을 구현하였습니다.",
+            "highlight": "Firebase 실시간 동기화 기반 좋아요·즐겨찾기, 이후 Prisma+PostgreSQL 전환까지 스스로 설계",
             "url": "https://photo-album-gilt.vercel.app/",
             "image": "/src/thumbnail/project-photo-album.png",
             "github": "https://github.com/nhl1991/photo-album",
@@ -97,6 +107,7 @@
         {
             "title": "Todo List",
             "description": "Next.js(프론트엔드)와 Nest.js(백엔드)를 활용하여 구현한 풀스택 TODO 애플리케이션입니다. REST API 설계 및 Postgres(NEON) 기반 데이터 저장 구조를 구현하였습니다.",
+            "highlight": "Next.js+NestJS 풀스택 독립 구현, REST API 설계와 최신 Next.js 패턴 적용",
             "url": "https://todolist-chi-red.vercel.app/",
             "github": "https://github.com/nhl1991/-NextJS-Todo-Client",
             "image": "/src/thumbnail/project-todo.png",
@@ -172,5 +183,46 @@
             ],
             "clone": true
         }
-    ]
+    ],
+    "whatsNew": [
+        {
+            "version": "v0.4.0-beta",
+            "description": "일본 개발자 이직 준비 중 → 포트폴리오 공개",
+            "current": true
+        },
+        {
+            "version": "v0.3.0",
+            "description": "Next.js + NestJS 풀스택 프로젝트 완성",
+            "current": false
+        },
+        {
+            "version": "v0.1.0",
+            "description": "개발 학습 시작 → Next.js, TypeScript 독학",
+            "current": false
+        }
+    ],
+    "sectionTitles": {
+        "about": "ABOUT",
+        "whatsNew": "새로운 소식",
+        "info": "정보"
+    },
+    "projectSections": {
+        "featured": "Featured",
+        "clone": "Clone Coding",
+        "others": "Others"
+    },
+    "info": [
+        { "key": "제공자", "value": "nhl1991" },
+        { "key": "카테고리", "value": "개발자 도구" },
+        { "key": "호환성", "value": "Next.js · React · TypeScript · NestJS · Firebase" },
+        { "key": "언어", "value": "한국어, 일본어" },
+        { "key": "프로젝트", "value": "8개" }
+    ],
+    "japanese": {
+        "title": "일본어",
+        "content": "JLPT N2 · TOEIC 940 · Todo List 프로젝트의 README.md를 일본어로 직접 작성했습니다."
+    },
+    "contact": {
+        "title": "연락처"
+    }
 }

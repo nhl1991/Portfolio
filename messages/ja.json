@@ -3,6 +3,14 @@
     "name": "盧亨来(ノヒョンレ)",
     "certificate": "情報処理技師(韓国国家資格)"
   },
+  "appHeader": {
+    "subtitle": "フロントエンド／フルスタックエンジニア",
+    "pillCategory": "開発者ツール",
+    "pillStatus": "求職中",
+    "version": "v0.4.0-beta・ジュニア",
+    "ctaContact": "お問い合わせ",
+    "ctaHistory": "履歴を見る"
+  },
   "about": [
     {
       "title": "1. UI/UXデザイン",
@@ -40,6 +48,7 @@
     {
       "title": "アニメ情報サイト",
       "description": "「MyAnimeList.net」のAPIを利用し、レイアウトとCSSの学習のために作成したアニメ情報サイトです。",
+      "highlight": "外部API連携、URL同期フィルターや無限スクロールなどUXの細部まで継続的に改善",
       "url": "https://project-mal.vercel.app",
       "image": "/src/thumbnail/project-mal.png",
       "github": "https://github.com/nhl1991/ProjectMAL/tree/dev",
@@ -59,6 +68,7 @@
     {
       "title": "Photo Album",
       "description": "「FIREBASE」と「NEXT.JS」を利用し「Flickr」風の写真シェアサイトです。「いいね」と「いいね」に基づいた写真を「フェバリット」を実装しました。",
+      "highlight": "Firebaseのリアルタイム同期を活かしたいいね・お気に入り機能。今後のPrisma+PostgreSQL移行まで自ら設計",
       "url": "https://photo-album-gilt.vercel.app/",
       "image": "/src/thumbnail/project-photo-album.png",
       "github": "https://github.com/nhl1991/photo-album",
@@ -97,6 +107,7 @@
     {
       "title": "Todo list",
       "description": "「Next.js」と「Nest.js」を用いて作ったTODOアプリです。",
+      "highlight": "Next.js+NestJSでフロントとバックエンドを独立実装。REST API設計と最新のNext.jsパターンを適用",
       "url": "https://todolist-chi-red.vercel.app/",
       "github": "https://github.com/nhl1991/-NextJS-Todo-Client",
       "image": "/src/thumbnail/project-todo.png",
@@ -172,5 +183,46 @@
       ],
       "clone": true
     }
-  ]
+  ],
+  "whatsNew": [
+    {
+      "version": "v0.4.0-beta",
+      "description": "日本でのエンジニア転職を準備中 → ポートフォリオを公開",
+      "current": true
+    },
+    {
+      "version": "v0.3.0",
+      "description": "Next.js + NestJSのフルスタックプロジェクトを完成",
+      "current": false
+    },
+    {
+      "version": "v0.1.0",
+      "description": "開発学習を開始 → Next.js、TypeScriptを独学",
+      "current": false
+    }
+  ],
+  "sectionTitles": {
+    "about": "ABOUT",
+    "whatsNew": "最新情報",
+    "info": "情報"
+  },
+  "projectSections": {
+    "featured": "Featured",
+    "clone": "Clone Coding",
+    "others": "Others"
+  },
+  "info": [
+    { "key": "提供元", "value": "nhl1991" },
+    { "key": "カテゴリ", "value": "開発者ツール" },
+    { "key": "互換性", "value": "Next.js・React・TypeScript・NestJS・Firebase" },
+    { "key": "言語", "value": "韓国語、日本語" },
+    { "key": "プロジェクト", "value": "8件" }
+  ],
+  "japanese": {
+    "title": "日本語",
+    "content": "JLPT N2・TOEIC 940・Todo Listプロジェクトのreadme.mdを日本語で直接執筆しました。"
+  },
+  "contact": {
+    "title": "連絡先"
+  }
 }

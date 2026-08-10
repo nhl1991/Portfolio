@@ -1,31 +1,14 @@
-import { useState } from "react";
 import Image from "next/image";
-import LinkButton from "@/components/ui/LinkButton";
+
 export default function ProjectPreviewImage({
   title,
   image,
-  url,
-  github,
 }: {
   title: string;
   image: string;
-  url: string;
-  github: string;
 }) {
-  const [isHover, setIsHover] = useState(false);
-  const onMouseEnter = () => {
-    setIsHover(true);
-  };
-  const onMouseLeave = () => {
-    setIsHover(false);
-  };
-
   return (
-    <figure
-      className="w-xl aspect-[16/10] relative rounded-2xl overflow-hidden"
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
-    >
+    <figure className="w-full md:flex-1 md:min-w-0 aspect-[16/10] relative rounded-2xl overflow-hidden border border-border">
       <Image
         className="object-cover"
         src={image}
@@ -34,18 +17,6 @@ export default function ProjectPreviewImage({
         sizes="(max-width: 768px) 100vw, 33vw"
         priority
       />
-      {isHover ? (
-        <div className="w-full h-full absolute z-50 flex items-center justify-center bg-black/90">
-          <div className="flex items-center justify-center gap-2">
-            <LinkButton
-              href={"http://" + url}
-              text="Website"
-              bg={false}
-            ></LinkButton>
-            <LinkButton href={github} text="Github" bg={false}></LinkButton>
-          </div>
-        </div>
-      ) : null}
     </figure>
   );
 }

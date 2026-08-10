@@ -12,5 +12,18 @@ const customJestConfig: Config = {
   testEnvironment: "jsdom",
 };
 
-// createJestConfig is exported this way to ensure that next/jest can load the Next.js config which is async
-export default createJestConfig(customJestConfig);
+const nextJestConfig = createJestConfig(customJestConfig);
+
+// next/jest concatenates its own transformIgnorePatterns with any we pass in,
+// and jest ignores a node_modules file if ANY pattern matches it - so a plain
+// addition can't un-ignore next-intl/use-intl (they still match next/jest's
+// broad default pattern). Override the merged array instead of extending it.
+const finalJestConfig = async () => {
+  const config = await nextJestConfig();
+  return {
+    ...config,
+    transformIgnorePatterns: ["/node_modules/(?!next-intl|use-intl)/"],
+  };
+};
+
+export default finalJestConfig;

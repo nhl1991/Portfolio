@@ -3,6 +3,14 @@
     "name": "Hyeongrae Noh",
     "certificate": "Engineer Information Processing (Korea National Certificate)"
   },
+  "appHeader": {
+    "subtitle": "Frontend / Fullstack Developer",
+    "pillCategory": "Developer Tools",
+    "pillStatus": "Open to Work",
+    "version": "v0.4.0-beta · Junior",
+    "ctaContact": "Contact",
+    "ctaHistory": "View History"
+  },
   "about": [
     {
       "title": "1. UI/UX Design",
@@ -40,6 +48,7 @@
     {
       "title": "Anime Info Site",
       "description": "An anime information website built using the MyAnimeList API. Developed to practice layout design and CSS.",
+      "highlight": "External API integration, iterated on UX details like URL-synced filters and infinite scroll",
       "url": "https://project-mal.vercel.app",
       "image": "/src/thumbnail/project-mal.png",
       "github": "https://github.com/nhl1991/ProjectMAL/tree/dev",
@@ -59,6 +68,7 @@
     {
       "title": "Photo Album",
       "description": "A Flickr-style photo sharing website built with Firebase and Next.js. Implemented a like feature and a like-based favorites list.",
+      "highlight": "Firebase real-time sync powers likes and favorites; independently planned the future Prisma + PostgreSQL migration",
       "url": "https://photo-album-gilt.vercel.app/",
       "image": "/src/thumbnail/project-photo-album.png",
       "github": "https://github.com/nhl1991/photo-album",
@@ -97,6 +107,7 @@
     {
       "title": "Todo List",
       "description": "A full-stack TODO application built with Next.js (frontend) and Nest.js (backend). Designed a REST API and implemented data storage with Postgres (NEON).",
+      "highlight": "Independently built both the Next.js frontend and NestJS backend, designing the REST API with modern Next.js patterns",
       "url": "https://todolist-chi-red.vercel.app/",
       "github": "https://github.com/nhl1991/-NextJS-Todo-Client",
       "image": "/src/thumbnail/project-todo.png",
@@ -172,5 +183,46 @@
       ],
       "clone": true
     }
-  ]
+  ],
+  "whatsNew": [
+    {
+      "version": "v0.4.0-beta",
+      "description": "Preparing to switch careers as a developer in Japan → published this portfolio",
+      "current": true
+    },
+    {
+      "version": "v0.3.0",
+      "description": "Completed a full-stack project with Next.js + NestJS",
+      "current": false
+    },
+    {
+      "version": "v0.1.0",
+      "description": "Started learning development → self-taught Next.js and TypeScript",
+      "current": false
+    }
+  ],
+  "sectionTitles": {
+    "about": "About",
+    "whatsNew": "What's New",
+    "info": "Info"
+  },
+  "projectSections": {
+    "featured": "Featured",
+    "clone": "Clone Coding",
+    "others": "Others"
+  },
+  "info": [
+    { "key": "Provider", "value": "nhl1991" },
+    { "key": "Category", "value": "Developer Tools" },
+    { "key": "Compatibility", "value": "Next.js · React · TypeScript · NestJS · Firebase" },
+    { "key": "Languages", "value": "Korean, Japanese" },
+    { "key": "Projects", "value": "8" }
+  ],
+  "japanese": {
+    "title": "Japanese",
+    "content": "JLPT N2 · TOEIC 940 · Wrote the README.md for the Todo List project entirely in Japanese."
+  },
+  "contact": {
+    "title": "Contact"
+  }
 }
