@@ -17,5 +17,5 @@ export interface Item {
     item_description: ItemDescription;
 }
 
-export const SUPPORTED_LOCALES = ['ko', 'ja'] as const
-export type Locale = 'ko' | 'ja'
+export const SUPPORTED_LOCALES = ['ko', 'ja', 'en'] as const
+export type Locale = 'ko' | 'ja' | 'en'

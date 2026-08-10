@@ -1,10 +1,11 @@
+import { isLocale } from "@/lib/utils";
 import { cookies } from "next/headers";
 import { NextRequest, NextResponse } from "next/server";
 
 
 export async function POST(req: NextRequest) {
     const { locale } = await req.json()
-    if (locale !== 'ja' && locale !== 'ko') return NextResponse.json(
+    if (!isLocale(locale)) return NextResponse.json(
         { error: 'Unsupported locale' },
         { status: 400 }
     )
