@@ -1,0 +1,176 @@
+{
+  "summary": {
+    "name": "Hyeongrae Noh",
+    "certificate": "Engineer Information Processing (Korea National Certificate)"
+  },
+  "about": [
+    {
+      "title": "1. UI/UX Design",
+      "content": "When I first started web development, I was drawn to how immediately the results could be visualized compared to other languages. Beyond simply implementing features, I became fascinated with designing interfaces that users can understand intuitively and use comfortably. Since then, I have continued to study and pay close attention to screen composition and user-flow design with the user experience in mind."
+    },
+    {
+      "title": "2. Refactoring",
+      "content": "While working on several personal projects, I kept asking myself, \"Is there a better structure?\" and \"How can I improve readability?\" This led me to form a habit of considering maintainability and scalability, not just functionality. I have grown increasingly interested in improving code quality through removing unnecessary duplication, separating responsibilities, and using clear naming. Going forward, I want to focus on writing sustainable code, not just implementing features."
+    },
+    {
+      "title": "3. Expanding into Backend and Full-Stack Skills",
+      "content": "I am currently focused on frontend development, but my long-term goal is to grow into a full-stack engineer who understands both frontend and backend. I have experience implementing authentication and data management features using Firebase, and I plan to study Prisma and PostgreSQL to strengthen my ability to design more structured data models and implement server-side logic."
+    }
+  ],
+  "projects": [
+    {
+      "title": "Lotto",
+      "description": "A number generator and draw assistant application built for Korea's 'LOTTO 6/45'.",
+      "url": "https://nhl1991.github.io/Lotto-Generator/",
+      "image": "/src/thumbnail/Lotto.png",
+      "github": "https://github.com/nhl1991/Lotto-Generator",
+      "language": [
+        "HTML5",
+        "TypeScript",
+        "CSS3"
+      ],
+      "framework": [
+        "Next.js"
+      ],
+      "database": [
+        "None"
+      ],
+      "clone": false
+    },
+    {
+      "title": "Anime Info Site",
+      "description": "An anime information website built using the MyAnimeList API. Developed to practice layout design and CSS.",
+      "url": "https://project-mal.vercel.app",
+      "image": "/src/thumbnail/project-mal.png",
+      "github": "https://github.com/nhl1991/ProjectMAL/tree/dev",
+      "language": [
+        "HTML5",
+        "TypeScript",
+        "CSS3"
+      ],
+      "framework": [
+        "Next.js"
+      ],
+      "database": [
+        "None"
+      ],
+      "clone": false
+    },
+    {
+      "title": "Photo Album",
+      "description": "A Flickr-style photo sharing website built with Firebase and Next.js. Implemented a like feature and a like-based favorites list.",
+      "url": "https://photo-album-gilt.vercel.app/",
+      "image": "/src/thumbnail/project-photo-album.png",
+      "github": "https://github.com/nhl1991/photo-album",
+      "language": [
+        "HTML5",
+        "TypeScript",
+        "CSS3"
+      ],
+      "framework": [
+        "Next.js"
+      ],
+      "database": [
+        "Firebase"
+      ],
+      "clone": false
+    },
+    {
+      "title": "Circling Navigation",
+      "description": "A simple web project implementing a menu that rotates in response to scrolling.",
+      "url": "https://project-new-circling-navigation.vercel.app",
+      "image": "/src/thumbnail/project-circling-navigation.png",
+      "github": "https://github.com/nhl1991/project-new-circling-navigation",
+      "language": [
+        "HTML5",
+        "TypeScript",
+        "CSS3"
+      ],
+      "framework": [
+        "Next.js"
+      ],
+      "database": [
+        "None"
+      ],
+      "clone": false
+    },
+    {
+      "title": "Todo List",
+      "description": "A full-stack TODO application built with Next.js (frontend) and Nest.js (backend). Designed a REST API and implemented data storage with Postgres (NEON).",
+      "url": "https://todolist-chi-red.vercel.app/",
+      "github": "https://github.com/nhl1991/-NextJS-Todo-Client",
+      "image": "/src/thumbnail/project-todo.png",
+      "language": [
+        "HTML5",
+        "TypeScript",
+        "CSS3"
+      ],
+      "framework": [
+        "Next.js",
+        "Nest.js(Render)"
+      ],
+      "database": [
+        "Postgres(NEON)"
+      ],
+      "clone": false
+    },
+    {
+      "title": "Next.js Demo",
+      "description": "A demo project collecting various features and experiments while self-studying Next.js.",
+      "url": "https://nextjs-example-demo.vercel.app/",
+      "github": "https://github.com/nhl1991/nextjs-example-demo",
+      "image": "/src/thumbnail/nextjs-demo.png",
+      "language": [
+        "HTML5",
+        "TypeScript",
+        "CSS3"
+      ],
+      "framework": [
+        "Next.js"
+      ],
+      "database": [
+        "None"
+      ],
+      "clone": false
+    },
+    {
+      "title": "Nwitter Reloaded",
+      "description": "A clone-coded, Twitter-style SNS built to learn Firebase. Implemented authentication and CRUD functionality for posts.",
+      "url": "https://nwitter-reloaded-2d0a7.web.app/",
+      "image": "/src/thumbnail/project-nwitter-reloaded.png",
+      "github": "https://github.com/nhl1991/nomad-clone/tree/main/nwitter-reloaded",
+      "language": [
+        "HTML5",
+        "TypeScript",
+        "CSS3"
+      ],
+      "framework": [
+        "React",
+        "Vite"
+      ],
+      "database": [
+        "Firebase"
+      ],
+      "clone": true
+    },
+    {
+      "title": "Nomad Movie",
+      "description": "A clone-coded movie information site built to learn the fundamentals of Next.js. Practiced routing and type definitions through movie list retrieval and detail-page implementation.",
+      "url": "https://project-nomad-movie.vercel.app",
+      "image": "/src/thumbnail/project-nomad-movie.png",
+      "github": "https://github.com/nhl1991/project-nomad-movie",
+      "language": [
+        "HTML5",
+        "TypeScript",
+        "CSS3"
+      ],
+      "framework": [
+        "Next.js"
+      ],
+      "database": [
+        "None"
+      ],
+      "clone": true
+    }
+  ]
+}

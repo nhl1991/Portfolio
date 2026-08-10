@@ -49,7 +49,7 @@
         "CSS3"
       ],
       "framework": [
-        "Next.JS"
+        "Next.js"
       ],
       "database": [
         "なし"
@@ -68,7 +68,7 @@
         "CSS3"
       ],
       "framework": [
-        "Next.JS"
+        "Next.js"
       ],
       "database": [
         "Firebase"
@@ -77,7 +77,7 @@
     },
     {
       "title": "Circling Navigation",
-      "description": "スクロールでメーニュが回る簡単なサイトです。",
+      "description": "スクロールでメニューが回る簡単なサイトです。",
       "url": "https://project-new-circling-navigation.vercel.app",
       "image": "/src/thumbnail/project-circling-navigation.png",
       "github": "https://github.com/nhl1991/project-new-circling-navigation",
@@ -87,7 +87,7 @@
         "CSS3"
       ],
       "framework": [
-        "Next.JS"
+        "Next.js"
       ],
       "database": [
         "なし"
@@ -96,8 +96,8 @@
     },
     {
       "title": "Todo list",
-      "description": "「Next.js」と「Nest.js」を用いて作ったTODOアップです。",
-      "url": "https://next-js-todo-client.vercel.app/",
+      "description": "「Next.js」と「Nest.js」を用いて作ったTODOアプリです。",
+      "url": "https://todolist-chi-red.vercel.app/",
       "github": "https://github.com/nhl1991/-NextJS-Todo-Client",
       "image": "/src/thumbnail/project-todo.png",
       "language": [
@@ -106,7 +106,7 @@
         "CSS3"
       ],
       "framework": [
-        "Next.JS",
+        "Next.js",
         "Nest.js(Render)"
       ],
       "database": [
@@ -115,8 +115,8 @@
       "clone": false
     },
     {
-      "title": "Next.JS Demo",
-      "description": "「NEXT.JS」を独学しながら、多様なことを試したものをまとめたサイトです。",
+      "title": "Next.js Demo",
+      "description": "「Next.js」を独学しながら、多様なことを試したものをまとめたサイトです。",
       "url": "https://nextjs-example-demo.vercel.app/",
       "github": "https://github.com/nhl1991/nextjs-example-demo",
       "image": "/src/thumbnail/nextjs-demo.png",
@@ -126,7 +126,7 @@
         "CSS3"
       ],
       "framework": [
-        "Next.JS"
+        "Next.js"
       ],
       "database": [
         "なし"
@@ -135,7 +135,7 @@
     },
     {
       "title": "Nwitter Reloaded",
-      "description": "Firebaseを学びながら行いました。「ツイタ」と言うSNSを倣ったクローンコティングサイトです。",
+      "description": "Firebaseを学びながら行いました。「Twitter」風のSNSを模倣したクローンコーディングサイトです。",
       "url": "https://nwitter-reloaded-2d0a7.web.app/",
       "image": "/src/thumbnail/project-nwitter-reloaded.png",
       "github": "https://github.com/nhl1991/nomad-clone/tree/main/nwitter-reloaded",
@@ -165,7 +165,7 @@
         "CSS3"
       ],
       "framework": [
-        "Next.JS"
+        "Next.js"
       ],
       "database": [
         "なし"
