@@ -38,20 +38,20 @@ export default function Summary() {
         <ul className="md:max-w-3xl flex flex-col gap-y-8">
             <li >
                 <TypographyH3>NAME</TypographyH3>
-                <p className="text-4xl px-4 py-2">{t('name')}</p>
+                <p className="text-xl md:text-2xl font-bold px-4 py-2">{t('name')}</p>
             </li>
             <li>
                 <TypographyH3>Language</TypographyH3>
                 <div className="flex flex-col gap-y-4 py-4">
                     <div className="w-max flex gap-x-2 px-4 py-2">
                         <FlagJP />
-                        <span className="text-2xl">
+                        <span>
                             <TypographyP>JLPT N2</TypographyP>
                         </span>
                     </div>
                     <div className="w-max flex gap-x-2 px-4 py-2">
                         <FlagUK />
-                        <span className="text-2xl">
+                        <span>
                             <TypographyP>TOEIC 940</TypographyP>
                         </span>
                     </div>
@@ -60,7 +60,7 @@ export default function Summary() {
             <li >
                 <TypographyH3>Certificate</TypographyH3>
                 <div className="w-max px-4 py-2">
-                    <span className="text-2xl"><TypographyP>{t('certificate')}</TypographyP></span>
+                    <span><TypographyP>{t('certificate')}</TypographyP></span>
                 </div>
             </li>
             <li >

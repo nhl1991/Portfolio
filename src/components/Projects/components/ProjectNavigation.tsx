@@ -18,7 +18,7 @@ export default function ProjectNavigation() {
       <header className="py-20">
         <TypographyH1>PROJECTS</TypographyH1>
       </header>
-      <div className="grid-layout p-24">
+      <div className="grid-layout p-8 md:p-16">
         {projects.map((item: Project, i: number) => {
           return (
             <article
@@ -31,7 +31,7 @@ export default function ProjectNavigation() {
             >
               {item.clone ? (
                 <div className="w-full h-full bg-black/80 absolute inset-0 flex items-center justify-center px-4 z-20">
-                  <p className="font-bold text-4xl">CLONE-CODING</p>
+                  <p className="font-bold text-xl md:text-2xl">CLONE-CODING</p>
                 </div>
               ) : null}
 

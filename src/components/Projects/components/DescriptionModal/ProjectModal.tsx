@@ -57,7 +57,7 @@ export default function ProjectModal() {
         />
 
         <article className="flex flex-col items-center justify-center gap-2 p-2">
-          <div className="flex md:flex-row flex-col gap-y-4 gap-x-12 text-4xl p-2">
+          <div className="flex md:flex-row flex-col gap-y-4 gap-x-12 p-2">
             <ProjectPreviewImage
               image={item.image}
               url={item.url}
@@ -70,7 +70,7 @@ export default function ProjectModal() {
               database={item.database}
             />
           </div>
-          <div className="flex flex-col-reverse gap-y-8 text-3xl p-2 ">
+          <div className="flex flex-col-reverse gap-y-8 p-2 ">
            
             <ProjectDescription description={item.description} />
           </div>
