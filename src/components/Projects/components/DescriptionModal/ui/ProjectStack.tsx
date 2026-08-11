@@ -11,15 +11,13 @@ export default function ProjectStack({
   database: Array<string>;
 }) {
   return (
-    <figure className="flex flex-row gap-4 text-lg items-center justify-center">
-      <div className="w-max flex flex-col gap-4">
-        <ListTitle title="Language" />
-        <ListItem items={language} />
-        <ListTitle title="Framework" />
-        <ListItem items={framework} />
-        <ListTitle title="Database" />
-        <ListItem items={database} />
-      </div>
-    </figure>
+    <div className="w-full md:w-56 md:flex-none flex flex-col gap-3">
+      <ListTitle title="Language" />
+      <ListItem items={language} />
+      <ListTitle title="Framework" />
+      <ListItem items={framework} />
+      <ListTitle title="Database" />
+      <ListItem items={database} />
+    </div>
   );
 }

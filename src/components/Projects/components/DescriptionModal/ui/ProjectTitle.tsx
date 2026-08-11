@@ -1,7 +1,6 @@
 import Github from "@/components/ui/svgIcon/Github";
 import GlobalAlt from "@/components/ui/svgIcon/Global-Alt";
-import { CloseIcon } from "@/components/ui/svgIcon/Icons";
-import { useStore } from "@/lib/stores";
+import { DialogTitle } from "@/components/ui/shadcn/dialog";
 import Link from "next/link";
 
 export default function ProjectTitle({
@@ -13,35 +12,18 @@ export default function ProjectTitle({
   website: string;
   github: string;
 }) {
-  const { setIsModalOpen } = useStore();
   return (
-    <header className="w-full h-max flex flex-col items-center justify-end p-2">
-      <div className="w-full flex  items-center justify-end gap-2">
-        <Link
-          href={website}
-          aria-label="Website"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <GlobalAlt className="w-12 hover:stroke-gray-600 " />
+    <header className="w-full flex flex-col items-center gap-2 pr-8">
+      <DialogTitle className="text-lg font-extrabold text-center">
+        {title.toUpperCase()}
+      </DialogTitle>
+      <div className="flex items-center gap-3">
+        <Link href={website} aria-label="Website" target="_blank" rel="noopener noreferrer">
+          <GlobalAlt className="w-6 h-6 text-muted-foreground hover:text-primary" />
         </Link>
-        <Link
-          href={github}
-          aria-label="Github"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Github className="w-10 hover:fill-gray-600 " />
+        <Link href={github} aria-label="Github" target="_blank" rel="noopener noreferrer">
+          <Github className="w-5 h-5 fill-muted-foreground hover:fill-primary" />
         </Link>
-        <button
-          className="cursor-pointer"
-          onClick={() => setIsModalOpen(false)}
-        >
-          <CloseIcon className="w-14" />
-        </button>
-      </div>
-      <div className="w-full flex items-center justify-center">
-        <h2 className="font-bold px-4 py-1">{title.toUpperCase()}</h2>
       </div>
     </header>
   );
