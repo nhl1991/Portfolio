@@ -218,7 +218,7 @@
     { "key": "言語", "value": "韓国語、日本語" },
     { "key": "プロジェクト", "value": "8件" }
   ],
-  "japanese": {
+  "language": {
     "title": "日本語",
     "content": "JLPT N2・TOEIC 940・Todo Listプロジェクトのreadme.mdを日本語で直接執筆しました。"
   },
