@@ -218,8 +218,8 @@
         { "key": "언어", "value": "한국어, 일본어" },
         { "key": "프로젝트", "value": "8개" }
     ],
-    "japanese": {
-        "title": "일본어",
+    "language": {
+        "title": "어학",
         "content": "JLPT N2 · TOEIC 940 · Todo List 프로젝트의 README.md를 일본어로 직접 작성했습니다."
     },
     "contact": {

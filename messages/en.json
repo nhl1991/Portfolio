@@ -218,7 +218,7 @@
     { "key": "Languages", "value": "Korean, Japanese" },
     { "key": "Projects", "value": "8" }
   ],
-  "japanese": {
+  "language": {
     "title": "Japanese",
     "content": "JLPT N2 · TOEIC 940 · Wrote the README.md for the Todo List project entirely in Japanese."
   },
