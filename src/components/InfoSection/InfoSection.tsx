@@ -9,8 +9,8 @@ export default function InfoSection() {
   const t = useTranslations();
   const info = t.raw("info") as InfoRow[];
   const infoTitle = t("sectionTitles.info");
-  const japaneseTitle = t("japanese.title");
-  const japaneseContent = t("japanese.content");
+  const languageTitle = t("language.title");
+  const languageContent = t("language.content");
 
   return (
     <section id="info" className="md:max-w-[min(66vw,1400px)] mx-auto px-6 py-8 scroll-mt-20 flex flex-col gap-8">
@@ -27,7 +27,7 @@ export default function InfoSection() {
       </div>
 
       <div>
-        <h2 className="text-[17px] font-extrabold mb-4">{japaneseTitle}</h2>
+        <h2 className="text-[17px] font-extrabold mb-4">{languageTitle}</h2>
         <div className="bg-card border border-border rounded-2xl px-5 py-4 flex flex-col gap-3">
           <div className="flex items-center gap-2 text-sm font-semibold">
             <FlagJP />
@@ -38,7 +38,7 @@ export default function InfoSection() {
             TOEIC 940
           </div>
           <p className="text-sm text-muted-foreground leading-relaxed pt-1">
-            {japaneseContent}
+            {languageContent}
           </p>
         </div>
       </div>
