@@ -34,5 +34,16 @@ export interface InfoRow {
     value: string;
 }
 
+export interface GitRepository {
+    id: number,
+    node_id: string,
+    name: string,
+    full_name: string,
+    private: boolean,
+    html_url: string,
+    updated_at: string,    
+}
+
+
 export const SUPPORTED_LOCALES = ['ko', 'ja', 'en'] as const
 export type Locale = 'ko' | 'ja' | 'en'
