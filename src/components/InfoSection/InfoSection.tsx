@@ -19,8 +19,8 @@ export default function InfoSection() {
         <div className="bg-card border border-border rounded-2xl divide-y divide-border px-5">
           {info.map((row) => (
             <div key={row.key} className="flex justify-between items-baseline gap-4 py-3">
-              <span className="text-sm text-muted-foreground flex-none">{row.key}</span>
-              <span className="text-sm text-right">{row.value}</span>
+              <span className="text-sm md:text-2xl text-muted-foreground flex-none">{row.key}</span>
+              <span className="text-sm md:text-2xl text-right">{row.value}</span>
             </div>
           ))}
         </div>
@@ -29,11 +29,11 @@ export default function InfoSection() {
       <div>
         <h2 className="text-[17px] font-extrabold mb-4">{languageTitle}</h2>
         <div className="bg-card border border-border rounded-2xl px-5 py-4 flex flex-col gap-3">
-          <div className="flex items-center gap-2 text-sm font-semibold">
+          <div className="flex items-center gap-2 text-sm md:text-xl font-semibold">
             <FlagJP />
             JLPT N2
           </div>
-          <div className="flex items-center gap-2 text-sm font-semibold">
+          <div className="flex items-center gap-2 text-sm md:text-xl font-semibold">
             <FlagUK />
             TOEIC 940
           </div>
