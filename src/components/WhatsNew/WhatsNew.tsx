@@ -51,15 +51,15 @@ export default function WhatsNew() {
           </div>
         ) : error ? (
           <div className="bg-card border border-border rounded-2xl px-5 py-3.5">
-            <p className="text-sm text-destructive">{error}</p>
+            <p className="text-sm  text-destructive">{error}</p>
           </div>
         ) : data.length > 0 ? (
           <div className="bg-card border border-border rounded-2xl divide-y divide-border px-5">
             {data.map((item: GitRepository, idx) => (
-              <div key={item.node_id} className="flex gap-4 py-3.5">
+              <div key={item.node_id} className="flex gap-4 py-3.5 ">
                 <span
                   className={cn(
-                    "font-mono text-xs flex-none w-24 pt-0.5",
+                    "font-mono text-xs md:text-2xl flex-none w-48 pt-0.5",
                     idx < 1 ? "font-bold text-primary" : "text-primary/60"
                   )}
                 >
@@ -67,7 +67,7 @@ export default function WhatsNew() {
                 </span>
                 <span
                   className={cn(
-                    "text-sm",
+                    "text-sm md:text-2xl hover:border-b-amber-200 border-b-2 border-b-transparent",
                     idx < 1 ? "font-semibold" : "text-muted-foreground"
                   )}
                 >
