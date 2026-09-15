@@ -3,7 +3,7 @@ import { render, screen } from "@testing-library/react";
 import { NextIntlClientProvider } from "next-intl";
 
 import Hero from "@/components/AppHeader/ui/Hero";
-import messages from "../messages/ko.json";
+import messages from "@messages/ko.json";
 
 describe("Hero.tsx", () => {
   it("renders the name heading, subtitle, and contact CTA", () => {
