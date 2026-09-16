@@ -12,7 +12,8 @@ export async function GET() {
                 next: {revalidate: 3600, tags: ['repository/nhl1991']}
             }
         );
-        if (!response.ok) throw new Error('NETWORK_ERROR');
+        if (!response.ok) throw new Error(`NETWORK_ERROR: ${response.status}`);
+
 
         const result: GitRepository[] = await response.json()
 
@@ -21,7 +22,7 @@ export async function GET() {
 
         return NextResponse.json({ repos }, { status: 200 })
     } catch (e) {
-        console.log(e);
-        throw new Error("FAILED_TO_FETCH");
+        console.error(e);
+        return NextResponse.json({ error: (e as Error).message }, { status: 500 });
     }
 }
