@@ -22,7 +22,6 @@ export default function WhatsNew() {
         })
         const { repos } = await response.json();
         setData(repos);
-        console.log(repos);
 
       } catch (e) {
         console.log(e);
