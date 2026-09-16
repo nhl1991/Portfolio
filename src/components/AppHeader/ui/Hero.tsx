@@ -22,27 +22,27 @@ export default function Hero() {
         <h1 className="text-2xl md:text-3xl font-extrabold mb-1">{name}</h1>
         <p className="text-muted-foreground text-base mb-3">{subtitle}</p>
         <div className="flex flex-wrap gap-2 justify-center md:justify-start mb-3">
-          <span className="text-xs font-semibold px-3 py-1.5 rounded-full bg-secondary text-muted-foreground border border-border">
+          <span className="text-xs md:text-xl font-semibold px-3 py-1.5 rounded-full bg-secondary text-muted-foreground border border-border">
             {pillCategory}
           </span>
-          <span className="text-xs font-semibold px-3 py-1.5 rounded-full bg-[color-mix(in_oklab,var(--app-green)_12%,transparent)] text-[var(--app-green)] inline-flex items-center gap-1.5">
+          <span className="text-xs md:text-xl font-semibold px-3 py-1.5 rounded-full bg-[color-mix(in_oklab,var(--app-green)_12%,transparent)] text-[var(--app-green)] inline-flex items-center gap-1.5">
             <span className="w-1.5 h-1.5 rounded-full bg-[var(--app-green)]" />
             {pillStatus}
           </span>
         </div>
-        <span className="block font-mono text-xs text-muted-foreground mb-4">
+        <span className="block font-mono text-xs md:text-xl text-muted-foreground mb-4">
           {version}
         </span>
         <div className="flex flex-wrap gap-2.5 justify-center md:justify-start">
           <a
             href="#contact"
-            className="text-sm font-bold px-5 py-2.5 rounded-full bg-primary text-primary-foreground hover:brightness-110"
+            className="text-sm md:text-xl font-bold px-5 py-2.5 rounded-full bg-primary text-primary-foreground hover:brightness-110"
           >
             {ctaContact}
           </a>
           <a
             href="#whatsnew"
-            className="text-sm font-bold px-5 py-2.5 rounded-full bg-card text-foreground border border-border hover:border-primary hover:text-primary"
+            className="text-sm md:text-xl font-bold px-5 py-2.5 rounded-full bg-card text-foreground border border-border hover:border-primary hover:text-primary"
           >
             {ctaHistory}
           </a>

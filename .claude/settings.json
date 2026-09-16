@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e ' *)",
+      "WebFetch(domain:nhl1991.github.io)",
+      "WebFetch(domain:project-mal.vercel.app)",
+      "WebFetch(domain:photo-album-gilt.vercel.app)",
+      "WebFetch(domain:project-new-circling-navigation.vercel.app)",
+      "WebFetch(domain:todolist-chi-red.vercel.app)",
+      "WebFetch(domain:next-js-todo-client.vercel.app)",
+      "WebFetch(domain:nextjs-example-demo.vercel.app)",
+      "WebFetch(domain:nwitter-reloaded-2d0a7.web.app)",
+      "WebFetch(domain:project-nomad-movie.vercel.app)",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('messages/ja.json','utf8'\\)\\); console.log\\('valid JSON'\\)\")",
+      "Bash(npx tsc *)",
+      "Bash(npx eslint *)",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('messages/en.json','utf8'\\)\\); console.log\\('en.json valid'\\)\")",
+      "Bash(npx jest *)",
+      "Bash(curl -s http://localhost:3000/ -H \"Cookie: locale=en\")",
+      "Bash(curl -s http://localhost:3000/)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git fetch *)",
+      "Bash(gh pr *)"
+    ]
+  }
+}
