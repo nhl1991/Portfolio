@@ -1,6 +1,9 @@
 "use client";
 import { useStore } from "@/lib/stores";
-import { Dialog, DialogContent } from "@/components/ui/shadcn/dialog";
+import {
+  Dialog,
+  DialogContent,
+} from "@/components/ui/shadcn/dialog";
 import ProjectPreviewImage from "./ui/ProjectPreviewImage";
 import ProjectStack from "./ui/ProjectStack";
 import ProjectDescription from "./ui/ProjectDescription";
@@ -14,7 +17,11 @@ export default function ProjectModal() {
   return (
     <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
       <DialogContent>
-        <ProjectTitle title={item.title} website={item.url} github={item.github} />
+        <ProjectTitle
+          title={item.title}
+          website={item.url}
+          github={item.github}
+        />
 
         <article className="flex flex-col gap-6 pt-2">
           <div className="flex flex-col md:flex-row gap-6">
@@ -25,7 +32,7 @@ export default function ProjectModal() {
               database={item.database}
             />
           </div>
-          <ProjectDescription description={item.description} />
+            <ProjectDescription description={item.description} />
         </article>
       </DialogContent>
     </Dialog>
