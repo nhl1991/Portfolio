@@ -68,7 +68,7 @@ export default function WhatsNew() {
                     idx < 1 ? "font-bold text-primary" : text_primary[idx],
                   )}
                 >
-                  {new Date(item.updated_at).toISOString().slice(0, 10)}
+                  {new Date(item.pushed_at).toISOString().slice(0, 10)}
                 </span>
                 <span
                   className={cn(
