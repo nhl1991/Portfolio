@@ -42,6 +42,7 @@ export interface GitRepository {
     private: boolean,
     html_url: string,
     updated_at: string,    
+    pushed_at: string,    
 }
 
 

@@ -19,10 +19,10 @@ export default function ProjectTitle({
       </DialogTitle>
       <div className="flex items-center gap-3">
         <Link href={website} aria-label="Website" target="_blank" rel="noopener noreferrer">
-          <GlobalAlt className="w-6 h-6 text-muted-foreground hover:text-primary" />
+          <GlobalAlt className="w-8 h-8 text-muted-foreground hover:text-primary" />
         </Link>
         <Link href={github} aria-label="Github" target="_blank" rel="noopener noreferrer">
-          <Github className="w-5 h-5 fill-muted-foreground hover:fill-primary" />
+          <Github className="w-8 h-8 fill-muted-foreground hover:fill-primary" />
         </Link>
       </div>
     </header>

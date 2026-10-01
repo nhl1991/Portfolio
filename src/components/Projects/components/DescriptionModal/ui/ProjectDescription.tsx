@@ -1,11 +1,13 @@
+import { DialogDescription } from "@/components/ui/shadcn/dialog";
+
 export default function ProjectDescription({
   description,
 }: {
   description: string;
 }) {
   return (
-    <p className="text-sm text-muted-foreground leading-relaxed">
+    <DialogDescription className="text-sm text-muted-foreground leading-relaxed">
       {description}
-    </p>
+    </DialogDescription>
   );
 }

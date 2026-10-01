@@ -13,16 +13,16 @@
   },
   "about": [
     {
-      "title": "1. UI/UX Design",
-      "content": "When I first started web development, I was drawn to how immediately the results could be visualized compared to other languages. Beyond simply implementing features, I became fascinated with designing interfaces that users can understand intuitively and use comfortably. Since then, I have continued to study and pay close attention to screen composition and user-flow design with the user experience in mind."
+      "title": "1. Why I Chose to Become a Web Engineer",
+      "content": "What first drew me to web engineering was the process of thinking through a problem and solving it through trial and error. I was also strongly attracted to the fact that I can see what I build on screen right away, and that each improvement is reflected directly in the user experience. In my personal projects, I find it rewarding not just to implement features, but to keep iterating while asking myself, \"How can I make this easier to use?\" and \"Can I make this structure easier to maintain?\""
     },
     {
-      "title": "2. Refactoring",
-      "content": "While working on several personal projects, I kept asking myself, \"Is there a better structure?\" and \"How can I improve readability?\" This led me to form a habit of considering maintainability and scalability, not just functionality. I have grown increasingly interested in improving code quality through removing unnecessary duplication, separating responsibilities, and using clear naming. Going forward, I want to focus on writing sustainable code, not just implementing features."
+      "title": "2. What I Have Worked On So Far",
+      "content": "I started by learning the fundamentals of web development, and I now focus on frontend development centered on React, Next.js, and TypeScript. In my personal projects, I have gone beyond building screens to implement features with real-world web applications in mind, including API integration, authentication, state management, data fetching, and responsive design. I have also worked on authentication and data management with Firebase, as well as backend development with NestJS, Prisma, and PostgreSQL, studying with the aim of understanding how a web application works as a whole, not just the frontend."
     },
     {
-      "title": "3. Expanding into Backend and Full-Stack Skills",
-      "content": "I am currently focused on frontend development, but my long-term goal is to grow into a full-stack engineer who understands both frontend and backend. I have experience implementing authentication and data management features using Firebase, and I plan to study Prisma and PostgreSQL to strengthen my ability to design more structured data models and implement server-side logic."
+      "title": "3. The Engineer I Aim to Become",
+      "content": "First, as a frontend engineer, I want to strengthen my ability to build UIs that are clear and easy for users to use. From there, I plan to deepen my understanding of backend and databases, with the long-term goal of becoming a full-stack engineer who understands both frontend and backend and can develop with the entire service in mind."
     }
   ],
   "projects": [
