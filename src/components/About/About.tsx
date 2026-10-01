@@ -3,9 +3,23 @@
 import { AboutItem } from "@/lib/interface";
 import { useTranslations } from "next-intl";
 
+function isAboutItemArray(value: unknown): value is AboutItem[] {
+  return (
+    Array.isArray(value) &&
+    value.every(
+      (item) =>
+        typeof item === "object" &&
+        item !== null &&
+        typeof (item as AboutItem).title === "string" &&
+        typeof (item as AboutItem).content === "string"
+    )
+  );
+}
+
 export default function About() {
   const t = useTranslations();
-  const about = t.raw("about") as AboutItem[];
+  const rawAbout = t.raw("about");
+  const about = isAboutItemArray(rawAbout) ? rawAbout : [];
   const title = t("sectionTitles.about");
 
   return (
