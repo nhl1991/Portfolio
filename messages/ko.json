@@ -5,9 +5,7 @@
   },
     "appHeader": {
         "subtitle": "Frontend / Fullstack Developer",
-        "pillCategory": "개발자 도구",
         "pillStatus": "구직 중",
-        "version": "v0.4.0-beta · 주니어",
         "ctaContact": "문의하기",
         "ctaHistory": "이력 보기"
     },
