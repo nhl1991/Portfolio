@@ -199,6 +199,7 @@
       "current": false
     }
   ],
+  "whatsNewError": "Couldn't load recent updates. Please try again later.",
   "sectionTitles": {
     "about": "About",
     "whatsNew": "What's New",

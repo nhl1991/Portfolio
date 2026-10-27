@@ -199,6 +199,7 @@
       "current": false
     }
   ],
+  "whatsNewError": "最新情報を読み込めませんでした。しばらくしてから再度お試しください。",
   "sectionTitles": {
     "about": "ABOUT",
     "whatsNew": "最新情報",
